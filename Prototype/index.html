@@ -38,7 +38,102 @@
       ::-webkit-scrollbar {
         display: none;
       }
-    </style>
+    
+      /* === SMOOTH SCROLL & SCROLL ANIMATION ENGINE === */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Base Scroll Reveal Classes */
+      html.js-reveal-ready .scroll-reveal {
+        opacity: 0;
+        transform: translateY(26px);
+        transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform;
+      }
+      html.js-reveal-ready .scroll-reveal.scroll-revealed {
+        opacity: 1 !important;
+        transform: translateY(0) scale(1) !important;
+      }
+
+      html.js-reveal-ready .scroll-reveal-scale {
+        opacity: 0;
+        transform: translateY(20px) scale(0.96);
+        transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform;
+      }
+      html.js-reveal-ready .scroll-reveal-scale.scroll-revealed {
+        opacity: 1 !important;
+        transform: translateY(0) scale(1) !important;
+      }
+
+      html.js-reveal-ready .scroll-reveal-left {
+        opacity: 0;
+        transform: translateX(-26px);
+        transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform;
+      }
+      html.js-reveal-ready .scroll-reveal-left.scroll-revealed {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+      }
+
+      html.js-reveal-ready .scroll-reveal-right {
+        opacity: 0;
+        transform: translateX(26px);
+        transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform;
+      }
+      html.js-reveal-ready .scroll-reveal-right.scroll-revealed {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+      }
+
+      /* Scroll Progress Bar at the top of viewport */
+      #scrollProgressBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        width: 0%;
+        background: linear-gradient(90deg, #2563eb, #38bdf8, #6366f1);
+        z-index: 9999;
+        transition: width 0.08s ease-out;
+        box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+      }
+
+      /* Back to Top Floating Button */
+      #backToTopBtn {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 90;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(16px) scale(0.9);
+        transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+      }
+      #backToTopBtn.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+      }
+
+      /* Reduced motion accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        html.js-reveal-ready .scroll-reveal,
+        html.js-reveal-ready .scroll-reveal-scale,
+        html.js-reveal-ready .scroll-reveal-left,
+        html.js-reveal-ready .scroll-reveal-right {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
+        html {
+          scroll-behavior: auto;
+        }
+      }
+</style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script id="tailwind-config">
       tailwind.config = {
@@ -210,6 +305,9 @@
   <body
     class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"
   >
+    <!-- Scroll Progress Indicator -->
+    <div id="scrollProgressBar"></div>
+
     <header
       class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
     >
@@ -416,7 +514,7 @@
                 </div>
               </div>
               <div
-                class="flex-1 flex flex-col justify-center text-left py-space-md lg:p-space-lg"
+                class="flex-1 flex flex-col justify-center text-left py-space-md lg:p-space-lg scroll-reveal-right"
               >
                 <h2
                   class="font-display-hero text-xl sm:text-2xl md:text-display-hero text-on-surface tracking-tight mb-space-lg leading-snug"
@@ -2155,5 +2253,197 @@
         </div>
       </div>
     </footer>
-  </body>
+      <!-- Back to Top Floating Action Button -->
+    <button
+      id="backToTopBtn"
+      aria-label="Kembali ke atas"
+      class="w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-xl shadow-blue-500/30 flex items-center justify-center transition-all hover:scale-110 active:scale-95 group focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+    >
+      <span class="material-symbols-outlined text-[24px] transition-transform duration-300 group-hover:-translate-y-0.5">arrow_upward</span>
+    </button>
+
+    <script>
+      // === UNIVERSAL SCROLL ANIMATION & INTERACTION ENGINE ===
+      (function () {
+        document.documentElement.classList.add("js-reveal-ready");
+
+        function initScrollAnimations() {
+          const progressBar = document.getElementById("scrollProgressBar");
+          const backToTopBtn = document.getElementById("backToTopBtn");
+          const header = document.querySelector("header");
+
+          // 1. Scroll Progress Bar & Back-to-Top Toggle
+          function handleScroll() {
+            const winScroll =
+              document.body.scrollTop || document.documentElement.scrollTop;
+            const height =
+              document.documentElement.scrollHeight -
+              document.documentElement.clientHeight;
+            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+
+            if (progressBar) {
+              progressBar.style.width = scrolled + "%";
+            }
+
+            if (backToTopBtn) {
+              if (winScroll > 320) {
+                backToTopBtn.classList.add("visible");
+              } else {
+                backToTopBtn.classList.remove("visible");
+              }
+            }
+
+            if (header) {
+              if (winScroll > 20) {
+                header.classList.add("shadow-md");
+              } else {
+                header.classList.remove("shadow-md");
+              }
+            }
+          }
+
+          window.addEventListener("scroll", handleScroll, { passive: true });
+          handleScroll();
+
+          if (backToTopBtn) {
+            backToTopBtn.addEventListener("click", function () {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+          }
+
+          // 2. IntersectionObserver for Scroll Animations
+          if (!("IntersectionObserver" in window)) {
+            document
+              .querySelectorAll(
+                ".scroll-reveal, .scroll-reveal-scale, .scroll-reveal-left, .scroll-reveal-right"
+              )
+              .forEach(function (el) {
+                el.classList.add("scroll-revealed");
+              });
+            return;
+          }
+
+          const observerOptions = {
+            threshold: 0.08,
+            rootMargin: "0px 0px -30px 0px",
+          };
+
+          const revealObserver = new IntersectionObserver(function (
+            entries,
+            observer
+          ) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("scroll-revealed");
+                observer.unobserve(entry.target);
+              }
+            });
+          }, observerOptions);
+
+          // Auto-tag sections, headers, and grid cards across page
+          const sections = document.querySelectorAll("section");
+          sections.forEach(function (section, sIdx) {
+            // Section header block (title/badge/desc)
+            const headerBlock = section.querySelector(
+              ":scope > div > .text-center, :scope > div > div:first-child"
+            );
+            if (headerBlock && !headerBlock.classList.contains("scroll-reveal") && sIdx > 0) {
+              headerBlock.classList.add("scroll-reveal");
+              revealObserver.observe(headerBlock);
+            }
+
+            // Cards in grids within section
+            const grids = section.querySelectorAll(".grid");
+            grids.forEach(function (grid) {
+              if (grid.closest('[id*="modal"], [role="dialog"]')) return;
+
+              const children = Array.from(grid.children);
+              if (children.length >= 2) {
+                children.forEach(function (card, cIdx) {
+                  if (
+                    !card.classList.contains("scroll-reveal") &&
+                    !card.classList.contains("scroll-reveal-scale")
+                  ) {
+                    card.classList.add("scroll-reveal");
+                    const delay = Math.min((cIdx % 4) * 75, 300);
+                    card.style.transitionDelay = delay + "ms";
+                    revealObserver.observe(card);
+                  }
+                });
+              }
+            });
+
+            // Prominent standalone cards/containers
+            const bigCards = section.querySelectorAll(".rounded-3xl, .rounded-2xl");
+            bigCards.forEach(function (card) {
+              if (card.closest('[id*="modal"], [role="dialog"]')) return;
+
+              if (
+                !card.classList.contains("scroll-reveal") &&
+                !card.classList.contains("scroll-reveal-scale") &&
+                !card.closest(".grid")
+              ) {
+                if (card.offsetHeight > 140) {
+                  card.classList.add("scroll-reveal-scale");
+                  revealObserver.observe(card);
+                }
+              }
+            });
+          });
+
+          // Explicitly tagged elements
+          document
+            .querySelectorAll(
+              ".scroll-reveal, .scroll-reveal-scale, .scroll-reveal-left, .scroll-reveal-right"
+            )
+            .forEach(function (el) {
+              revealObserver.observe(el);
+            });
+
+          // Tag footer
+          const footer = document.querySelector("footer");
+          if (footer) {
+            footer.classList.add("scroll-reveal");
+            revealObserver.observe(footer);
+          }
+
+          // In Organisasi.html: support switchOrgTab revealing
+          const tabBtnMpk = document.getElementById("tabBtnMpk");
+          const tabBtnOsis = document.getElementById("tabBtnOsis");
+          if (tabBtnMpk) {
+            tabBtnMpk.addEventListener("click", function () {
+              setTimeout(function () {
+                document
+                  .querySelectorAll(
+                    "#treeMpk .scroll-reveal, #treeMpk .scroll-reveal-scale"
+                  )
+                  .forEach(function (el) {
+                    el.classList.add("scroll-revealed");
+                  });
+              }, 60);
+            });
+          }
+          if (tabBtnOsis) {
+            tabBtnOsis.addEventListener("click", function () {
+              setTimeout(function () {
+                document
+                  .querySelectorAll(
+                    "#treeOsis .scroll-reveal, #treeOsis .scroll-reveal-scale"
+                  )
+                  .forEach(function (el) {
+                    el.classList.add("scroll-revealed");
+                  });
+              }, 60);
+            });
+          }
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initScrollAnimations);
+        } else {
+          initScrollAnimations();
+        }
+      })();
+    </script>
+</body>
 </html>
