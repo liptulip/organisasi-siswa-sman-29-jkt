@@ -1,0 +1,2159 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#dae2fd",
+              primary: "#004ac6",
+              "tertiary-fixed-dim": "#4edea3",
+              "on-tertiary-fixed-variant": "#005236",
+              "secondary-fixed-dim": "#7bd0ff",
+              "on-secondary-container": "#004d6a",
+              "on-surface-variant": "#434655",
+              "on-tertiary-container": "#bdffdb",
+              "surface-container-low": "#f2f3ff",
+              "inverse-surface": "#283044",
+              "on-tertiary": "#ffffff",
+              surface: "#faf8ff",
+              background: "#faf8ff",
+              "on-secondary": "#ffffff",
+              "surface-bright": "#faf8ff",
+              "inverse-primary": "#b4c5ff",
+              "surface-container": "#eaedff",
+              "on-primary": "#ffffff",
+              secondary: "#00668a",
+              "on-error": "#ffffff",
+              "primary-fixed": "#dbe1ff",
+              "tertiary-fixed": "#6ffbbe",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#eef0ff",
+              "tertiary-container": "#007d55",
+              "on-secondary-fixed-variant": "#004c69",
+              "primary-container": "#2563eb",
+              "on-primary-fixed": "#00174b",
+              "on-primary-container": "#eeefff",
+              outline: "#737686",
+              "surface-container-high": "#e2e7ff",
+              "primary-fixed-dim": "#b4c5ff",
+              error: "#ba1a1a",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#131b2e",
+              "on-tertiary-fixed": "#002113",
+              "on-primary-fixed-variant": "#003ea8",
+              "outline-variant": "#c3c6d7",
+              "secondary-container": "#40c2fd",
+              "surface-dim": "#d2d9f4",
+              "surface-variant": "#dae2fd",
+              "surface-tint": "#0053db",
+              "on-secondary-fixed": "#001e2c",
+              "secondary-fixed": "#c4e7ff",
+              tertiary: "#006242",
+              "on-background": "#131b2e",
+              "error-container": "#ffdad6",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-mobile": "1.5rem",
+              "gutter-mobile": "1rem",
+              margin: "2rem",
+              "space-sm": "0.5rem",
+              "space-lg": "1.5rem",
+              "space-xl": "3rem",
+              gutter: "1.5rem",
+              "space-xs": "0.25rem",
+              "space-md": "1rem",
+            },
+            fontFamily: {
+              "display-hero-mobile": ["Plus Jakarta Sans"],
+              "body-lg": ["Inter"],
+              "body-sm": ["Inter"],
+              "label-md": ["Inter"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "badge-caps": ["Inter"],
+              "body-md": ["Inter"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "display-hero": ["Plus Jakarta Sans"],
+              "label-sm": ["Inter"],
+              "headline-lg": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "display-hero-mobile": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+              "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "26px",
+                {
+                  lineHeight: "34px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "badge-caps": [
+                "11px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.04em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "32px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-sm": [
+                "18px",
+                {
+                  lineHeight: "26px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "display-hero": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "800",
+                },
+              ],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"
+  >
+    <header
+      class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-sm shrink-0">
+          <img
+            alt="Ekskul Directory Logo"
+            class="h-8 w-auto object-contain"
+            src="logo.png"
+          />
+          <div class="flex flex-col">
+            <span
+              class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none"
+              >Get to Know Our Ekskul</span
+            ><span
+              class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-normal mt-0.5"
+              >OSIS SMA</span
+            >
+          </div>
+        </div>
+        <nav
+          class="hidden md:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low"
+          data-active-classes="bg-primary-container text-on-primary-container font-label-md rounded-full shadow-sm"
+        >
+          <a
+            aria-current="page"
+            class="px-space-md py-1.5 transition-colors bg-primary-container text-on-primary-container font-label-md rounded-full shadow-sm"
+            data-path="beranda"
+            href="#"
+            >Beranda</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant px-space-md py-1.5 rounded-full transition-colors hover:text-on-surface hover:bg-surface-container-high"
+            data-path="daftar-ekskul"
+            href="#"
+            >Daftar Ekskul</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant px-space-md py-1.5 rounded-full transition-colors hover:text-on-surface hover:bg-surface-container-high"
+            data-path="tentang-program"
+            href="#"
+            >Tentang Program</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-md">
+          <a
+            class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md shadow-sm transition-all hover:bg-primary hover:text-on-primary"
+            data-path="daftar-ekskul"
+            href="#"
+            ><span class="material-symbols-outlined text-[18px]">search</span
+            ><span class="">Cari Ekskul</span></a
+          >
+          <div class="flex items-center gap-space-xs pl-space-xs"></div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]">
+      <div class="flex flex-col w-full">
+        <!-- Interactive Background Glow & Hero Canvas -->
+        <section class="relative w-full overflow-hidden bg-surface py-24 md:py-32 lg:py-36">
+          <!-- Ambient Blur Background Elements -->
+          <div
+            class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[360px] bg-gradient-to-tr from-primary-fixed/40 via-secondary-container/20 to-tertiary-fixed/30 blur-3xl pointer-events-none rounded-full"
+          ></div>
+          <div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 relative z-10">
+            <div
+              class="flex flex-col items-center text-center max-w-3xl mx-auto"
+            >
+              <!-- OSIS Period Badge -->
+              <div
+                class="inline-flex items-center gap-space-xs px-4 sm:px-5 py-2 sm:py-1.5 rounded-2xl sm:rounded-full bg-surface-container-high shadow-sm mb-space-xl text-center"
+              >
+                <span class="relative flex h-2.5 w-2.5">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"
+                  ></span>
+                </span>
+                <span
+                  class="font-badge-caps text-badge-caps text-on-surface uppercase tracking-wider font-semibold"
+                >
+                  Program Kerja Organisasi Siswa OSIS Masa Bakti 2024/2025
+                </span>
+              </div>
+              <!-- Headline -->
+              <h1
+                class="font-display-hero text-2xl sm:text-3xl md:text-display-hero text-on-surface tracking-tight mb-space-lg leading-tight"
+              >
+                Get to Know Our Ekskul: <br class="hidden sm:inline" /><span
+                  class="text-primary-container"
+                  >Temukan Minat &amp; Bakat Mu !</span
+                >
+              </h1>
+              <!-- Subtitle -->
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-space-xl leading-relaxed"
+              >
+                Eksplorasi 20 pilihan ekstrakurikuler resmi sekolah. Kembangkan
+                potensi akademik, seni, olahraga, dan kepemimpinan bersama
+                rekan-rekan berprestasi.
+              </p>
+              <!-- Search Bar with Micro-interactions -->
+              <div
+                class="w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-xl shadow-surface-container-highest/30 p-2 md:p-3 flex flex-col sm:flex-row items-center gap-2 mb-space-md"
+              >
+                <div
+                  class="flex items-center gap-space-sm w-full px-space-md py-2 text-on-surface-variant"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[24px]"
+                    >search</span
+                  >
+                  <input
+                    class="w-full bg-transparent font-body-md text-body-md text-on-surface focus:outline-none placeholder:text-outline"
+                    id="ekskulSearchInput"
+                    placeholder="Cari nama ekskul, minat, atau jadwal..."
+                    type="text"
+                  />
+                </div>
+                <div class="flex items-center gap-2 w-full sm:w-auto shrink-0">
+                  <button
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-xl py-3 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md shadow-md transition-all hover:bg-primary active:scale-95"
+                    id="searchBtn"
+                    type="button"
+                  >
+                    <span class="">Cari Ekskul</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >arrow_forward</span
+                    >
+                  </button>
+                </div>
+              </div>
+              <!-- Quick Tag Hints -->
+              <div
+                class="flex flex-wrap items-center justify-center gap-2 text-on-surface-variant font-label-sm text-label-sm pt-space-xs"
+              >
+                <span class="text-outline">Pencarian Populer:</span>
+                <button
+                  class="quick-tag px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors"
+                  data-tag="Robotika"
+                  type="button"
+                >
+                  Robotika
+                </button>
+                <button
+                  class="quick-tag px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors"
+                  data-tag="Basket"
+                  type="button"
+                >
+                  Basket
+                </button>
+                <button
+                  class="quick-tag px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors"
+                  data-tag="Debate"
+                  type="button"
+                >
+                  Debate
+                </button>
+                <button
+                  class="quick-tag px-3 py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors"
+                  data-tag="PMR"
+                  type="button"
+                >
+                  PMR
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="relative w-full bg-surface flex items-center justify-center py-24 md:py-32 lg:py-36 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-surface-container-high/40 via-surface to-primary-fixed/20 pointer-events-none"
+          ></div>
+          <div class="relative max-w-[1280px] w-full mx-auto px-4 sm:px-6 md:px-10 lg:px-16 z-10">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-xl shadow-surface-container-highest/30 p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col lg:flex-row items-center gap-6 lg:gap-space-xl"
+            >
+              <div
+                class="relative shrink-0 w-full lg:w-[420px] max-w-[420px] h-[360px] sm:h-[460px] lg:h-[580px] rounded-2xl overflow-hidden bg-gradient-to-tr from-surface-container-high via-surface-container to-surface-container-lowest shadow-md flex items-center justify-center group"
+              >
+                <img
+                  alt="Drs. H. Mulyadi Kusuma, M.Pd. - Kepala Sekolah"
+                  class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1U6ELU50lxr1MqYsHHH7jWCW7r9wlykupffYbVxjaOzCMxWkprH-EpENQRW7Jh-WQGSlgI6bCV1s6pDHKQPsdC3_AnsiyL0iqWfter8V3sREgyfl-CjzZLWKO87BB7FG3OHvXYrxz05XDxyR7K_aDpwKjs-UcnhRcaBoASeq3q7DIChBdzH2zmoQv3UTw5vVW1jRwzrcMO8B_XMfqByy142mIWNf9Bpg-iAQaW2Tl-F2Q"
+                />
+                <div
+                  class="absolute bottom-3 left-2 right-2 sm:left-4 sm:right-4 bg-surface/90 backdrop-blur-md px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl shadow-md border border-outline-variant/30 flex items-center justify-between"
+                >
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-tertiary text-[20px]"
+                      >verified</span
+                    ><span
+                      class="font-label-md text-label-md text-on-surface font-semibold"
+                      >Kepala SMAN 29 Jakarta Mandiri</span
+                    >
+                  </div>
+                  <span
+                    class="font-badge-caps text-badge-caps text-primary uppercase font-bold tracking-wider"
+                    >PENGARAH OSIS</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex-1 flex flex-col justify-center text-left py-space-md lg:p-space-lg"
+              >
+                <h2
+                  class="font-display-hero text-xl sm:text-2xl md:text-display-hero text-on-surface tracking-tight mb-space-lg leading-snug"
+                >
+                  “Dukung Potensi, Karakter, dan Prestasi Generasi Emas Melalui
+                  Wadah Ekstrakurikuler”
+                </h2>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-space-xl"
+                >
+                  Selamat datang di direktori resmi ekstrakurikuler sekolah
+                  kita. Kami percaya bahwa pendidikan unggul tidak hanya
+                  bertumpu pada pencapaian akademik di dalam kelas, melainkan
+                  juga pada pembentukan karakter tangguh, kepemimpinan,
+                  sportivitas, serta kreativitas. Melalui 20 pilihan
+                  ekstrakurikuler yang aktif dan terakreditasi ini, temukan
+                  minat sejatimu, bangun relasi suportif, dan bersiaplah
+                  mengukir prestasi terbaik bagi almamater serta masa depanmu.
+                </p>
+                <div
+                  class="flex flex-wrap items-center justify-between gap-space-md pt-space-lg border-t border-outline-variant/20"
+                >
+                  <div class="flex flex-col">
+                    <span
+                      class="font-headline-md text-lg sm:text-headline-md text-on-surface font-semibold"
+                      >Drs. H. Mulyadi Kusuma, M.Pd.</span
+                    ><span
+                      class="font-body-md text-xs sm:text-body-md text-on-surface-variant mt-0.5"
+                      >Kepala SMAN 29 Jakarta Mandiri • Pengarah OSIS 2024/2025</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-full bg-tertiary/10 text-tertiary font-label-md text-label-md font-semibold"
+                      ><span class="material-symbols-outlined text-[18px]"
+                        >school</span
+                      >
+                      Resmi Terverifikasi</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="relative w-full bg-surface py-20 md:py-28 lg:py-32 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-surface-container-high/40 via-surface to-primary-fixed/20 pointer-events-none"
+          ></div>
+          <div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 relative z-10">
+            <div
+              class="relative overflow-hidden rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-xl shadow-surface-container-highest/20 p-4 sm:p-6 md:p-10 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-10 lg:gap-12"
+            >
+              <div
+                class="absolute -top-24 -right-24 w-96 h-96 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none"
+              ></div>
+              <div
+                class="absolute -bottom-24 -left-24 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none"
+              ></div>
+              <div
+                class="w-full lg:max-w-[460px] flex flex-col text-left relative z-10"
+              >
+                <div
+                  class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-fixed/50 text-primary w-fit mb-space-md shadow-sm backdrop-blur-md"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >verified</span
+                  ><span
+                    class="font-badge-caps text-[11px] uppercase tracking-wider font-bold"
+                    >Badan Eksekutif &amp; Legislatif Siswa</span
+                  >
+                </div>
+                <h2
+                  class="font-display-hero text-2xl sm:text-3xl lg:text-[34px] leading-snug lg:leading-[42px] text-on-surface tracking-tight font-bold mb-space-md"
+                >
+                  Lihat Profil 2 Organisasi Siswa Sekolah:
+                  <span class="text-primary block mt-1"
+                    >Kenali Lebih Dekat OSIS &amp; MPK SMAN 29</span
+                  >
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-xl"
+                >
+                  Temukan dedikasi pengurus sekolah melalui OSIS sebagai wadah
+                  eksekutif penggerak program inovatif dan MPK sebagai lembaga
+                  legislatif perumus aspirasi serta pengawas siswa.
+                </p>
+                <div class="flex flex-col gap-3">
+                  <div
+                    class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low border border-outline-variant/20 shadow-sm"
+                  >
+                    <div
+                      class="w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >verified_user</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-md text-on-surface font-semibold text-[14px]"
+                        >Kepengurusan Resmi 2024/2025</span
+                      ><span
+                        class="font-body-sm text-on-surface-variant text-[12px]"
+                        >Masa bakti aktif dan berintegritas tinggi</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low border border-outline-variant/20 shadow-sm"
+                  >
+                    <div
+                      class="w-9 h-9 rounded-lg bg-tertiary text-on-tertiary flex items-center justify-center shrink-0 shadow-sm"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >groups</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-md text-on-surface font-semibold text-[14px]"
+                        >Kolaborasi Aktif &amp; Sinergis</span
+                      ><span
+                        class="font-body-sm text-on-surface-variant text-[12px]"
+                        >Menghubungkan suara siswa dengan pihak sekolah</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low border border-outline-variant/20 shadow-sm"
+                  >
+                    <div
+                      class="w-9 h-9 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >campaign</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-md text-on-surface font-semibold text-[14px]"
+                        >Wadah Aspirasi Terbuka</span
+                      ><span
+                        class="font-body-sm text-on-surface-variant text-[12px]"
+                        >Penyalur ide kreatif &amp; inisiatif konstruktif</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-10 w-full lg:flex-1 shrink-0 relative z-10"
+              >
+                <div
+                  class="relative overflow-hidden rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-md group"
+                >
+                  <div class="relative h-54 sm:h-58 w-full overflow-hidden">
+                    <img
+                      alt="Kolaborasi Proyek Tim Siswa"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://lh3.googleusercontent.com/aida/AEtjO1UlbUHPqPHsyiAOnBoV1e2q26G6enZBmJUp7FnapvkJvGEKCE4HORnHvTlM5jHRtebRIR8GgrHaPKGNLcwgUMiquqhn1m4edGhk1bvJ2RmbKN9NzdMl53j-2qxud8zwbmwo3dfrINdU6YGbUtwrKWYB14rq9FxSOusRmnS62rN7NFPEMd0zPci2omu2AHeWJ2MpOPVxQmALaC-UcYzBXchtXZeU6AafB-TgkzSGw_tb2Q"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-on-surface/95 via-on-surface/40 to-transparent pointer-events-none"
+                    ></div>
+                    <div
+                      class="absolute top-3 left-3 right-3 flex items-center justify-between"
+                    >
+                      <span
+                        class="px-2.5 py-0.5 rounded-full font-badge-caps text-[11px] font-bold bg-primary text-on-primary shadow-sm uppercase tracking-wide"
+                        >Dokumentasi Kegiatan</span
+                      ><span
+                        class="px-2 py-0.5 rounded-full font-label-sm text-[11px] bg-surface/90 backdrop-blur-md text-on-surface font-semibold shadow-sm"
+                        >1 / 4</span
+                      >
+                    </div>
+                    <div
+                      class="absolute bottom-2.5 inset-x-3.5 flex items-end justify-between gap-3"
+                    >
+                      <div class="flex-1">
+                        <h4
+                          class="font-headline-sm text-[15px] sm:text-[16px] font-bold text-surface tracking-tight leading-snug"
+                        >
+                          OSIS SMA Negeri 29 Jakarta - Periode 2026-2027 
+                        </h4>
+                        <p
+                          class="font-body-sm text-[11px] sm:text-[12px] text-surface-variant line-clamp-1 leading-normal opacity-90 mt-0.5"
+                        >
+                          Foto bersama Pengurus OSIS SMA Negeri 29 Jakarta - Periode 2026-2027 
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-1 shrink-0">
+                        <button
+                          aria-label="Slide sebelumnya"
+                          class="w-7 h-7 rounded-lg bg-surface/85 backdrop-blur-md border border-outline-variant/30 flex items-center justify-center text-on-surface shadow-sm hover:bg-surface-container-high transition-colors"
+                          type="button"
+                        >
+                          <span class="material-symbols-outlined text-[16px]"
+                            >chevron_left</span
+                          ></button
+                        ><button
+                          aria-label="Slide berikutnya"
+                          class="w-7 h-7 rounded-lg bg-primary text-on-primary flex items-center justify-center shadow-sm hover:bg-primary-container transition-colors"
+                          type="button"
+                        >
+                          <span class="material-symbols-outlined text-[16px]"
+                            >chevron_right</span
+                          >
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="px-3.5 py-2 bg-surface-container-low flex items-center justify-between border-t border-outline-variant/20"
+                  >
+                    <div
+                      class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-[11px]"
+                    >
+                      <span
+                        class="w-2 h-2 rounded-full bg-primary animate-ping"
+                      ></span
+                      ><span class="font-medium text-on-surface"
+                        >Galeri Terkini:</span
+                      ><span class="truncate max-w-[180px] sm:max-w-none"
+                        >Sidang Pleno MPK • Pensi &amp; Bakti Sosial</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <span class="w-5 h-1.5 rounded-full bg-primary"></span
+                      ><span
+                        class="w-1.5 h-1.5 rounded-full bg-outline-variant/40"
+                      ></span
+                      ><span
+                        class="w-1.5 h-1.5 rounded-full bg-outline-variant/40"
+                      ></span
+                      ><span
+                        class="w-1.5 h-1.5 rounded-full bg-outline-variant/40"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2.5">
+                  <a
+                    class="w-full flex items-center justify-between p-4 rounded-2xl bg-primary-container text-on-primary shadow-md hover:bg-primary transition-all group"
+                    href="./Organisasi.html"
+                    ><div class="flex items-center gap-3.5">
+                      <div
+                        class="w-11 h-11 rounded-xl bg-surface-container-lowest/20 flex items-center justify-center shrink-0"
+                      >
+                        <span class="material-symbols-outlined text-[24px]"
+                          >account_tree</span
+                        >
+                      </div>
+                      <div class="flex flex-col text-left">
+                        <span
+                          class="font-headline-sm text-[16px] font-bold text-on-primary leading-tight"
+                          >Buka Portal Resmi OSIS &amp; MPK SMAN 29</span
+                        ><span
+                          class="font-body-sm text-[12px] text-on-primary-container opacity-90"
+                          >Struktur kepengurusan, visi-misi, program kerja, dan
+                          arsip aspirasi</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="w-10 h-10 rounded-xl bg-surface-container-lowest/20 flex items-center justify-center shrink-0 group-hover:translate-x-1 transition-transform"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >arrow_forward</span
+                      >
+                    </div></a
+                  >
+                  <!-- <div class="grid grid-cols-2 gap-2.5">
+                    <a
+                      class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/30 hover:bg-surface-container-high transition-colors group"
+                      href="#"
+                      ><div class="flex items-center gap-2">
+                        <span
+                          class="material-symbols-outlined text-primary text-[18px]"
+                          >military_tech</span
+                        ><span
+                          class="font-label-md text-[13px] text-on-surface font-semibold"
+                          >Profil OSIS</span
+                        >
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-outline text-[16px] group-hover:translate-x-0.5 transition-transform"
+                        >arrow_outward</span
+                      ></a
+                    ><a
+                      class="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-surface-container-low border border-outline-variant/30 hover:bg-surface-container-high transition-colors group"
+                      href="#"
+                      ><div class="flex items-center gap-2">
+                        <span
+                          class="material-symbols-outlined text-secondary text-[18px]"
+                          >balance</span
+                        ><span
+                          class="font-label-md text-[13px] text-on-surface font-semibold"
+                          >Profil MPK</span
+                        >
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-outline text-[16px] group-hover:translate-x-0.5 transition-transform"
+                        >arrow_outward</span
+                      ></a
+                    >
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Filter & Catalog Section -->
+        <section class="w-full bg-surface py-24 md:py-32 lg:py-36">
+          <div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+            <!-- Filter Bar -->
+            <div
+              class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg mb-space-xl pb-space-lg border-b border-outline-variant/20"
+            >
+              <!-- Horizontal Scrollable Category Pills -->
+              <div
+                class="flex items-center gap-2 sm:gap-space-sm overflow-x-auto pb-2 lg:pb-0 scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0"
+                id="categoryFilters"
+              >
+                <button
+                  class="filter-pill active shrink-0 px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-sm"
+                  data-category="all"
+                  type="button"
+                >
+                  Semua (20)
+                </button>
+                <button
+                  class="filter-pill shrink-0 px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface shadow-sm"
+                  data-category="olahraga"
+                  type="button"
+                >
+                  Olahraga (5)
+                </button>
+                <button
+                  class="filter-pill shrink-0 px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface shadow-sm"
+                  data-category="seni"
+                  type="button"
+                >
+                  Seni &amp; Budaya (5)
+                </button>
+                <button
+                  class="filter-pill shrink-0 px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface shadow-sm"
+                  data-category="teknologi"
+                  type="button"
+                >
+                  Teknologi &amp; Akademik (4)
+                </button>
+                <button
+                  class="filter-pill shrink-0 px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface shadow-sm"
+                  data-category="bela-diri"
+                  type="button"
+                >
+                  Bela Diri (2)
+                </button>
+                <button
+                  class="filter-pill shrink-0 px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface shadow-sm"
+                  data-category="kepanduan"
+                  type="button"
+                >
+                  Kepanduan &amp; Kemanusiaan (4)
+                </button>
+              </div>
+              <!-- Result Counter Indicator -->
+              <div
+                class="flex items-center gap-space-xs text-on-surface-variant shrink-0 font-label-sm text-label-sm"
+              >
+                <span
+                  class="inline-block w-2.5 h-2.5 rounded-full bg-primary-container"
+                ></span>
+                <span class="font-medium text-on-surface" id="counterText"
+                  >Menampilkan 20 Ekstrakurikuler Aktif</span
+                >
+              </div>
+            </div>
+            <!-- 3-Column Catalog Bento Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+              id="ekskulGrid"
+            >
+              <!-- Card 1: IT & Programming Club -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="teknologi"
+                data-name="IT &amp; Programming Club coding web development competitive programming AI teknologi"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Aktivitas IT &amp; Programming Club"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-primary text-on-primary shadow-md backdrop-blur-md"
+                    >
+                      Teknologi &amp; Akademik
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      IT &amp; Programming Club
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Wadah eksplorasi web development, competitive programming,
+                      dan AI untuk siswa berbakat teknologi.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Rabu &amp; Jumat, 15.30 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 2: Robotika & IoT -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="teknologi"
+                data-name="Robotika &amp; IoT mikrokontroler robot line-follower olimpiade teknologi"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Aktivitas Robotika &amp; IoT"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-primary text-on-primary shadow-md backdrop-blur-md"
+                    >
+                      Teknologi &amp; Akademik
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Robotika &amp; IoT
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Eksplorasi mikrokontroler, robot line-follower, dan
+                      persiapan olimpiade robotika nasional.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-secondary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Kamis &amp; Sabtu, 14.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 3: English Debate & Model UN -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="teknologi"
+                data-name="English Debate &amp; Model UN public speaking diplomasi debat inggris akademik"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Debat Bahasa Inggris &amp; Model UN"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-primary text-on-primary shadow-md backdrop-blur-md"
+                    >
+                      Teknologi &amp; Akademik
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      English Debate &amp; Model UN
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Asah kemampuan berfikir kritis, public speaking,
+                      diplomasi, dan debat kompetitif internasional.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Selasa, 15.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 4: KIR (Karya Ilmiah Remaja) -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="teknologi"
+                data-name="KIR Karya Ilmiah Remaja sains penelitian riset eksperimen akademik"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="KIR Laboratorium &amp; Riset"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-primary text-on-primary shadow-md backdrop-blur-md"
+                    >
+                      Teknologi &amp; Akademik
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      KIR (Karya Ilmiah Remaja)
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Penelitian sains terapan, metodologi ilmiah, dan publikasi
+                      proyek riset inovatif pelajar.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-tertiary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Senin, 15.30 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 5: Basket Putra & Putri -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="olahraga"
+                data-name="Basket Putra &amp; Putri DBL championship olahraga bola basket"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Basket Pertandingan &amp; Latihan"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-high text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Olahraga
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Basket Putra &amp; Putri
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Pelatihan fundamental bola basket, strategi tanding, dan
+                      pembinaan atlet DBL championship.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Selasa &amp; Kamis, 16.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 6: Futsal & Sepakbola -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="olahraga"
+                data-name="Futsal &amp; Sepakbola turnamen bola fisik tanding olahraga"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Futsal dan Sepakbola Lapangan"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-high text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Olahraga
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Futsal &amp; Sepakbola
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Latihan fisik terstruktur, kekompakan tim, dan partisipasi
+                      rutin turnamen antar-sekolah regional.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Rabu &amp; Jumat, 16.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 7: Bulu Tangkis -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="olahraga"
+                data-name="Bulu Tangkis badminton smash footwork PBSI olahraga"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Bulu Tangkis Lapangan"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-high text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Olahraga
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Bulu Tangkis
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Penguasaan teknik smash, agility footwork, dan sparring
+                      rutin di GOR sekolah berstandar PBSI.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Senin &amp; Sabtu, 08.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 8: Modern Dance & Tari Tradisional -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="seni"
+                data-name="Modern Dance &amp; Tari Tradisional choreography festival seni tari"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Modern Dance &amp; Tari Tradisional"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-highest text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Seni &amp; Budaya
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Modern Dance &amp; Tari Tradisional
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Harmoni gerak tari nusantara dan modern choreography untuk
+                      festival seni tahunan.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Selasa &amp; Jumat, 15.30 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 9: Paduan Suara & Vokal Solo -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="seni"
+                data-name="Paduan Suara &amp; Vokal Solo choir nyanyi vokal SATB solfegio seni"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Paduan Suara dan Olah Vokal"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-highest text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Seni &amp; Budaya
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Paduan Suara &amp; Vokal Solo
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Olah vokal paduan 4 suara (SATB), teknik solfegio, dan
+                      paduan suara kompetisi nasional.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Rabu &amp; Kamis, 15.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 10: Teater & Seni Peran -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="seni"
+                data-name="Teater &amp; Seni Peran drama akting tata panggung lakon sastra seni"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Pementasan Teater &amp; Seni Peran"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-highest text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Seni &amp; Budaya
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Teater &amp; Seni Peran
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Eksplorasi keaktoran, tata panggung, vokal sastra, dan
+                      pementasan drama lakon tahunan.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Kamis, 15.30 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 11: Taekwondo -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="bela-diri"
+                data-name="Taekwondo poomsae kyorugi WTF sabum bela diri beladiri"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Latihan Taekwondo"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-high text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Bela Diri
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Taekwondo
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Disiplin poomsae dan kyorugi resmi WTF di bawah bimbingan
+                      sabum bersertifikat nasional.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Selasa &amp; Sabtu, 16.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 12: Silat Merpati Putih -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="bela-diri"
+                data-name="Silat Merpati Putih pencak silat olah napas ketangkasan fisik bela diri"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Pencak Silat Merpati Putih"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1509563487979-b5d4a53739e0?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-high text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Bela Diri
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Silat Merpati Putih
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Pelestarian seni bela diri warisan bangsa dengan fokus
+                      pada olah napas dan ketangkasan fisik.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Senin &amp; Kamis, 15.30 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 13: PMR (Palang Merah Remaja) -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="kepanduan"
+                data-name="PMR Palang Merah Remaja pertolongan pertama donor darah bencana kemanusiaan kepanduan"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Pelatihan Medis &amp; PMR"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-error text-on-error shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Kepanduan &amp; Kemanusiaan
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      PMR (Palang Merah Remaja)
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Pendidikan pertolongan pertama, donor darah, kesiapsiagaan
+                      bencana, dan bakti sosial.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-error"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Jumat, 14.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 14: Pramuka Gugus Depan -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="kepanduan"
+                data-name="Pramuka Gugus Depan kepemimpinan survival sandi pramuka scout kepanduan"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Kegiatan Pramuka Berkemah"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-tertiary text-on-tertiary shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Kepanduan &amp; Kemanusiaan
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Pramuka Gugus Depan
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Kepemimpinan lapangan, survival skill, sandi pramuka, dan
+                      pembentukan karakter tangguh siswa.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-tertiary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Sabtu, 08.30 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 15: Fotografi & Sinematografi -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="seni"
+                data-name="Fotografi &amp; Sinematografi kamera foto video editing film storytelling seni"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Praktik Fotografi &amp; Sinematografi"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-highest text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Seni &amp; Budaya
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Fotografi &amp; Sinematografi
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Belajar komposisi visual fotografi, teknik kamera manual,
+                      editing video, dan storytelling.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-secondary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Rabu &amp; Sabtu, 15.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 16: Jurnalistik Siswa -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="seni"
+                data-name="Jurnalistik Siswa mading berita liputan esai penulisan majalah digital seni"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Liputan dan Majalah Sekolah Jurnalistik"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-highest text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Seni &amp; Budaya
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Jurnalistik Siswa
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Peliputan berita sekolah, penulisan esai investigasi,
+                      desain majalah dinding dan portal digital.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Selasa, 15.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 17: Paskibra (Pasukan Pengibar Bendera) -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="kepanduan"
+                data-name="Paskibra Pasukan Pengibar Bendera baris berbaris kedisiplinan kepemimpinan kepanduan"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Upacara dan Baris Berbaris Paskibra"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-primary text-on-primary shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Kepanduan &amp; Kemanusiaan
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Paskibra Satuan Sekolah
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Pelatihan ketahanan fisik, formasi baris-berbaris presisi,
+                      dan persiapan upacara kenegaraan.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Senin &amp; Rabu, 15.30 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 18: Pecinta Alam (Sispala) -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="kepanduan"
+                data-name="Pecinta Alam Sispala konservasi navigasi darat pendakian lingkungan kepanduan"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Penjelajahan Alam Bebas Sispala"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-tertiary text-on-tertiary shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Kepanduan &amp; Kemanusiaan
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Pecinta Alam (Sispala)
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Eksplorasi alam bebas, edukasi konservasi hayati, navigasi
+                      darat, dan simulasi penjelajahan.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-tertiary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Sabtu, 09.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 19: Bola Voli -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="olahraga"
+                data-name="Bola Voli passing spike block turnamen o2sn olahraga"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Pertandingan Bola Voli"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-high text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Olahraga
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Bola Voli
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Teknik passing atas/bawah presisi, smash vertikal, defense
+                      kekompakan tim, dan persiapan ajang O2SN.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Rabu &amp; Jumat, 16.00 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 20: Tenis Meja -->
+              <div
+                class="ekskul-card group bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-category="olahraga"
+                data-name="Tenis Meja pingpong spin rally refleks olahraga"
+              >
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden">
+                    <img
+                      alt="Permainan Tenis Meja"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      src="https://images.unsplash.com/photo-1534158914592-062992fbe900?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
+                    />
+                    <span
+                      class="absolute top-3 right-3 px-3 py-1 rounded-full font-badge-caps text-badge-caps bg-surface-container-high text-on-surface shadow-md backdrop-blur-md font-semibold"
+                    >
+                      Olahraga
+                    </span>
+                  </div>
+                  <div class="p-space-lg pb-2">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors"
+                    >
+                      Tenis Meja
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-space-md"
+                    >
+                      Pelatihan kontrol spin bola, kecepatan reaksi visual,
+                      servis akurat, dan sparring intensif.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="px-space-lg pb-space-lg flex flex-col gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_month</span
+                    >
+                    <span class="truncate">Selasa &amp; Kamis, 15.30 WIB</span>
+                  </div>
+                  <a
+                    class="w-full inline-flex items-center justify-center gap-space-xs py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-primary-container group-hover:text-on-primary transition-all"
+                    href="DetailEkskul.html"
+                  >
+                    <span class="">Lihat Profil Lengkap</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Empty State If Search No Result -->
+            <div
+              class="hidden flex-col items-center justify-center py-20 text-center"
+              id="noResultsState"
+            >
+              <div
+                class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-outline mb-space-md"
+              >
+                <span class="material-symbols-outlined text-[36px]"
+                  >search_off</span
+                >
+              </div>
+              <h3
+                class="font-headline-sm text-headline-sm text-on-surface mb-1"
+              >
+                Ekskul Tidak Ditemukan
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-space-lg"
+              >
+                Coba gunakan kata kunci pencarian lain atau pilih kategori
+                "Semua" untuk melihat opsi lengkap.
+              </p>
+              <button
+                class="inline-flex items-center gap-space-xs px-space-lg py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary"
+                id="resetFilterBtn"
+                type="button"
+              >
+                <span class="">Reset Pencarian</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- Interactive JavaScript -->
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const searchInput = document.getElementById("ekskulSearchInput");
+            const searchBtn = document.getElementById("searchBtn");
+            const filterPills = document.querySelectorAll(".filter-pill");
+            const cards = document.querySelectorAll(".ekskul-card");
+            const counterText = document.getElementById("counterText");
+            const noResults = document.getElementById("noResultsState");
+            const resetBtn = document.getElementById("resetFilterBtn");
+            const quickTags = document.querySelectorAll(".quick-tag");
+
+            let currentCategory = "all";
+
+            function filterEkskuls() {
+              const query = searchInput.value.toLowerCase().trim();
+              let visibleCount = 0;
+
+              cards.forEach((card) => {
+                const category = card.getAttribute("data-category");
+                const nameData = card.getAttribute("data-name").toLowerCase();
+
+                const matchesCategory =
+                  currentCategory === "all" || category === currentCategory;
+                const matchesQuery = !query || nameData.includes(query);
+
+                if (matchesCategory && matchesQuery) {
+                  card.classList.remove("hidden");
+                  card.classList.add("flex");
+                  visibleCount++;
+                } else {
+                  card.classList.add("hidden");
+                  card.classList.remove("flex");
+                }
+              });
+
+              counterText.textContent = `Menampilkan ${visibleCount} Ekstrakurikuler Aktif`;
+
+              if (visibleCount === 0) {
+                noResults.classList.remove("hidden");
+                noResults.classList.add("flex");
+              } else {
+                noResults.classList.add("hidden");
+                noResults.classList.remove("flex");
+              }
+            }
+
+            // Filter Pill clicks
+            filterPills.forEach((pill) => {
+              pill.addEventListener("click", () => {
+                filterPills.forEach((p) => {
+                  p.classList.remove("bg-primary-container", "text-on-primary");
+                  p.classList.add(
+                    "bg-surface-container-lowest",
+                    "text-on-surface-variant",
+                  );
+                });
+
+                pill.classList.remove(
+                  "bg-surface-container-lowest",
+                  "text-on-surface-variant",
+                );
+                pill.classList.add("bg-primary-container", "text-on-primary");
+
+                currentCategory = pill.getAttribute("data-category");
+                filterEkskuls();
+              });
+            });
+
+            // Search events
+            searchInput.addEventListener("input", filterEkskuls);
+            searchBtn.addEventListener("click", filterEkskuls);
+
+            // Quick Tag suggestions
+            quickTags.forEach((tag) => {
+              tag.addEventListener("click", () => {
+                searchInput.value = tag.getAttribute("data-tag");
+                filterEkskuls();
+                searchInput.focus();
+              });
+            });
+
+            // Reset
+            resetBtn.addEventListener("click", () => {
+              searchInput.value = "";
+              currentCategory = "all";
+              filterPills.forEach((p) => {
+                if (p.getAttribute("data-category") === "all") {
+                  p.classList.remove(
+                    "bg-surface-container-lowest",
+                    "text-on-surface-variant",
+                  );
+                  p.classList.add("bg-primary-container", "text-on-primary");
+                } else {
+                  p.classList.remove("bg-primary-container", "text-on-primary");
+                  p.classList.add(
+                    "bg-surface-container-lowest",
+                    "text-on-surface-variant",
+                  );
+                }
+              });
+              filterEkskuls();
+            });
+          });
+        </script>
+      </div>
+    </main>
+    <footer class="w-full bg-surface-container-low mt-28 md:mt-36 shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"
+    >
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 py-20 md:py-24">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-space-lg"
+        >
+          <div class="flex flex-col items-center md:items-start gap-1">
+            <span class="font-headline-sm text-headline-sm text-on-surface"
+              >Get to Know Our Ekskul</span
+            >
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left"
+            >
+              © 2024 OSIS SMA - Wadah Eksplorasi Minat, Bakat, &amp;
+              Kepemimpinan Generasi Muda.
+            </p>
+          </div>
+          <div class="flex items-center gap-space-lg">
+            <a
+              aria-label="Instagram Sekolah"
+              class="flex items-center gap-1 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-on-surface"
+              href="#"
+              ><span class="material-symbols-outlined text-[20px]"
+                >photo_camera</span
+              ><span class="">Instagram</span></a
+            ><a
+              aria-label="YouTube Sekolah"
+              class="flex items-center gap-1 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-on-surface"
+              href="#"
+              ><span class="material-symbols-outlined text-[20px]"
+                >smart_display</span
+              ><span class="">YouTube</span></a
+            ><a
+              aria-label="TikTok Sekolah"
+              class="flex items-center gap-1 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-on-surface"
+              href="#"
+              ><span class="material-symbols-outlined text-[20px]"
+                >music_note</span
+              ><span class="">TikTok</span></a
+            >
+          </div>
+        </div>
+        <div
+          class="mt-space-lg pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant"
+        >
+          <span class="text-center sm:text-left"
+            >Dikelola secara independen oleh Tim Dokumentasi &amp; IT OSIS
+            SMA.</span
+          ><span class="text-center sm:text-right"
+            >Dirancang dengan Semangat Kolaborasi Siswa</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

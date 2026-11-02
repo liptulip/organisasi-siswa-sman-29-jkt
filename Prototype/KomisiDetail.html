@@ -1,0 +1,1200 @@
+<!doctype html>
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed": "#c4e7ff",
+              "inverse-primary": "#b4c5ff",
+              "surface-variant": "#dae2fd",
+              "surface-dim": "#d2d9f4",
+              surface: "#faf8ff",
+              "primary-fixed": "#dbe1ff",
+              "on-tertiary-fixed": "#002113",
+              primary: "#004ac6",
+              "surface-container-highest": "#dae2fd",
+              "outline-variant": "#c3c6d7",
+              "tertiary-fixed": "#6ffbbe",
+              "on-background": "#131b2e",
+              "primary-fixed-dim": "#b4c5ff",
+              "tertiary-fixed-dim": "#4edea3",
+              "surface-bright": "#faf8ff",
+              "surface-container-high": "#e2e7ff",
+              "primary-container": "#2563eb",
+              error: "#ba1a1a",
+              "on-tertiary-container": "#bdffdb",
+              tertiary: "#006242",
+              "on-tertiary-fixed-variant": "#005236",
+              "surface-tint": "#0053db",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              outline: "#737686",
+              "inverse-surface": "#283044",
+              "on-surface-variant": "#434655",
+              "error-container": "#ffdad6",
+              "on-primary-container": "#eeefff",
+              "on-primary-fixed": "#00174b",
+              "on-error": "#ffffff",
+              secondary: "#00668a",
+              "on-tertiary": "#ffffff",
+              "tertiary-container": "#007d55",
+              "on-secondary-fixed-variant": "#004c69",
+              "on-surface": "#131b2e",
+              "secondary-container": "#40c2fd",
+              "surface-container-low": "#f2f3ff",
+              "on-primary-fixed-variant": "#003ea8",
+              "on-secondary-fixed": "#001e2c",
+              background: "#faf8ff",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#7bd0ff",
+              "surface-container": "#eaedff",
+              "on-secondary-container": "#004d6a",
+              "inverse-on-surface": "#eef0ff",
+              "on-secondary": "#ffffff",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "space-xs": "0.25rem",
+              "space-xl": "3rem",
+              gutter: "1.5rem",
+              "gutter-mobile": "1rem",
+              "space-md": "1rem",
+              margin: "2rem",
+              "space-sm": "0.5rem",
+              "space-lg": "1.5rem",
+              "margin-mobile": "1.5rem",
+            },
+            fontFamily: {
+              "headline-md": ["Plus Jakarta Sans"],
+              "display-hero-mobile": ["Plus Jakarta Sans"],
+              "body-sm": ["Inter"],
+              "label-md": ["Inter"],
+              "body-md": ["Inter"],
+              "label-sm": ["Inter"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "badge-caps": ["Inter"],
+              "body-lg": ["Inter"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "display-hero": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "32px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "600",
+                },
+              ],
+              "display-hero-mobile": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-sm": [
+                "18px",
+                {
+                  lineHeight: "26px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "badge-caps": [
+                "11px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.04em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+              "headline-lg-mobile": [
+                "26px",
+                {
+                  lineHeight: "34px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "display-hero": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "800",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background font-body-md text-on-surface antialiased">
+    <header
+      class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-sm">
+          <div
+            class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary font-headline-md font-bold text-headline-sm shadow-sm"
+          >
+            29
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+              <span
+                class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight leading-none"
+                >SMAN 29</span
+              ><span
+                class="px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-badge-caps text-badge-caps uppercase leading-none"
+                >Jakarta</span
+              >
+            </div>
+            <span
+              class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-0.5"
+              >Portal OSIS &amp; MPK</span
+            >
+          </div>
+        </div>
+        <nav
+          class="hidden xl:flex items-center gap-space-sm"
+          data-active-classes="bg-primary-container text-on-primary-container font-label-md px-3.5 py-1.5 rounded-full shadow-sm"
+        >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors"
+            data-path="beranda"
+            href="#"
+            >Pengurus</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors"
+            data-path="profil-organisasi"
+            href="#"
+            >Program Kerja</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors"
+            data-path="bidang-osis"
+            href="#"
+            >Dokumentasi</a
+          >
+          <!-- <a
+            aria-current="page"
+            class="transition-colors bg-primary-container text-on-primary-container font-label-md px-3.5 py-1.5 rounded-full shadow-sm"
+            data-path="komisi-mpk"
+            href="#"
+            >Komisi MPK</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors"
+            data-path="katalog-ekskul"
+            href="#"
+            >Katalog Ekskul</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors"
+            data-path="aspirasi-dan-kontak"
+            href="#"
+            >Kotak Aspirasi</a
+          > -->
+        </nav>
+        <!-- <div class="flex items-center gap-space-sm">
+          <a
+            class="hidden sm:inline-flex items-center justify-center font-label-md text-label-md bg-primary text-on-primary hover:bg-primary-container px-space-md py-2 rounded-full transition-all duration-200 shadow-sm"
+            data-path="aspirasi-dan-kontak"
+            href="#"
+            >Kirim Aspirasi</a
+          >
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-on-primary text-[18px]"
+              >person</span
+            >
+          </div>
+        </div> -->
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-background">
+      <div class="flex flex-col w-full">
+        <!-- BREADCRUMB -->
+        <div class="w-full bg-surface-container-low py-space-md">
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 flex items-center justify-between flex-wrap gap-space-sm"
+          >
+            <div class="flex items-center gap-2">
+              <a
+                class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1"
+                data-path="beranda"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-[16px]">home</span>
+                Beranda
+              </a>
+              <span class="font-label-sm text-label-sm text-outline-variant"
+                >/</span
+              >
+              <a
+                class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors"
+                data-path="profil-organisasi"
+                href="#"
+              >
+                Profil Organisasi
+              </a>
+              <span class="font-label-sm text-label-sm text-outline-variant"
+                >/</span
+              >
+              <a
+                class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors"
+                data-path="komisi-mpk"
+                href="#"
+              >
+                Komisi MPK
+              </a>
+              <span class="font-label-sm text-label-sm text-outline-variant"
+                >/</span
+              >
+              <span class="font-label-sm text-label-sm text-primary font-bold">
+                Komisi C
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-badge-caps text-badge-caps uppercase"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-tertiary animate-pulse"
+                ></span>
+                Komisi Pengawasan Aktif 2024/2025
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- 1. HERO SECTION: UCAPAN SELAMAT DATANG & STATISTIK -->
+        <section class="w-full py-20 md:py-28 lg:py-32 bg-surface relative overflow-hidden">
+          <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 relative z-10"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center"
+            >
+              <!-- Text Content -->
+              <div class="lg:col-span-7 flex flex-col gap-space-sm">
+                <div
+                  class="inline-flex items-center gap-2 px-3.5 py-2 rounded-2xl sm:rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-badge-caps text-badge-caps uppercase w-fit shadow-sm text-xs"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px] text-tertiary"
+                    >shield</span
+                  >
+                  Selamat Datang di Halaman Resmi Komisi C MPK SMAN 29 Jakarta
+                </div>
+                <h1
+                  class="font-display-hero text-2xl sm:text-3xl md:text-display-hero text-on-surface tracking-tight leading-tight"
+                >
+                  Mengawal Integritas, Transparansi Anggaran, &amp;
+                  Akuntabilitas Siswa 29
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed"
+                >
+                  Sebagai komisi pengawasan dan audit anggaran dalam struktur
+                  Majelis Perwakilan Kelas, kami mengawal jalannya 10 Seksi
+                  Bidang OSIS secara objektif, menelaah laporan
+                  pertanggungjawaban kegiatan, serta menjamin seluruh alokasi
+                  dana dan aspirasi kelas berjalan sesuai amanat konstitusi
+                  sekolah.
+                </p>
+                <!-- Quick CTAs -->
+                <div
+                  class="flex flex-wrap items-center gap-space-sm pt-space-xs"
+                >
+                  <a
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-md py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-md"
+                    href="#struktur-pengurus"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >badge</span
+                    >
+                    Lihat Personil Komisi
+                  </a>
+                  <a
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-md py-3 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all shadow-sm"
+                    href="#proker-pengawasan"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >fact_check</span
+                    >
+                    Agenda &amp; Proker Komisi
+                  </a>
+                </div>
+              </div>
+              <!-- Quote & Legislative Badge Card -->
+              <div class="lg:col-span-5 relative">
+                <div
+                  class="rounded-2xl p-space-lg bg-surface-container-lowest border border-outline-variant/30 shadow-xl flex flex-col gap-space-md relative overflow-hidden"
+                >
+                  <div
+                    class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span class="material-symbols-outlined text-[26px]"
+                      >gavel</span
+                    >
+                  </div>
+                  <blockquote
+                    class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-relaxed"
+                  >
+                    “Transparansi bukan sekadar angka di atas kertas LPJ,
+                    melainkan bukti kehormatan demokrasi siswa dalam memajukan
+                    SMAN 29 Jakarta.”
+                  </blockquote>
+                  <div
+                    class="pt-space-sm border-t border-outline-variant/30 flex items-center justify-between"
+                  >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-md text-label-md text-on-surface font-bold"
+                        >Biro Pengawasan &amp; Evaluasi Anggaran</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Komisi C MPK SMAN 29 • Periode 2024/2025</span
+                      >
+                    </div>
+                    <span
+                      class="material-symbols-outlined text-tertiary text-[26px]"
+                      >verified</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Quick Stats Metric Strip -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-space-sm mt-space-xl pt-space-md"
+            >
+              <div
+                class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col items-start gap-1"
+              >
+                <span
+                  class="font-display-hero-mobile text-display-hero-mobile font-bold text-primary"
+                  >12</span
+                >
+                <span
+                  class="font-label-md text-label-md text-on-surface font-semibold"
+                  >Anggota Komisi</span
+                >
+                <span class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Delegasi perwakilan terpilih</span
+                >
+              </div>
+              <div
+                class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col items-start gap-1"
+              >
+                <span
+                  class="font-display-hero-mobile text-display-hero-mobile font-bold text-secondary"
+                  >4</span
+                >
+                <span
+                  class="font-label-md text-label-md text-on-surface font-semibold"
+                  >Proker Utama</span
+                >
+                <span class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Audit, evaluasi KPI, &amp; pleno</span
+                >
+              </div>
+              <div
+                class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col items-start gap-1"
+              >
+                <span
+                  class="font-display-hero-mobile text-display-hero-mobile font-bold text-tertiary"
+                  >10</span
+                >
+                <span
+                  class="font-label-md text-label-md text-on-surface font-semibold"
+                  >Sekbid Diawasi</span
+                >
+                <span class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Pengawasan eksekutif OSIS</span
+                >
+              </div>
+              <div
+                class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col items-start gap-1"
+              >
+                <span
+                  class="font-display-hero-mobile text-display-hero-mobile font-bold text-primary-container"
+                  >100%</span
+                >
+                <span
+                  class="font-label-md text-label-md text-on-surface font-semibold"
+                  >Status Pleno Terverifikasi</span
+                >
+                <span class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Standar operasional ketat</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 2. STRUKTUR PENGURUS KOMISI (STANDAR SEKBID OSIS) -->
+        <section class="w-full py-20 md:py-28 lg:py-32 bg-surface-container-low" id="struktur-pengurus">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+            <div
+              class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-xl"
+            >
+              <span
+                class="font-badge-caps text-badge-caps text-primary uppercase font-bold tracking-widest mb-1"
+                >Struktur Kepemimpinan</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-on-surface font-bold"
+              >
+                Pengurus &amp; Senator Komisi C 2024/2025
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                Dipimpin oleh Ketua Komisi terverifikasi dan didukung oleh
+                jajaran senator delegasi kelas yang berdedikasi mengawal
+                akuntabilitas kesiswaan.
+              </p>
+            </div>
+            <!-- KETUA KOMISI (Centered Spotlight Card) -->
+            <div class="flex justify-center mb-space-xl">
+              <div
+                class="w-full max-w-xs rounded-3xl bg-surface-container-lowest p-space-md shadow-lg flex flex-col items-center text-center border border-outline-variant/30 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="w-full h-72 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-high"
+                >
+                  <img
+                    alt="Reza Aditiya Wardhana - Ketua Komisi C MPK"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1WWlZeUx5S6Y0eozHHWHFlHL0qgcBGRiPd-vqlT3ALoZ3oVHh-K6aLGhCIJuNqwrErGAzTiM-CCsf1zlsrYc6GnZrYz7dqvNQIPyGG2VhU3Q-zNZvBitFaTLUXiwxW99FSrNrMiAOzGJZYDBToS8Eg47YB6sbKrhxAI1vtU3trY1Msp8mF_d7_6ONtMhMzNOFkEOyk_S1UV_kxMDmIbDWr8LAB1i3vtd_BJ9uwl82HCtg"
+                  />
+                </div>
+                <span
+                  class="px-3 py-1 rounded-full bg-primary text-on-primary font-badge-caps text-badge-caps uppercase font-bold mb-2 shadow-sm"
+                >
+                  Ketua Komisi
+                </span>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                >
+                  Reza Aditiya Wardhana
+                </h3>
+                <span
+                  class="font-label-md text-label-md text-primary font-semibold mt-0.5"
+                  >Ketua Komisi C MPK</span
+                >
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                >
+                  Pengawasan Eksekutif &amp; Budgeting
+                </p>
+                <span
+                  class="mt-2 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium"
+                  >Kelas: XI MIPA 3</span
+                >
+              </div>
+            </div>
+            <!-- 4 ANGGOTA SENATOR KOMISI (4-Column Grid) -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg"
+            >
+              <!-- Kartu 1: Sekretaris -->
+              <div
+                class="rounded-3xl bg-surface-container-lowest p-space-md shadow-md flex flex-col items-center text-center border border-outline-variant/30 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="w-full h-72 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-high"
+                >
+                  <img
+                    alt="Amira Maulida - Sekretaris Komisi C"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1XTawBehBf0merl4lerRdL9WMcErouEkLxM1pijGHUqER3vKq6hcEYYGK_N4Yrbhsq-5_cH9ThhJ6U2L1RGarGC0uTMY-8NXqK7s-gNo3QFxl4VXELdvQgUvrVNlM5c5FWIeKMgqJ7n24e66lTcmbWIsIPgifULuV4BQgtAtsHbzdSn-Eqes26k4L4TbM7yFuX-KRtO-DXC47cydLsRDjrQeWCwzdHNWdaB-X_o-3L4Dw"
+                  />
+                </div>
+                <span
+                  class="px-3 py-1 rounded-full bg-error text-on-error font-badge-caps text-badge-caps uppercase font-bold mb-2 shadow-sm"
+                >
+                  Sekretaris
+                </span>
+                <h4
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                >
+                  Amira Maulida
+                </h4>
+                <span
+                  class="font-label-md text-label-md text-primary font-semibold mt-0.5"
+                  >Sekretaris Komisi</span
+                >
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                >
+                  Administrasi Risalah &amp; Berita Acara
+                </p>
+                <span
+                  class="mt-2 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium"
+                  >Kelas: XI-5</span
+                >
+              </div>
+              <!-- Kartu 2: Auditor Evaluasi -->
+              <div
+                class="rounded-3xl bg-surface-container-lowest p-space-md shadow-md flex flex-col items-center text-center border border-outline-variant/30 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="w-full h-72 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-high"
+                >
+                  <img
+                    alt="Bagas Ramadhan - Senator Evaluasi Kinerja"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1VWxHvyFzdBNIcXTMRtWcWIYmckcvTS7wY0OBjzMl8Gh6GtLrceHb3-XjSOJ_jd5c95ms7TXDalcvEUU-UBwMWi1Jzy_wnQwZOK1MR2AS0dmpRlrU4BKS1531fN_vz0PU7Oa2Xs-k4pCyzs8od8y4dB0gqLnB04dYehbs-nd5VDPajhCn23fLpVuF34E44nu57GOHSByX7SxAnkZPD-xEoAypQxG2gIi1d3CwP6gAOY"
+                  />
+                </div>
+                <span
+                  class="px-3 py-1 rounded-full bg-tertiary text-on-tertiary font-badge-caps text-badge-caps uppercase font-bold mb-2 shadow-sm"
+                >
+                  Auditor
+                </span>
+                <h4
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                >
+                  Bagas Ramadhan
+                </h4>
+                <span
+                  class="font-label-md text-label-md text-tertiary font-semibold mt-0.5"
+                  >Senator Evaluasi Kinerja</span
+                >
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                >
+                  Verifikasi Matriks KPI &amp; Supervisi
+                </p>
+                <span
+                  class="mt-2 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium"
+                  >Kelas: XI IPS 2</span
+                >
+              </div>
+              <!-- Kartu 3: Anggaran -->
+              <div
+                class="rounded-3xl bg-surface-container-lowest p-space-md shadow-md flex flex-col items-center text-center border border-outline-variant/30 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="w-full h-72 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-high"
+                >
+                  <img
+                    alt="Nadira Shafira - Senator Akuntabilitas Dana"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1VigkED7YnrCeQA4B1zUJxJ3rm1OdPlMhzt4L9hO1TDF0NWCmQ_Yl7s-V4kkxW-z9QsXOfWqGpIIF3ePgwAuGh2e4Zav9uiAFgawg-DzvjYnB5YllzATw9L6mdCLb6Ac8v0ao6G7JQrTd_hnORg_o-wFNysOT0AGRY2L0AtiPeCIa7Isoq1VAr1HAdYJwXR9lenGmVliNH6_JxFEnpUnhzMddUg8g572YN0KV2j8o1a"
+                  />
+                </div>
+                <span
+                  class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-badge-caps text-badge-caps uppercase font-bold mb-2 shadow-sm"
+                >
+                  Anggaran
+                </span>
+                <h4
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                >
+                  Nadira Shafira
+                </h4>
+                <span
+                  class="font-label-md text-label-md text-secondary font-semibold mt-0.5"
+                  >Senator Akuntabilitas Dana</span
+                >
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                >
+                  Review LPJ &amp; Alokasi Kas OSIS
+                </p>
+                <span
+                  class="mt-2 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium"
+                  >Kelas: XI-4</span
+                >
+              </div>
+              <!-- Kartu 4: Aspirasi & Kepatuhan -->
+              <div
+                class="rounded-3xl bg-surface-container-lowest p-space-md shadow-md flex flex-col items-center text-center border border-outline-variant/30 hover:shadow-xl transition-all"
+              >
+                <div
+                  class="w-full h-72 rounded-2xl overflow-hidden mb-space-sm bg-surface-container-high"
+                >
+                  <img
+                    alt="Daffa Alfarizi - Senator Kepatuhan Regulasi"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1WWlZeUx5S6Y0eozHHWHFlHL0qgcBGRiPd-vqlT3ALoZ3oVHh-K6aLGhCIJuNqwrErGAzTiM-CCsf1zlsrYc6GnZrYz7dqvNQIPyGG2VhU3Q-zNZvBitFaTLUXiwxW99FSrNrMiAOzGJZYDBToS8Eg47YB6sbKrhxAI1vtU3trY1Msp8mF_d7_6ONtMhMzNOFkEOyk_S1UV_kxMDmIbDWr8LAB1i3vtd_BJ9uwl82HCtg"
+                  />
+                </div>
+                <span
+                  class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-badge-caps text-badge-caps uppercase font-bold mb-2 shadow-sm"
+                >
+                  Aspirasi
+                </span>
+                <h4
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                >
+                  Daffa Alfarizi
+                </h4>
+                <span
+                  class="font-label-md text-label-md text-primary font-semibold mt-0.5"
+                  >Senator Kepatuhan Regulasi</span
+                >
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                >
+                  Harmonisasi AD/ART &amp; Suara Kelas
+                </p>
+                <span
+                  class="mt-2 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium"
+                  >Kelas: X-1</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 3. PROKER (PROGRAM KERJA PENGAWASAN) -->
+        <section class="w-full py-20 md:py-28 lg:py-32 bg-surface" id="proker-pengawasan">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-xl"
+            >
+              <div>
+                <span
+                  class="font-badge-caps text-badge-caps text-tertiary uppercase font-bold tracking-widest"
+                  >Agenda Legislasi &amp; Kontrol</span
+                >
+                <h2
+                  class="font-headline-lg text-headline-lg text-on-surface font-bold"
+                >
+                  Program Kerja Pengawasan Komisi C
+                </h2>
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant max-w-md"
+              >
+                Empat pilar program strategis untuk menjaga integritas,
+                transparansi nota keuangan, dan kedisiplinan organisasi di
+                lingkungan sekolah.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+              <!-- Proker 1 -->
+              <div
+                class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex flex-col justify-between hover:shadow-md transition-all overflow-hidden"
+              >
+                <div class="flex flex-col gap-space-sm">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-badge-caps text-badge-caps uppercase font-bold"
+                    >
+                      Audit Terjadwal
+                    </span>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >calendar_today</span
+                      >
+                      H+14 Pasca-Event
+                    </span>
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface font-bold"
+                  >
+                    Audit LPJ &amp; Laporan Anggaran Berkala
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Verifikasi nota fisik, transparansi pembukuan kas acara, dan
+                    kelengkapan bukti serah terima dana OSIS selambatnya dua
+                    pekan setelah kegiatan tuntas demi memastikan nol kebocoran
+                    dana.
+                  </p>
+                </div>
+                <div
+                  class="pt-space-md mt-space-sm border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-2 text-label-sm text-label-sm text-on-surface-variant"
+                >
+                  <span>Sasaran: 10 Sekbid &amp; Panitia Terpilih</span>
+                  <span
+                    class="text-tertiary font-semibold flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >check_circle</span
+                    >
+                    Kepatuhan 100%
+                  </span>
+                </div>
+              </div>
+              <!-- Proker 2 -->
+              <div
+                class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex flex-col justify-between hover:shadow-md transition-all overflow-hidden"
+              >
+                <div class="flex flex-col gap-space-sm">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-badge-caps text-badge-caps uppercase font-bold"
+                    >
+                      Matriks KPI
+                    </span>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >schedule</span
+                      >
+                      Bulanan &amp; Triwulan
+                    </span>
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface font-bold"
+                  >
+                    Lembar Penilaian Kinerja Sekbid (KPI OSIS)
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Pemberian rapor penilaian berkala bagi tiap Seksi Bidang
+                    OSIS berdasarkan ketepatan waktu rundown, output kepuasan
+                    siswa, serta kedisiplinan koordinasi lintas divisi.
+                  </p>
+                </div>
+                <div
+                  class="pt-space-md mt-space-sm border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-2 text-label-sm text-label-sm text-on-surface-variant"
+                >
+                  <span>Output: Rapor Kinerja Eksekutif</span>
+                  <span
+                    class="text-primary font-semibold flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >insights</span
+                    >
+                    Indeks Mutu &gt; 85.0
+                  </span>
+                </div>
+              </div>
+              <!-- Proker 3 -->
+              <div
+                class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex flex-col justify-between hover:shadow-md transition-all overflow-hidden"
+              >
+                <div class="flex flex-col gap-space-sm">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-badge-caps text-badge-caps uppercase font-bold"
+                    >
+                      Sidang Tengah Masa
+                    </span>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >event</span
+                      >
+                      Maret 2025
+                    </span>
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface font-bold"
+                  >
+                    Sidang Evaluasi Paruh Waktu (Mid-Term)
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Rapat pleno tengah masa bakti bersama BPH OSIS dan pembina
+                    kesiswaan guna meninjau persentase ketercapaian program
+                    kerja semester pertama serta restrukturisasi strategi.
+                  </p>
+                </div>
+                <div
+                  class="pt-space-md mt-space-sm border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-2 text-label-sm text-label-sm text-on-surface-variant"
+                >
+                  <span>Peserta: Seluruh Anggota MPK &amp; OSIS</span>
+                  <span
+                    class="text-secondary font-semibold flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >how_to_reg</span
+                    >
+                    Rekomendasi Pleno
+                  </span>
+                </div>
+              </div>
+              <!-- Proker 4 -->
+              <div
+                class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex flex-col justify-between hover:shadow-md transition-all overflow-hidden"
+              >
+                <div class="flex flex-col gap-space-sm">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-badge-caps text-badge-caps uppercase font-bold"
+                    >
+                      Sidang Paripurna
+                    </span>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >history_edu</span
+                      >
+                      Mei 2025
+                    </span>
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface font-bold"
+                  >
+                    Sidang Pleno Akhir Masa Bakti &amp; Suksesi
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Forum musyawarah tertinggi untuk penerimaan atau penolakan
+                    Laporan Pertanggungjawaban Akhir OSIS sebelum penyerahan
+                    mandat dan pembentukan panitia suksesi baru.
+                  </p>
+                </div>
+                <div
+                  class="pt-space-md mt-space-sm border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-2 text-label-sm text-label-sm text-on-surface-variant"
+                >
+                  <span>Status: Ketetapan Berita Acara Final</span>
+                  <span
+                    class="text-on-surface font-semibold flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >handshake</span
+                    >
+                    Legitimasi Civitas
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 4. DOKUMENTASI KEGIATAN: CAROUSEL INTERAKTIF -->
+        <section class="w-full py-20 md:py-28 lg:py-32 bg-surface-container-low">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+            <div
+              class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm mb-space-lg"
+            >
+              <div>
+                <span
+                  class="font-badge-caps text-badge-caps text-primary uppercase font-bold tracking-widest"
+                  >Galeri Resmi</span
+                >
+                <h2
+                  class="font-headline-lg text-headline-lg text-on-surface font-bold"
+                >
+                  Dokumentasi Kegiatan Pengawasan
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-1"
+                >
+                  Momen jalannya rapat koordinasi komisi, audit berkas proposal,
+                  dan pelaksanaan sidang pleno MPK SMAN 29 Jakarta.
+                </p>
+              </div>
+              <!-- Carousel Controls -->
+              <div class="flex items-center gap-2">
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant mr-1"
+                  >Slide 1 dari 4</span
+                >
+                <button
+                  aria-label="Slide Sebelumnya"
+                  class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-sm flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >arrow_back</span
+                  >
+                </button>
+                <button
+                  aria-label="Slide Selanjutnya"
+                  class="w-10 h-10 rounded-full bg-primary shadow-sm flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >arrow_forward</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- Showcase Image Card -->
+            <div
+              class="rounded-3xl overflow-hidden bg-surface-container-lowest shadow-lg border border-outline-variant/30 relative group"
+            >
+              <div class="w-full h-80 lg:h-96 relative overflow-hidden">
+                <img
+                  alt="Rapat Koordinasi dan Sidang Evaluasi Paruh Waktu Komisi MPK"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1USTZ19KKY7Syhwltjfo5LNL-dUqwbnv1LHlEXOtdQ0okPNi2NgPXEb6RUEC8LlTLvrU8kO9_PGxYB8TKDycXRJDI9Y-8Hh3QO_tejKZs2Drw3p4IKKz8LeE85-8vRIk8zIdNPKBJ8kRGOVFLixElw_-Fnl41DCL65OTndb0EvXz7TQFzOUsWZ_s-3sWYY3pLXiBYfwkhuHXSI6hAu9Nx6WRnsm5za9HnwNBW_siKfuHw"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-on-background/20 to-transparent"
+                ></div>
+              </div>
+              <div
+                class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-sm"
+              >
+                <div class="flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-badge-caps text-badge-caps uppercase font-bold"
+                    >
+                      Sidang Paripurna MPK
+                    </span>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Ruang Sidang Sasana Krida SMAN 29</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                  >
+                    Sidang Pleno Uji Transparansi &amp; Evaluasi Anggaran
+                    Semester Genap
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl"
+                  >
+                    Senator Komisi C memimpin verifikasi pembukuan dana kegiatan
+                    OSIS bersama perwakilan wali kelas dan ketua ekskul dalam
+                    iklim musyawarah terbuka yang konstruktif.
+                  </p>
+                </div>
+                <!-- Dots Indicator -->
+                <div class="flex items-center gap-1.5">
+                  <span class="w-8 h-2 rounded-full bg-primary"></span>
+                  <span
+                    class="w-2 h-2 rounded-full bg-surface-container-high"
+                  ></span>
+                  <span
+                    class="w-2 h-2 rounded-full bg-surface-container-high"
+                  ></span>
+                  <span
+                    class="w-2 h-2 rounded-full bg-surface-container-high"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="w-full bg-surface-container-low mt-space-xl">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 py-16 md:py-20">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg mb-space-xl"
+        >
+          <div class="lg:col-span-4 flex flex-col gap-space-sm">
+            <div class="flex items-center gap-space-sm">
+              <div
+                class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary font-headline-md font-bold text-headline-sm"
+              >
+                29
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="font-headline-sm text-headline-sm text-on-surface font-bold"
+                  >SMAN 29 Jakarta</span
+                ><span
+                  class="font-label-sm text-label-sm text-on-surface-variant"
+                  >Lembaga Legislatif &amp; Eksekutif Siswa</span
+                >
+              </div>
+            </div>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-space-xs"
+            >
+              Wadah aspirasi, integritas, dan kreasi kepemimpinan pelajar SMAN
+              29 Jakarta. Menggerakkan inisiatif nyata melalui MPK dan OSIS
+              berdaya saing global.
+            </p>
+            <div class="flex items-center gap-2 mt-space-xs">
+              <span
+                class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"
+              ></span
+              ><span
+                class="font-label-sm text-label-sm text-tertiary font-semibold"
+                >Masa Bakti Aktif 2024/2025</span
+              >
+            </div>
+          </div>
+          <div class="lg:col-span-3 flex flex-col gap-space-xs">
+            <span
+              class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider mb-space-xs"
+              >Lembaga &amp; Direktori</span
+            ><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="profil-organisasi"
+              href="#"
+              >Profil &amp; Struktur Lembaga</a
+            ><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="bidang-osis"
+              href="#"
+              >Seksi Bidang OSIS (1 - 10)</a
+            ><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="komisi-mpk"
+              href="#"
+              >Komisi &amp; Badan Pengawas MPK</a
+            ><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="katalog-ekskul"
+              href="#"
+              >Direktori Ekskul 29</a
+            ><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="aspirasi-dan-kontak"
+              href="#"
+              >Kanal Suara Siswa &amp; FAQ</a
+            >
+          </div>
+          <div class="lg:col-span-2 flex flex-col gap-space-xs">
+            <span
+              class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider mb-space-xs"
+              >Kanal Resmi</span
+            ><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://instagram.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              >@osis29jkt</a
+            ><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://instagram.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              >@mpk29jkt</a
+            ><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://youtube.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              >SMAN 29 Official</a
+            ><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://tiktok.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              >@kreatif29jkt</a
+            ><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="aspirasi-dan-kontak"
+              href="#"
+              >Hubungi Pengurus</a
+            >
+          </div>
+          <div class="lg:col-span-3 flex flex-col gap-space-xs">
+            <span
+              class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider mb-space-xs"
+              >Sekretariat Bersama</span
+            >
+            <p
+              class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+            >
+              Jl. Kramat No. 6, Kebayoran Lama Selatan, Kec. Kebayoran Lama,
+              Kota Jakarta Selatan, DKI Jakarta 12240
+            </p>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs"
+            >
+              Ruang Sasana Krida OSIS &amp; MPK (Lantai 2 Gedung SMAN 29
+              Jakarta)
+            </p>
+          </div>
+        </div>
+        <div
+          class="pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-sm"
+        >
+          <p
+            class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left"
+          >
+            © 2025 SMAN 29 Jakarta • MPK &amp; OSIS 29. Seluruh hak cipta
+            dilindungi.
+          </p>
+          <div class="flex items-center gap-space-md">
+            <span class="font-body-sm text-body-sm text-on-surface-variant"
+              >Kemandirian • Integritas • Prestasi</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

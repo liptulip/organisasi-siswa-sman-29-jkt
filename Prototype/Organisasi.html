@@ -1,0 +1,2389 @@
+<!doctype html>
+<html class="scroll-smooth" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>Ekasana Vardhana Sakti - OSIS &amp; MPK SMAN 29 Jakarta</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e2e7ff",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-surface": "#131b2e",
+              primary: "#004ac6",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#4edea3",
+              "inverse-on-surface": "#eef0ff",
+              "surface-container-highest": "#dae2fd",
+              "primary-fixed-dim": "#b4c5ff",
+              "outline-variant": "#c3c6d7",
+              "tertiary-container": "#007d55",
+              secondary: "#00668a",
+              "on-primary-fixed": "#00174b",
+              "tertiary-fixed": "#6ffbbe",
+              "primary-container": "#2563eb",
+              "on-background": "#131b2e",
+              "on-surface-variant": "#434655",
+              "surface-container": "#eaedff",
+              "on-tertiary-fixed-variant": "#005236",
+              tertiary: "#006242",
+              "on-tertiary-container": "#bdffdb",
+              "on-error": "#ffffff",
+              "inverse-surface": "#283044",
+              "surface-bright": "#faf8ff",
+              "secondary-fixed": "#c4e7ff",
+              "on-secondary-fixed": "#001e2c",
+              error: "#ba1a1a",
+              background: "#faf8ff",
+              "on-primary-container": "#eeefff",
+              "secondary-fixed-dim": "#7bd0ff",
+              "on-secondary-container": "#004d6a",
+              "surface-variant": "#dae2fd",
+              "on-primary-fixed-variant": "#003ea8",
+              "inverse-primary": "#b4c5ff",
+              outline: "#737686",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#002113",
+              "on-secondary-fixed-variant": "#004c69",
+              "primary-fixed": "#dbe1ff",
+              "surface-tint": "#0053db",
+              "surface-container-low": "#f2f3ff",
+              surface: "#faf8ff",
+              "surface-dim": "#d2d9f4",
+              "secondary-container": "#40c2fd",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              gutter: "1.5rem",
+              margin: "2rem",
+              "space-lg": "1.5rem",
+              "gutter-mobile": "1rem",
+              "space-xs": "0.25rem",
+              "margin-mobile": "1rem",
+              "space-sm": "0.5rem",
+              "space-xl": "2.5rem",
+              "space-md": "1rem",
+            },
+            fontFamily: {
+              "display-hero": ["Plus Jakarta Sans"],
+              "label-sm": ["Inter"],
+              "body-sm": ["Inter"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "body-lg": ["Inter"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "badge-caps": ["Inter"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "label-md": ["Inter"],
+              "body-md": ["Inter"],
+              "display-hero-mobile": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "display-hero": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "800",
+                },
+              ],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }],
+              "headline-sm": [
+                "18px",
+                {
+                  lineHeight: "26px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "32px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+              "headline-lg": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "badge-caps": [
+                "11px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.04em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg-mobile": [
+                "26px",
+                {
+                  lineHeight: "34px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+              "display-hero-mobile": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-surface font-body-md text-on-surface antialiased selection:bg-blue-600 selection:text-white"
+  >
+    <!-- HEADER & NAVIGATION -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 h-20 flex items-center justify-between gap-4"
+      >
+        <!-- Brand -->
+        <a class="flex items-center gap-3 shrink-0 group" href="#beranda">
+          <img
+            alt="Logo OSIS MPK SMAN 29 Jakarta"
+            class="h-11 w-auto object-contain transition-transform group-hover:scale-105"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBW5e-0p9LMAAycT8KeLwSzSH7f1T-idWfB5F3o6l3I5Q-rKWCZ529z9gufdT0JlWjre1jG0oQxoc3sTl8U6FBtCeWhYUj81iV0tc6m1u1T5nYx_q4Bne8IgWWEkzs6gydblWt6mnv1ZH6z0ONLoXscNbijYQOKOU8MUqy3_awyxBNf7Z4UFZPr4htSUV_Bz_cn3Ofy_RvMdKf1Nq8-QeLlpiMdD1-5m9EXgsNcmT-"
+          />
+          <div class="flex flex-col">
+            <span
+              class="font-headline-sm text-sm sm:text-base font-bold text-slate-900 tracking-tight leading-snug"
+              >OSIS / MPK</span
+            >
+            <span
+              class="text-xs font-semibold text-blue-600 uppercase tracking-wider"
+              >SMAN 29 Jakarta</span
+            >
+          </div>
+        </a>
+        <!-- Nav Items -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+          <a
+            class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
+            href="#sambutan"
+            >Sambutan</a
+          >
+          <a
+            class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
+            href="#visi"
+            >Visi</a
+          >
+          <a
+            class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
+            href="#misi"
+            >Misi</a
+          >
+          <a
+            class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
+            href="SekbidDetail.html"
+            >Program Kerja</a
+          >
+          <a
+            class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
+            href="#kepengurusan"
+            >Kepengurusan</a
+          >
+          <a
+            class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
+            href="#galeri"
+            >Galeri</a
+          >
+          <a
+            class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
+            href="#kontak"
+            >Kontak</a
+          >
+        </nav>
+        <!-- Action Button -->
+        <!-- <div class="flex items-center gap-3">
+          <a
+            class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-full bg-blue-600 text-white font-label-md text-sm font-semibold hover:bg-blue-700 transition-all shadow-md shadow-blue-500/20 hover:shadow-lg"
+            href="KomisiDetail.html"
+          >
+            <span class="material-symbols-outlined text-[18px]"
+              >chat_bubble</span
+            >
+            <span class="hidden sm:inline">Salurkan Aspirasi</span>
+          </a>
+          <a
+            class="hidden xl:inline-flex items-center justify-center p-2.5 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors"
+            href="#kontak"
+          >
+            <span class="material-symbols-outlined text-[20px]">mail</span>
+          </a>
+        </div> -->
+      </div>
+    </header>
+    <main class="w-full pt-20">
+      <!-- 1. HERO SECTION -->
+      <section
+        class="relative min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden bg-slate-900 text-white"
+        id="beranda"
+      >
+        <div class="absolute inset-0 z-0">
+          <img
+            alt="OSIS MPK SMAN 29 Jakarta"
+            class="w-full h-full object-cover object-center filter brightness-[0.4] contrast-105 scale-100"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1UlbUHPqPHsyiAOnBoV1e2q26G6enZBmJUp7FnapvkJvGEKCE4HORnHvTlM5jHRtebRIR8GgrHaPKGNLcwgUMiquqhn1m4edGhk1bvJ2RmbKN9NzdMl53j-2qxud8zwbmwo3dfrINdU6YGbUtwrKWYB14rq9FxSOusRmnS62rN7NFPEMd0zPci2omu2AHeWJ2MpOPVxQmALaC-UcYzBXchtXZeU6AafB-TgkzSGw_tb2Q"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/80"
+          ></div>
+          <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.18)_0,transparent_70%)]"
+          ></div>
+        </div>
+        <div
+          class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 py-24 md:py-32 text-center flex flex-col items-center"
+        >
+          <!-- Mode Pill Toggle Switch inspired by IMAGE_2 -->
+          <div class="mb-6 flex flex-col items-center">
+            <div
+              class="inline-flex items-center gap-3 p-1.5 px-3 rounded-full bg-slate-900/90 border border-slate-700/80 shadow-2xl backdrop-blur-md"
+            >
+              <button
+                class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all text-white bg-blue-600 shadow-md shadow-blue-500/30"
+                id="heroModeOsisBtn"
+                onclick="setHeroOrgMode('osis')"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[15px]"
+                  >diversity_3</span
+                >
+                <span class="">OSIS</span>
+              </button>
+              <!-- Pill / Capsule toggle switch button with glowing knob -->
+              <button
+                aria-checked="false"
+                class="relative w-14 h-7 rounded-full transition-colors duration-300 flex items-center p-0.5 cursor-pointer bg-blue-600 shadow-[0_0_15px_rgba(37,99,235,0.6)] focus:outline-none"
+                id="heroCapsuleSwitch"
+                onclick="toggleHeroOrgMode()"
+                role="switch"
+                title="Ganti Lembaga: OSIS / MPK"
+                type="button"
+              >
+                <div
+                  class="w-6 h-6 rounded-full bg-white shadow-md transform transition-transform duration-300 translate-x-0 flex items-center justify-center"
+                  id="heroSwitchKnob"
+                >
+                  <span
+                    class="w-2 h-2 rounded-full bg-blue-600 transition-colors"
+                    id="heroSwitchIcon"
+                  ></span>
+                </div>
+              </button>
+              <button
+                class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all text-slate-400 hover:text-white"
+                id="heroModeMpkBtn"
+                onclick="setHeroOrgMode('mpk')"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[15px]"
+                  >how_to_reg</span
+                >
+                <span class="">MPK</span>
+              </button>
+            </div>
+            <span
+              class="text-[11px] font-semibold text-blue-300 mt-2 uppercase tracking-widest transition-colors"
+              id="heroModeIndicatorText"
+            >
+              MODE AKTIF: KELUARGA BESAR OSIS
+            </span>
+          </div>
+          <!-- Badge Semboyan -->
+          <div class="inline-block mb-4">
+            <span
+              class="px-4 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/40 text-blue-300 font-bold text-xs uppercase tracking-widest backdrop-blur-md transition-all duration-300"
+              id="heroTagBadge"
+            >
+              EKASANA VARDHANA SAKTI
+            </span>
+          </div>
+          <!-- Main Headline with reactive highlight text -->
+          <h1
+            class="text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight uppercase text-white font-headline-lg leading-snug sm:leading-tight mb-4 drop-shadow-md"
+          >
+            <span class="" id="heroOrgTitlePrefix">OSIS</span>
+            <span class="text-slate-400 font-light text-3xl sm:text-5xl"
+              >/</span
+            >
+            <span class="text-slate-400" id="heroOrgTitleSuffix">MPK</span
+            ><br />
+            <span
+              class="text-blue-400 transition-colors duration-300"
+              id="heroSchoolHighlight"
+              >SMAN 29 JAKARTA</span
+            >
+          </h1>
+          <p
+            class="text-base sm:text-xl text-slate-200 max-w-2xl font-body-lg leading-relaxed mb-8 font-medium transition-all"
+            id="heroSubtitle"
+          >
+            Bersatu untuk tumbuh berkembang kuat dan kebersamaan.
+          </p>
+          <!-- Action CTA Buttons -->
+          <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-3.5 w-full sm:w-auto">
+            <a
+              class="w-full sm:w-auto px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-label-md text-sm font-bold shadow-lg shadow-blue-500/30 transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
+              href="#sambutan"
+              id="heroPrimaryCta"
+            >
+              <span class="" id="heroPrimaryCtaText"
+                >Sambutan &amp; Program</span
+              >
+              <span class="material-symbols-outlined text-[18px]"
+                >arrow_downward</span
+              >
+            </a>
+            <a
+              class="w-full sm:w-auto px-7 py-3 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-600 text-white font-label-md text-sm font-semibold backdrop-blur-md transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
+              href="#kepengurusan"
+              id="heroSecondaryCta"
+            >
+              <span class="material-symbols-outlined text-[18px]"
+                >account_tree</span
+              >
+              <span class="" id="heroSecondaryCtaText">Bagan Kepengurusan</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION SAMBUTAN KETUA ORGANISASI -->
+      <section class="py-24 md:py-32 lg:py-36 bg-white relative overflow-hidden border-b border-slate-100" id="sambutan">
+        <!-- Subtle decorative background blurs -->
+        <div
+          class="absolute -top-24 -left-24 w-96 h-96 bg-blue-100/60 rounded-full blur-3xl pointer-events-none transition-all duration-500"
+          id="sambutanBgGlow"
+        ></div>
+        <div
+          class="absolute -bottom-20 right-0 w-80 h-80 bg-blue-50/70 rounded-full blur-2xl pointer-events-none"
+        ></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 relative z-10">
+          <!-- Header Section Badge & Title -->
+          <div class="max-w-3xl mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4 transition-colors"
+              id="sambutanSectionBadge"
+            >
+              <span class="material-symbols-outlined text-[15px]"
+                >record_voice_over</span
+              >
+              <span class="">SAMBUTAN RESMI</span>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-headline-lg tracking-tight leading-snug"
+            >
+              Menyalakan Semangat Kolaborasi Menuju
+              <span
+                class="text-blue-600 transition-colors"
+                id="sambutanTitleHighlight"
+                >Prestasi Gemilang</span
+              >
+            </h2>
+          </div>
+          <!-- 2 Column Responsive Grid Layout -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center"
+          >
+            <!-- Kolom Kiri: Kartu Foto Portrait Ketua -->
+            <div class="lg:col-span-5 flex justify-center">
+              <div class="relative w-full max-w-sm sm:max-w-md group">
+                <!-- Ambient Glow Border -->
+                <div
+                  class="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-sky-400 opacity-25 group-hover:opacity-40 blur-xl transition-all duration-500"
+                  id="leaderCardGlow"
+                ></div>
+                <div
+                  class="relative bg-white rounded-3xl border border-slate-200/80 shadow-2xl p-5 overflow-hidden backdrop-blur-sm"
+                >
+                  <!-- Frame Foto Pemimpin -->
+                  <div
+                    class="relative w-full h-[360px] sm:h-[400px] rounded-2xl overflow-hidden bg-slate-100 shadow-inner"
+                  >
+                    <img
+                      alt="Ketua OSIS SMAN 29 Jakarta"
+                      class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      id="leaderPortraitImg"
+                      src="https://lh3.googleusercontent.com/aida/AEtjO1WWlZeUx5S6Y0eozHHWHFlHL0qgcBGRiPd-vqlT3ALoZ3oVHh-K6aLGhCIJuNqwrErGAzTiM-CCsf1zlsrYc6GnZrYz7dqvNQIPyGG2VhU3Q-zNZvBitFaTLUXiwxW99FSrNrMiAOzGJZYDBToS8Eg47YB6sbKrhxAI1vtU3trY1Msp8mF_d7_6ONtMhMzNOFkEOyk_S1UV_kxMDmIbDWr8LAB1i3vtd_BJ9uwl82HCtg"
+                    />
+                    <!-- Gradient Overlay on Bottom of Image -->
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"
+                    ></div>
+                    <!-- Floating Pill on Bottom of Image -->
+                    <div
+                      class="absolute bottom-3 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 flex flex-wrap gap-1.5 items-center justify-between"
+                    >
+                      <span
+                        class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-medium border border-white/30 flex items-center gap-1.5"
+                      >
+                        <span
+                          class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"
+                        ></span>
+                        Masa Bakti 2024/2025
+                      </span>
+                      <span
+                        class="px-2.5 py-1 rounded-full bg-blue-600 text-white text-[11px] font-bold shadow-md transition-colors"
+                        id="leaderClassTag"
+                      >
+                        Kelas XI F-2
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Card Bio Info -->
+                  <div class="pt-5 pb-1 flex flex-col">
+                    <div
+                      class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-600 mb-1 transition-colors"
+                      id="leaderRoleSubhead"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >verified</span
+                      >
+                      <span id="leaderRoleBadgeText" class=""
+                        >Ketua Umum OSIS SMAN 29</span
+                      >
+                    </div>
+                    <h3
+                      class="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug font-headline-md"
+                      id="leaderName"
+                    >
+                      Muhammad Fathir Al-Ghifari
+                    </h3>
+                    <p
+                      class="text-xs text-slate-500 mt-1 flex items-center gap-1"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[15px] text-slate-400"
+                        >school</span
+                      >
+                      SMA Negeri 29 Jakarta Selatan
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Kolom Kanan: Teks Sambutan Hangat & Komitmen Nilai -->
+            <div class="lg:col-span-7 flex flex-col gap-6">
+              <!-- Paragraf 1: Salam Pembuka -->
+              <p
+                class="text-slate-800 text-base sm:text-lg leading-relaxed font-medium"
+              >
+                <span class="font-bold text-slate-900"
+                  >Assalamu’alaikum Warahmatullahi Wabarakatuh, Salam Sejahtera,
+                  dan Salam Kebersamaan.</span
+                >
+                Selamat datang di laman resmi OSIS &amp; MPK SMAN 29 Jakarta.
+                Puji syukur kami panjatkan, atas amanah dan kepercayaan besar
+                dari Bapak/Ibu Dewan Guru, rekan-rekan pengurus, serta seluruh
+                siswa-siswi tercinta untuk bersama memajukan almamater tercinta.
+              </p>
+              <!-- Paragraf 2: Esensi Organisasi -->
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                Bagi kami, organisasi sekolah bukan sekadar struktur formalitas
+                kepengurusan, melainkan wadah bertumbuh, laboratorium
+                kepemimpinan yang humanis, serta rumah kreasi terbuka tempat
+                setiap mimpi dan aspirasi siswa didengarkan, dihargai, dan
+                diwujudkan dalam karya nyata yang berdampak.
+              </p>
+              <!-- 3 Poin Nilai & Komitmen Utama -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
+                <!-- Poin 1 -->
+                <div
+                  class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-blue-300 transition-all flex flex-col gap-2 group hover:shadow-sm"
+                >
+                  <div
+                    class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors"
+                    id="pointIcon1"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >groups</span
+                    >
+                  </div>
+                  <h4
+                    class="text-xs sm:text-sm font-bold text-slate-900 leading-snug"
+                  >
+                    Kolaboratif &amp; Terbuka
+                  </h4>
+                  <p class="text-[12px] text-slate-600 leading-relaxed">
+                    Membuka ruang sinergi seluas-luasnya bagi seluruh ide,
+                    bakat, dan inisiatif baru.
+                  </p>
+                </div>
+                <!-- Poin 2 -->
+                <div
+                  class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-blue-300 transition-all flex flex-col gap-2 group hover:shadow-sm"
+                >
+                  <div
+                    class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors"
+                    id="pointIcon2"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >trending_up</span
+                    >
+                  </div>
+                  <h4
+                    class="text-xs sm:text-sm font-bold text-slate-900 leading-snug"
+                  >
+                    Progresif Berprestasi
+                  </h4>
+                  <p class="text-[12px] text-slate-600 leading-relaxed">
+                    Mendorong sekbid, ekstrakurikuler, dan kompetisi siswa
+                    berdaya saing unggul.
+                  </p>
+                </div>
+                <!-- Poin 3 -->
+                <div
+                  class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-blue-300 transition-all flex flex-col gap-2 group hover:shadow-sm"
+                >
+                  <div
+                    class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors"
+                    id="pointIcon3"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >handshake</span
+                    >
+                  </div>
+                  <h4
+                    class="text-xs sm:text-sm font-bold text-slate-900 leading-snug"
+                  >
+                    Integritas &amp; Pelayanan
+                  </h4>
+                  <p class="text-[12px] text-slate-600 leading-relaxed">
+                    Mengedepankan dedikasi tulus dalam melayani dan
+                    memperjuangkan suara siswa.
+                  </p>
+                </div>
+              </div>
+              <!-- Penutup Kutipan Filosofi & Tanda Tangan Digital -->
+              <div
+                class="mt-2 pt-5 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-1.5 h-10 rounded-full bg-blue-600 transition-colors"
+                    id="quoteBar"
+                  ></div>
+                  <div>
+                    <p class="text-xs italic text-slate-500 leading-relaxed">
+                      "Pemimpin sejati bukan yang mencari tepuk tangan,
+                      melainkan yang menumbuhkan pemimpin-pemimpin baru di
+                      sekelilingnya."
+                    </p>
+                    <span
+                      class="text-xs font-bold text-slate-900 mt-1 block"
+                      id="signLeaderTitle"
+                    >
+                      — Presidium Ekasana Vardhana Sakti
+                    </span>
+                  </div>
+                </div>
+                <a
+                  class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors shrink-0 group self-start sm:self-center"
+                  href="#visi"
+                  id="sambutanNextLink"
+                >
+                  Eksplor Visi &amp; Misi
+                  <span
+                    class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2. SECTION VISI KAMI -->
+      <section class="relative py-24 md:py-32 lg:py-36 bg-gradient-to-b from-blue-50/70 via-white to-blue-50/40 overflow-hidden" id="visi">
+        <div
+          class="absolute -top-10 left-10 w-32 h-32 bg-blue-300/20 rounded-2xl rotate-12 blur-xl pointer-events-none"
+        ></div>
+        <div
+          class="absolute bottom-10 right-10 w-44 h-44 bg-blue-200/40 rounded-full blur-2xl pointer-events-none"
+        ></div>
+        <div
+          class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 text-center flex flex-col items-center relative z-10"
+        >
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 to-blue-500 text-white flex items-center justify-center shadow-lg shadow-blue-500/30 mb-4 transition-transform hover:scale-110"
+          >
+            <span class="material-symbols-outlined text-[34px]"
+              >visibility</span
+            >
+          </div>
+          <div
+            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-6"
+          >
+            <span class="">✨ VISI KAMI ✨</span>
+          </div>
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 leading-snug tracking-tight font-headline-lg"
+          >
+            Mengembangkan OSIS &amp; MPK SMAN 29 Jakarta sebagai wadah yang
+            <span class="text-blue-600">inspiratif</span>,
+            <span class="text-blue-600">aktif</span> dan
+            <span class="text-blue-600">kritis</span> dalam mewujudkan
+            lingkungan sekolah yang
+            <span
+              class="text-blue-600 underline decoration-blue-300 decoration-wavy underline-offset-8"
+              >berkualitas</span
+            >
+            secara internal maupun eksternal.
+          </h2>
+        </div>
+      </section>
+      <!-- 3. SECTION MISI KAMI -->
+      <section class="py-24 md:py-32 lg:py-36 bg-white border-t border-slate-100" id="misi">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+          <div
+            class="text-center max-w-2xl mx-auto mb-14 flex flex-col items-center"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/30 mb-3"
+            >
+              <span class="material-symbols-outlined text-[26px]">flag</span>
+            </div>
+            <div
+              class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2"
+            >
+              ✨ MISI KAMI ✨
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-headline-lg"
+            >
+              Langkah <span class="text-blue-600">Strategis</span> Kami
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2">
+              Pilar-pilar utama yang menjadi fokus kami dalam mewujudkan visi
+              organisasi
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-blue-300 shadow-sm hover:shadow-md transition-all flex items-start gap-4 group"
+            >
+              <div
+                class="w-11 h-11 shrink-0 rounded-xl bg-blue-600 group-hover:bg-blue-700 text-white flex items-center justify-center font-bold text-lg shadow-sm transition-colors shadow-blue-500/20"
+              >
+                1
+              </div>
+              <div class="flex items-start gap-2.5 pt-1">
+                <span
+                  class="material-symbols-outlined text-emerald-500 text-[22px] shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <p
+                  class="text-slate-800 text-sm sm:text-base font-medium leading-relaxed"
+                >
+                  Menghadirkan OSIS yang inspiratif dengan memberikan ruang bagi
+                  siswa siswi untuk berkarya dan berinovasi.
+                </p>
+              </div>
+            </div>
+            <div
+              class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-blue-300 shadow-sm hover:shadow-md transition-all flex items-start gap-4 group"
+            >
+              <div
+                class="w-11 h-11 shrink-0 rounded-xl bg-blue-600 group-hover:bg-blue-700 text-white flex items-center justify-center font-bold text-lg shadow-sm transition-colors shadow-blue-500/20"
+              >
+                2
+              </div>
+              <div class="flex items-start gap-2.5 pt-1">
+                <span
+                  class="material-symbols-outlined text-emerald-500 text-[22px] shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <p
+                  class="text-slate-800 text-sm sm:text-base font-medium leading-relaxed"
+                >
+                  Menghidupkan budaya apresiatif sebagai penghargaan bagi siswa
+                  siswi.
+                </p>
+              </div>
+            </div>
+            <div
+              class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-blue-300 shadow-sm hover:shadow-md transition-all flex items-start gap-4 group"
+            >
+              <div
+                class="w-11 h-11 shrink-0 rounded-xl bg-blue-600 group-hover:bg-blue-700 text-white flex items-center justify-center font-bold text-lg shadow-sm transition-colors shadow-blue-500/20"
+              >
+                3
+              </div>
+              <div class="flex items-start gap-2.5 pt-1">
+                <span
+                  class="material-symbols-outlined text-emerald-500 text-[22px] shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <p
+                  class="text-slate-800 text-sm sm:text-base font-medium leading-relaxed"
+                >
+                  Mendorong siswa siswi untuk berperan aktif dalam bidang dan
+                  jurusannya masing-masing.
+                </p>
+              </div>
+            </div>
+            <div
+              class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-blue-300 shadow-sm hover:shadow-md transition-all flex items-start gap-4 group"
+            >
+              <div
+                class="w-11 h-11 shrink-0 rounded-xl bg-blue-600 group-hover:bg-blue-700 text-white flex items-center justify-center font-bold text-lg shadow-sm transition-colors shadow-blue-500/20"
+              >
+                4
+              </div>
+              <div class="flex items-start gap-2.5 pt-1">
+                <span
+                  class="material-symbols-outlined text-emerald-500 text-[22px] shrink-0 mt-0.5"
+                  >check_circle</span
+                >
+                <p
+                  class="text-slate-800 text-sm sm:text-base font-medium leading-relaxed"
+                >
+                  Mengoptimalkan program kerja melalui perencanaan yang matang
+                  dan terarah.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4. SECTION PROGRAM KERJA UNGGULAN -->
+      <section class="py-24 md:py-32 lg:py-36 bg-slate-50/70 border-t border-slate-100" id="program-kerja">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+          <div
+            class="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/30 mb-3"
+            >
+              <span class="material-symbols-outlined text-[26px]"
+                >fact_check</span
+              >
+            </div>
+            <div
+              class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2"
+            >
+              ✨ PROGRAM KERJA ✨
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-headline-lg"
+            >
+              Program <span class="text-blue-600">Unggulan</span> Kami
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2">
+              Berbagai kegiatan positif yang dirancang untuk mengembangkan
+              potensi dan karakter siswa
+            </p>
+          </div>
+          <div class="flex flex-col gap-16">
+            <!-- Proker 1 -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
+            >
+              <div
+                class="lg:col-span-6 overflow-hidden rounded-2xl shadow-xl border border-slate-200 bg-white"
+              >
+                <img
+                  alt="TWENTY NINE CUP VOL.9"
+                  class="w-full h-[220px] sm:h-[320px] md:h-[380px] object-cover hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1Xxj-YipTs0ub6WPE6CyLzJcM3Dtm_TbyqaCdYffC-zh4R0CTsN0aPw0aQwtufV2x5l7LGWyST_f24CC_YAWelXmWAGcVHlNzzz3seCpz9n3bKoKV_IggRQToRv3uLnOtcYqH0aPw3CnY2H1F--AeBGr50nUJZ-hVwuDPjVkyIPpdKHC8L11-Df2jCK6MVOdpjN-e20DTTCVno2vgcPYO8-QtAs_NVd96zSxv-xUH7WOg"
+                />
+              </div>
+              <div class="lg:col-span-6 flex flex-col items-start gap-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm shadow-blue-500/20"
+                >
+                  1
+                </div>
+                <h3
+                  class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-headline-md tracking-tight uppercase"
+                >
+                  TWENTY NINE CUP (29 CUP) VOL.9
+                </h3>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                  Twenty Nine Cup Vol.9 bertujuan untuk mempererat hubungan
+                  antarsekolah dan memberikan kesempatan bagi siswa/i SMP, SMA,
+                  dan SMK sederajat se-Jabodetabek untuk menunjukkan kreativitas
+                  dan bakat terbaik mereka. Acara ini menghadirkan berbagai
+                  cabang perlombaan seperti Futsal, Basket, Modern Dance, hingga
+                  Band Akustik yang selalu menjadi sorotan utama tahunan.
+                </p>
+                <a
+                  class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-label-md text-sm font-semibold transition-all shadow-md shadow-blue-500/20"
+                  href="#galeri"
+                >
+                  <span class="">Lihat Lebih Detail</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+            <!-- Proker 2 -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
+            >
+              <div
+                class="lg:col-span-6 order-2 lg:order-1 flex flex-col items-start gap-4"
+              >
+                <div
+                  class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm shadow-blue-500/20"
+                >
+                  2
+                </div>
+                <h3
+                  class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-headline-md tracking-tight"
+                >
+                  3S (Senyum, Salam, Sapa) &amp; Gerakan Disiplin
+                </h3>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                  3S bertujuan untuk meningkatkan kedisiplinan, kerapian, dan
+                  mempererat silaturahmi antara pengurus OSIS, MPK, dewan guru,
+                  dan seluruh warga SMAN 29 Jakarta. Kegiatan dilaksanakan
+                  setiap pagi hari sebelum masuk sekolah di pintu gerbang utama
+                  oleh tim gabungan piket kedisiplinan siswa.
+                </p>
+                <a
+                  class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-label-md text-sm font-semibold transition-all shadow-md shadow-blue-500/20"
+                  href="KomisiDetail.html"
+                >
+                  <span class="">Lihat Lebih Detail</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+              <div
+                class="lg:col-span-6 order-1 lg:order-2 overflow-hidden rounded-2xl shadow-xl border border-slate-200 bg-white"
+              >
+                <img
+                  alt="3S dan Disiplin Positif OSIS MPK"
+                  class="w-full h-[220px] sm:h-[320px] md:h-[380px] object-cover hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1W3ugh5hE---W05QHJAdcz3GAKv10hG0UGcysjjsjT7tQkEZoQ67PGuucgD3XXi-wMK2e0vU4KLRnQryDTt8AP5-yHi-eW5OGh9J7grxeGnGblIYojKSeSRM8S8n0wCxYPM7OunNrFHM_Zrq_sBNiVy7eSZYMbpBZFiIAM5cYvPEEFlj3MROkj_0wr-mXo0SxFgJgN2fnRQL6-5jK9KqysCO36U8DNtB_Sz34IUxVMcNg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 5. SECTION KEPENGURUSAN -->
+      <section class="py-28 md:py-36 lg:py-40 bg-white border-t border-slate-100" id="kepengurusan">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+          <!-- Section Header -->
+          <div
+            class="text-center max-w-2xl mx-auto mb-12 flex flex-col items-center"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/30 mb-3"
+            >
+              <span class="material-symbols-outlined text-[26px]"
+                >account_tree</span
+              >
+            </div>
+            <div
+              class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2"
+            >
+              ✨ STRUKTUR HIERARKI ORGANISASI ✨
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-headline-lg"
+            >
+              Bagan Hierarki <span class="text-blue-600">Organisasi</span>
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2">
+              Visualisasi alur komando, koordinasi strategis, dan sinergi
+              kepemimpinan OSIS &amp; MPK SMAN 29 Jakarta
+            </p>
+            <!-- Tab Switcher Navigation -->
+            <div class="mt-8 flex flex-col sm:inline-flex sm:flex-row p-1.5 rounded-2xl sm:rounded-full bg-slate-100 border border-slate-200 shadow-inner w-full sm:w-auto gap-1" role="tablist">
+              <button
+                class="w-full sm:w-auto px-5 sm:px-6 py-2 rounded-xl sm:rounded-full font-label-md text-xs sm:text-sm font-bold transition-all shadow-sm bg-blue-600 text-white flex items-center justify-center gap-2"
+                id="tabBtnOsis"
+                onclick="switchOrgTab('osis')"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >diversity_3</span
+                >
+                Bagan Hierarki OSIS
+              </button>
+              <button
+                class="w-full sm:w-auto px-5 sm:px-6 py-2 rounded-xl sm:rounded-full font-label-md text-xs sm:text-sm font-bold transition-all text-slate-700 hover:text-blue-600 flex items-center justify-center gap-2"
+                id="tabBtnMpk"
+                onclick="switchOrgTab('mpk')"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >how_to_reg</span
+                >
+                Bagan Hierarki MPK
+              </button>
+            </div>
+          </div>
+          <!-- 1. BAGAN HIERARKI OSIS -->
+          <div
+            class="flex flex-col items-center transition-all duration-300"
+            id="treeOsis"
+          >
+            <!-- Level 1: Ketua Umum OSIS -->
+            <div class="relative flex flex-col items-center group w-full">
+              <div
+                class="w-full max-w-[280px] sm:w-72 bg-white rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col mx-auto"
+              >
+                <div
+                  class="relative w-full h-64 sm:h-72 overflow-hidden bg-slate-100"
+                >
+                  <span
+                    class="absolute top-3 left-3 z-10 px-3 py-1 rounded-full bg-blue-600 text-white font-badge-caps text-[11px] font-bold tracking-wider uppercase shadow-sm"
+                    >KETUA UMUM</span
+                  >
+                  <img
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1WWlZeUx5S6Y0eozHHWHFlHL0qgcBGRiPd-vqlT3ALoZ3oVHh-K6aLGhCIJuNqwrErGAzTiM-CCsf1zlsrYc6GnZrYz7dqvNQIPyGG2VhU3Q-zNZvBitFaTLUXiwxW99FSrNrMiAOzGJZYDBToS8Eg47YB6sbKrhxAI1vtU3trY1Msp8mF_d7_6ONtMhMzNOFkEOyk_S1UV_kxMDmIbDWr8LAB1i3vtd_BJ9uwl82HCtg"
+                    alt="Muhammad Fathir Al-Ghifari - Ketua Umum OSIS"
+                    class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none"
+                  ></div>
+                </div>
+                <div
+                  class="p-4 bg-slate-50/70 flex-1 flex flex-col justify-between"
+                >
+                  <div>
+                    <h4
+                      class="text-base font-extrabold text-slate-900 leading-snug tracking-tight"
+                    >
+                      Muhammad Fathir Al-Ghifari
+                    </h4>
+                    <p class="text-xs font-semibold text-blue-600 mt-0.5">
+                      Ketua Umum OSIS
+                    </p>
+                    <p class="text-[11px] text-slate-500 mt-1">
+                      Koordinator Eksekutif &amp; Kebijakan Siswa
+                    </p>
+                  </div>
+                  <div
+                    class="mt-3 pt-2.5 border-t border-slate-200/70 flex items-center justify-between text-[11px] text-slate-600"
+                  >
+                    <span class="">Kelas XI F-2</span>
+                    <span
+                      class="material-symbols-outlined text-[16px] text-blue-600"
+                      >verified</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Connector to Level 2 -->
+              <div class="w-0.5 h-10 bg-blue-600"></div>
+            </div>
+
+            <!-- Level 2: Wakil Ketua OSIS -->
+            <div class="relative flex flex-col items-center group w-full">
+              <div
+                class="w-full max-w-[280px] sm:w-72 bg-white rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col mx-auto"
+              >
+                <div
+                  class="relative w-full h-64 sm:h-72 overflow-hidden bg-slate-100"
+                >
+                  <span
+                    class="absolute top-3 left-3 z-10 px-3 py-1 rounded-full bg-[#ef4444] text-white font-badge-caps text-[11px] font-bold tracking-wider uppercase shadow-sm"
+                    >WAKIL KETUA</span
+                  >
+                  <img
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1VWxHvyFzdBNIcXTMRtWcWIYmckcvTS7wY0OBjzMl8Gh6GtLrceHb3-XjSOJ_jd5c95ms7TXDalcvEUU-UBwMWi1Jzy_wnQwZOK1MR2AS0dmpRlrU4BKS1531fN_vz0PU7Oa2Xs-k4pCyzs8od8y4dB0gqLnB04dYehbs-nd5VDPajhCn23fLpVuF34E44nu57GOHSByX7SxAnkZPD-xEoAypQxG2gIi1d3CwP6gAOY"
+                    alt="Muhamad Rosid Sunbus - Wakil Ketua OSIS"
+                    class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none"
+                  ></div>
+                </div>
+                <div
+                  class="p-4 bg-slate-50/70 flex-1 flex flex-col justify-between"
+                >
+                  <div>
+                    <h4
+                      class="text-base font-extrabold text-slate-900 leading-snug tracking-tight"
+                    >
+                      Muhamad Rosid Sunbus
+                    </h4>
+                    <p class="text-xs font-semibold text-blue-600 mt-0.5">
+                      Wakil Ketua Umum
+                    </p>
+                    <p class="text-[11px] text-slate-500 mt-1">
+                      Operasional Proker &amp; Manajerial Sekbid
+                    </p>
+                  </div>
+                  <div
+                    class="mt-3 pt-2.5 border-t border-slate-200/70 flex items-center justify-between text-[11px] text-slate-600"
+                  >
+                    <span class="">Kelas XI F-4</span>
+                    <span
+                      class="material-symbols-outlined text-[16px] text-blue-600"
+                      >event_note</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Connector to Level 3 -->
+              <div class="w-0.5 h-10 bg-blue-400"></div>
+            </div>
+
+            <!-- Level 3: Sekretaris & Bendahara (Horizontal 2 cards side by side) -->
+            <div
+              class="relative w-full max-w-3xl flex flex-col items-center mb-6"
+            >
+              <!-- Horizontal Crossbar -->
+              <div class="hidden sm:block w-2/3 border-t-2 border-blue-300"></div>
+              <div
+                class="w-full flex flex-col sm:flex-row items-center justify-around relative -mt-[1px] gap-6 sm:gap-8 px-2 sm:px-6"
+              >
+                <!-- Left Drop & Sekretaris -->
+                <div class="flex flex-col items-center group w-full sm:w-auto">
+                  <div class="hidden sm:block w-0.5 h-6 bg-blue-300"></div>
+                  <div
+                    class="w-full max-w-[280px] sm:w-72 bg-white rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col mx-auto"
+                  >
+                    <div
+                      class="relative w-full h-60 sm:h-64 overflow-hidden bg-slate-100"
+                    >
+                      <span
+                        class="absolute top-3 left-3 z-10 px-3 py-1 rounded-full bg-[#0284c7] text-white font-badge-caps text-[11px] font-bold tracking-wider uppercase shadow-sm"
+                        >SEKRETARIS</span
+                      >
+                      <img
+                        src="https://lh3.googleusercontent.com/aida/AEtjO1XTawBehBf0merl4lerRdL9WMcErouEkLxM1pijGHUqER3vKq6hcEYYGK_N4Yrbhsq-5_cH9ThhJ6U2L1RGarGC0uTMY-8NXqK7s-gNo3QFxl4VXELdvQgUvrVNlM5c5FWIeKMgqJ7n24e66lTcmbWIsIPgifULuV4BQgtAtsHbzdSn-Eqes26k4L4TbM7yFuX-KRtO-DXC47cydLsRDjrQeWCwzdHNWdaB-X_o-3L4Dw"
+                        alt="Raisyah Penelope Aneira - Sekretaris Umum"
+                        class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none"
+                      ></div>
+                    </div>
+                    <div
+                      class="p-4 bg-slate-50/70 flex-1 flex flex-col justify-between"
+                    >
+                      <div>
+                        <h5
+                          class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug tracking-tight"
+                        >
+                          Raisyah Penelope Aneira
+                        </h5>
+                        <p class="text-xs font-semibold text-blue-600 mt-0.5">
+                          Sekretaris Umum
+                        </p>
+                        <p class="text-[11px] text-slate-500 mt-0.5">
+                          Administrasi &amp; Dokumentasi Resmi
+                        </p>
+                      </div>
+                      <div
+                        class="mt-3 pt-2.5 border-t border-slate-200/70 flex items-center justify-between text-[11px] text-slate-600"
+                      >
+                        <span class="">Kelas XI F-1</span>
+                        <span
+                          class="material-symbols-outlined text-[16px] text-sky-600"
+                          >edit_note</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Mobile Connector Between Sekretaris & Bendahara -->
+                <div class="w-0.5 h-8 bg-blue-300 sm:hidden"></div>
+
+                <!-- Right Drop & Bendahara -->
+                <div class="flex flex-col items-center group w-full sm:w-auto">
+                  <div class="hidden sm:block w-0.5 h-6 bg-blue-300"></div>
+                  <div
+                    class="w-full max-w-[280px] sm:w-72 bg-white rounded-3xl border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col mx-auto"
+                  >
+                    <div
+                      class="relative w-full h-60 sm:h-64 overflow-hidden bg-slate-100"
+                    >
+                      <span
+                        class="absolute top-3 left-3 z-10 px-3 py-1 rounded-full bg-[#8b5cf6] text-white font-badge-caps text-[11px] font-bold tracking-wider uppercase shadow-sm"
+                        >BENDAHARA</span
+                      >
+                      <img
+                        src="https://lh3.googleusercontent.com/aida/AEtjO1VigkED7YnrCeQA4B1zUJxJ3rm1OdPlMhzt4L9hO1TDF0NWCmQ_Yl7s-V4kkxW-z9QsXOfWqGpIIF3ePgwAuGh2e4Zav9uiAFgawg-DzvjYnB5YllzATw9L6mdCLb6Ac8v0ao6G7JQrTd_hnORg_o-wFNysOT0AGRY2L0AtiPeCIa7Isoq1VAr1HAdYJwXR9lenGmVliNH6_JxFEnpUnhzMddUg8g572YN0KV2j8o1a"
+                        alt="Salwa Bidara - Bendahara Umum"
+                        class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none"
+                      ></div>
+                    </div>
+                    <div
+                      class="p-4 bg-slate-50/70 flex-1 flex flex-col justify-between"
+                    >
+                      <div>
+                        <h5
+                          class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug tracking-tight"
+                        >
+                          Salwa Bidara
+                        </h5>
+                        <p class="text-xs font-semibold text-blue-600 mt-0.5">
+                          Bendahara Umum
+                        </p>
+                        <p class="text-[11px] text-slate-500 mt-0.5">
+                          Pengelolaan Anggaran &amp; Keuangan
+                        </p>
+                      </div>
+                      <div
+                        class="mt-3 pt-2.5 border-t border-slate-200/70 flex items-center justify-between text-[11px] text-slate-600"
+                      >
+                        <span class="">Kelas XI F-3</span>
+                        <span
+                          class="material-symbols-outlined text-[16px] text-purple-600"
+                          >payments</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Central Trunk down to Sekbid Grid -->
+              <div class="w-0.5 h-10 bg-blue-300"></div>
+            </div>
+
+            <!-- Level 4: 8 Seksi Bidang (Branching Grid) -->
+            <div class="w-full max-w-6xl relative pt-4">
+              <!-- Top branch connector line -->
+              <div
+                class="hidden lg:block absolute top-0 left-8 right-8 h-0.5 bg-blue-200"
+              ></div>
+              <div class="flex items-center justify-center mb-6">
+                <span
+                  class="px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider shadow-sm flex items-center gap-1.5"
+                >
+                  <span class="material-symbols-outlined text-[16px]">hub</span>
+                  Divisi Seksi Bidang (Sekbid)
+                </span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Sekbid 1 -->
+                <div
+                  class="p-4 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm group hover:shadow-md"
+                >
+                  <div class="flex items-center gap-3 mb-2">
+                    <div
+                      class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >church</span
+                      >
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 leading-snug"
+                      >Ketuhanan &amp; Budi Pekerti</span
+                    >
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="SekbidDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+                <!-- Sekbid 2 -->
+                <div
+                  class="p-4 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm group hover:shadow-md"
+                >
+                  <div class="flex items-center gap-3 mb-2">
+                    <div
+                      class="w-9 h-9 rounded-xl bg-red-100 text-red-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >shield</span
+                      >
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 leading-snug"
+                      >Cinta Tanah Air &amp; Bela Negara</span
+                    >
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="SekbidDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+                <!-- Sekbid 3 -->
+                <div
+                  class="p-4 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm group hover:shadow-md"
+                >
+                  <div class="flex items-center gap-3 mb-2">
+                    <div
+                      class="w-9 h-9 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >school</span
+                      >
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 leading-snug"
+                      >Pendidikan Politik &amp; Kepemimpinan</span
+                    >
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="SekbidDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+                <!-- Sekbid 4 -->
+                <div
+                  class="p-4 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm group hover:shadow-md"
+                >
+                  <div class="flex items-center gap-3 mb-2">
+                    <div
+                      class="w-9 h-9 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >storefront</span
+                      >
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 leading-snug"
+                      >Keterampilan &amp; Kewirausahaan</span
+                    >
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="SekbidDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+                <!-- Sekbid 5 -->
+                <div
+                  class="p-4 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm group hover:shadow-md"
+                >
+                  <div class="flex items-center gap-3 mb-2">
+                    <div
+                      class="w-9 h-9 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >sports_volleyball</span
+                      >
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 leading-snug"
+                      >Kesegaran Jasmani &amp; Daya Kreasi</span
+                    >
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="SekbidDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+                <!-- Sekbid 6 -->
+                <div
+                  class="p-4 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm group hover:shadow-md"
+                >
+                  <div class="flex items-center gap-3 mb-2">
+                    <div
+                      class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >palette</span
+                      >
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 leading-snug"
+                      >Persepsi, Apresiasi, &amp; Seni</span
+                    >
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="SekbidDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+                <!-- Sekbid 7 -->
+                <div
+                  class="p-4 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm group hover:shadow-md"
+                >
+                  <div class="flex items-center gap-3 mb-2">
+                    <div
+                      class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >computer</span
+                      >
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 leading-snug"
+                      >Teknologi Informasi &amp; Komunikasi</span
+                    >
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="SekbidDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+                <!-- Sekbid 8 -->
+                <div
+                  class="p-4 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm group hover:shadow-md"
+                >
+                  <div class="flex items-center gap-3 mb-2">
+                    <div
+                      class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >eco</span
+                      >
+                    </div>
+                    <span class="text-xs font-bold text-slate-900 leading-snug"
+                      >Perlengkapan &amp; Lingkungan Hidup</span
+                    >
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="SekbidDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2. BAGAN HIERARKI MPK -->
+          <div
+            class="hidden flex flex-col items-center transition-all duration-300"
+            id="treeMpk"
+          >
+            <!-- Level 1: Ketua Umum MPK -->
+            <div class="relative flex flex-col items-center group w-full">
+              <div
+                class="w-full max-w-[280px] sm:w-72 bg-white rounded-2xl border-2 border-blue-600 shadow-xl overflow-hidden text-center relative z-10 hover:shadow-2xl transition-all duration-300 mx-auto"
+              >
+                <div
+                  class="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-1.5 px-3 flex items-center justify-center gap-1.5"
+                >
+                  <span class="material-symbols-outlined text-[14px]"
+                    >verified</span
+                  >
+                  <span class="text-[11px] font-bold uppercase tracking-wider"
+                    >Ketua Umum MPK</span
+                  >
+                </div>
+                <div class="p-4 flex flex-col items-center">
+                  <div
+                    class="w-24 h-24 rounded-full overflow-hidden border-2 border-blue-100 shadow-md mb-2.5"
+                  >
+                    <img
+                      alt="Nabila Zahra Azzahra"
+                      class="w-full h-full object-cover object-top"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1fAnBVKuqa4vivqA-TDP7DbvL0i6p_j_IH-0M0LTBldvwIHoAxP8AYDmASEgQMH-LE0nrlwG2XEbz-07MJqigU7vyc-H60DOJ7cvNl0FG4oW_zhqNHsbPUYt2eyxkgWBCeX0fE3iC6x8WU3m7NUrjIH__Djh-ma4FH3J_0RCCPu1NfXtiVETWEw9JXSE4M0J6tyn7qYG4oZkVOHrHoc_ckY3RgnWQTDlzTCUEirur"
+                    />
+                  </div>
+                  <h4
+                    class="text-base font-extrabold text-slate-900 leading-snug"
+                  >
+                    Nabila Zahra Azzahra
+                  </h4>
+                  <span class="text-xs font-semibold text-blue-600 mt-0.5"
+                    >Kelas XI F-5</span
+                  >
+                </div>
+              </div>
+              <!-- Connector to Level 2 -->
+              <div class="w-0.5 h-10 bg-blue-600"></div>
+            </div>
+            <!-- Level 2: Wakil Ketua & Sekretaris MPK -->
+            <div
+              class="relative w-full max-w-2xl flex flex-col items-center mb-6"
+            >
+              <!-- Horizontal Crossbar -->
+              <div class="hidden sm:block w-1/2 border-t-2 border-blue-400"></div>
+              <div class="w-full flex flex-col sm:flex-row items-center justify-around relative -mt-[1px] gap-6 sm:gap-4 px-2 sm:px-4">
+                <!-- Wakil Ketua MPK -->
+                <div class="flex flex-col items-center w-full sm:w-auto">
+                  <div class="hidden sm:block w-0.5 h-6 bg-blue-400"></div>
+                  <div
+                    class="w-full max-w-[280px] sm:w-64 bg-white rounded-2xl border border-slate-200 hover:border-blue-400 shadow-md p-4 text-center flex flex-col items-center transition-all mx-auto"
+                  >
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-blue-100 text-blue-700 text-[10px] font-bold uppercase tracking-wider mb-2.5"
+                      >Wakil Ketua MPK</span
+                    >
+                    <div
+                      class="w-20 h-20 rounded-full overflow-hidden border-2 border-blue-100 mb-2.5 shadow-sm"
+                    >
+                      <img
+                        alt="Dama Elrafi Indrajaya"
+                        class="w-full h-full object-cover object-top"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUepmAG0RVCXpBpiJKzvDtp4c2nZbgIHCrSCGKIRQKlwz-Z7WvmPkAmUm4PFYHQRRv9uEx6ky8FlnqiodUMSfgFjhFIkJaDzRd36c92wkNvP-wC1WJtPjrF-oiPQ7ivoX954uEdECn3e8Pv-ofe9Sc_EB1fEpHV3DV8Fh2l2ZKDM5N12X10I05N_jOdZTsz_RHlFQPJtHxmf8Mx0tD_4x6oJpHUF3HPYwlAdMQm7Ig"
+                      />
+                    </div>
+                    <h5 class="text-sm sm:text-base font-bold text-slate-900 leading-snug mb-1">
+                      Dama Elrafi Indrajaya
+                    </h5>
+                    <span class="text-xs text-slate-500 font-medium">XI F-3</span>
+                  </div>
+                </div>
+
+                <!-- Mobile Connector Between Wakil & Sekretaris MPK -->
+                <div class="w-0.5 h-8 bg-blue-400 sm:hidden"></div>
+
+                <!-- Sekretaris MPK -->
+                <div class="flex flex-col items-center w-full sm:w-auto">
+                  <div class="hidden sm:block w-0.5 h-6 bg-blue-400"></div>
+                  <div
+                    class="w-full max-w-[280px] sm:w-64 bg-white rounded-2xl border border-slate-200 hover:border-blue-400 shadow-md p-4 text-center flex flex-col items-center transition-all mx-auto"
+                  >
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-blue-100 text-blue-700 text-[10px] font-bold uppercase tracking-wider mb-2.5"
+                      >Sekretaris MPK</span
+                    >
+                    <div
+                      class="w-20 h-20 rounded-full overflow-hidden border-2 border-blue-100 mb-2.5 shadow-sm"
+                    >
+                      <img
+                        alt="Aneira Afkarina"
+                        class="w-full h-full object-cover object-top"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1fAnBVKuqa4vivqA-TDP7DbvL0i6p_j_IH-0M0LTBldvwIHoAxP8AYDmASEgQMH-LE0nrlwG2XEbz-07MJqigU7vyc-H60DOJ7cvNl0FG4oW_zhqNHsbPUYt2eyxkgWBCeX0fE3iC6x8WU3m7NUrjIH__Djh-ma4FH3J_0RCCPu1NfXtiVETWEw9JXSE4M0J6tyn7qYG4oZkVOHrHoc_ckY3RgnWQTDlzTCUEirur"
+                      />
+                    </div>
+                    <h5 class="text-sm sm:text-base font-bold text-slate-900 leading-snug mb-1">
+                      Aneira Afkarina
+                    </h5>
+                    <span class="text-xs text-slate-500 font-medium">XI F-2</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Central Stem down to Komisi -->
+              <div class="w-0.5 h-10 bg-blue-300"></div>
+            </div>
+            <!-- Level 3: Komisi MPK -->
+            <div class="w-full max-w-4xl relative pt-4">
+              <!-- Top branch connector bar -->
+              <div
+                class="hidden md:block absolute top-0 left-12 right-12 h-0.5 bg-blue-200"
+              ></div>
+              <div class="flex items-center justify-center mb-6">
+                <span
+                  class="px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider shadow-sm flex items-center gap-1.5"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >balance</span
+                  >
+                  Komisi Parlemen MPK
+                </span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <!-- Komisi 1 -->
+                <div
+                  class="p-5 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm hover:shadow-md group"
+                >
+                  <div class="flex items-start gap-3.5 mb-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[22px]"
+                        >gavel</span
+                      >
+                    </div>
+                    <div>
+                      <h5 class="text-sm font-bold text-slate-900 leading-snug">
+                        Komisi Legislatif
+                      </h5>
+                      <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Penyusun regulasi tata tertib siswa dan AD/ART
+                        organisasi sekolah.
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="KomisiDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+                <!-- Komisi 2 -->
+                <div
+                  class="p-5 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm hover:shadow-md group"
+                >
+                  <div class="flex items-start gap-3.5 mb-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[22px]"
+                        >how_to_vote</span
+                      >
+                    </div>
+                    <div>
+                      <h5 class="text-sm font-bold text-slate-900 leading-snug">
+                        Komisi Aspirasi
+                      </h5>
+                      <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Penjaring, penampung, dan advokasi suara seluruh peserta
+                        didik.
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="KomisiDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+                <!-- Komisi 3 -->
+                <div
+                  class="p-5 rounded-2xl border border-slate-200 bg-white hover:border-blue-400 transition-all flex flex-col justify-between shadow-sm hover:shadow-md group"
+                >
+                  <div class="flex items-start gap-3.5 mb-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[22px]"
+                        >policy</span
+                      >
+                    </div>
+                    <div>
+                      <h5 class="text-sm font-bold text-slate-900 leading-snug">
+                        Komisi Pengawasan
+                      </h5>
+                      <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Audit, monitoring, dan evaluasi berkala pelaksanaan
+                        program kerja.
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    class="text-xs font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 self-start mt-2"
+                    href="KomisiDetail.html"
+                  >
+                    Lihat Selengkapnya
+                    <span class="material-symbols-outlined text-[14px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function switchOrgTab(tab) {
+            const treeOsis = document.getElementById("treeOsis");
+            const treeMpk = document.getElementById("treeMpk");
+            const tabBtnOsis = document.getElementById("tabBtnOsis");
+            const tabBtnMpk = document.getElementById("tabBtnMpk");
+            const activeClass =
+              "w-full sm:w-auto px-5 sm:px-6 py-2.5 rounded-xl sm:rounded-full font-label-md text-xs sm:text-sm font-bold transition-all shadow-sm bg-blue-600 text-white flex items-center justify-center gap-2";
+            const inactiveClass =
+              "w-full sm:w-auto px-5 sm:px-6 py-2.5 rounded-xl sm:rounded-full font-label-md text-xs sm:text-sm font-bold transition-all text-slate-700 hover:text-blue-600 flex items-center justify-center gap-2";
+            if (tab === "osis") {
+              treeOsis.classList.remove("hidden");
+              treeMpk.classList.add("hidden");
+              tabBtnOsis.className = activeClass;
+              tabBtnMpk.className = inactiveClass;
+            } else {
+              treeMpk.classList.remove("hidden");
+              treeOsis.classList.add("hidden");
+              tabBtnMpk.className = activeClass;
+              tabBtnOsis.className = inactiveClass;
+            }
+          }
+        </script>
+      </section>
+      <!-- 6. SECTION GALERI -->
+      <section class="py-24 md:py-32 lg:py-36 bg-slate-50/70 border-t border-slate-100" id="galeri">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+          <div
+            class="text-center max-w-2xl mx-auto mb-14 flex flex-col items-center"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/30 mb-3"
+            >
+              <span class="material-symbols-outlined text-[26px]"
+                >photo_library</span
+              >
+            </div>
+            <div
+              class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2"
+            >
+              ✨ GALERI ✨
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-headline-lg"
+            >
+              Dokumentasi <span class="text-blue-600">Kegiatan</span>
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2">
+              Momen-momen berharga dari berbagai kegiatan yang telah kami
+              laksanakan
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div
+              class="overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-sm group"
+            >
+              <img
+                alt="Rapat Koordinasi OSIS MPK"
+                class="w-full h-48 sm:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1UlbUHPqPHsyiAOnBoV1e2q26G6enZBmJUp7FnapvkJvGEKCE4HORnHvTlM5jHRtebRIR8GgrHaPKGNLcwgUMiquqhn1m4edGhk1bvJ2RmbKN9NzdMl53j-2qxud8zwbmwo3dfrINdU6YGbUtwrKWYB14rq9FxSOusRmnS62rN7NFPEMd0zPci2omu2AHeWJ2MpOPVxQmALaC-UcYzBXchtXZeU6AafB-TgkzSGw_tb2Q"
+              />
+            </div>
+            <div
+              class="overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-sm group"
+            >
+              <img
+                alt="Juara Futsal 29 Cup"
+                class="w-full h-48 sm:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1Uv_f1gHREEtyQBtJKDGneZNbv5ZB8dA1EoSoy0wTyZ_TMQ2JUAazfJGyOXtKo97bcEHwgBJGUFwNkueVbzo5dYLCQj8knTBaJtOLpJYRv_6HtXWwHDEh0GOxt4VRzlTaE1rsCNFzBduusAYfLpJ1jDy1q_zFlVZ1wTLrtl1En91hb42i1VucmLICbZcgTaffzKxm3HIxekcceTGxWFS2rdnpUol09IfV3Auru5Ox-j-Q"
+              />
+            </div>
+            <div
+              class="overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-sm group"
+            >
+              <img
+                alt="Pameran Teknologi &amp; Robotik"
+                class="w-full h-48 sm:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1UVTzuykEPcTu7WAErYOooDVsWdjOjEQ0neaa4AVqZgc5RvKnXbtXru0iQSf0kIdTDjMFZf38u5Tqblyd7N-YHLuwfTJwoNMoVI72Y3kEscdcOiR5LCuch9HbWibP0pSd66bciRrE-nvOdPgM31MYOCYSz3vIwunN4snSMkvDP-mK613GrFAa4OZgre4_4R1qY1yj63pLPjbfQo4UVtq_XP_9YMYZU-BOpc8nhaTqIE"
+              />
+            </div>
+            <div
+              class="overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-sm group"
+            >
+              <img
+                alt="Workshop Coding &amp; Kreativitas"
+                class="w-full h-48 sm:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1W3ugh5hE---W05QHJAdcz3GAKv10hG0UGcysjjsjT7tQkEZoQ67PGuucgD3XXi-wMK2e0vU4KLRnQryDTt8AP5-yHi-eW5OGh9J7grxeGnGblIYojKSeSRM8S8n0wCxYPM7OunNrFHM_Zrq_sBNiVy7eSZYMbpBZFiIAM5cYvPEEFlj3MROkj_0wr-mXo0SxFgJgN2fnRQL6-5jK9KqysCO36U8DNtB_Sz34IUxVMcNg"
+              />
+            </div>
+            <div
+              class="md:col-span-2 overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-sm group"
+            >
+              <img
+                alt="Kompetisi Futsal Pelajar"
+                class="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1Xxj-YipTs0ub6WPE6CyLzJcM3Dtm_TbyqaCdYffC-zh4R0CTsN0aPw0aQwtufV2x5l7LGWyST_f24CC_YAWelXmWAGcVHlNzzz3seCpz9n3bKoKV_IggRQToRv3uLnOtcYqH0aPw3CnY2H1F--AeBGr50nUJZ-hVwuDPjVkyIPpdKHC8L11-Df2jCK6MVOdpjN-e20DTTCVno2vgcPYO8-QtAs_NVd96zSxv-xUH7WOg"
+              />
+            </div>
+            <div
+              class="md:col-span-2 overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-sm group"
+            >
+              <img
+                alt="Sidang Pleno Bersama"
+                class="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmEH6S5Im2x-DkOiAZqkkw6Jzd7cVfNK9fCpCCMybAj032rniKgtxHYCQjf_6uaW4Ia4QE9N-VaKwObSTy9JdkuwpbT2i3LlXnEdcxtAd2LsrwjUEbgtc9hh1hNpeNOpz9Zwz8eDFcAMOVHMWR7vaxJqPIwg1nMS8oo6UHApuydXBZf-Wg58Orc9SN5Q1DUHebLZFYQexjwsP60890FrJR7trkH7iaasjYofECFCKx"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 7. SECTION SALURKAN ASPIRASI SISWA -->
+      <!-- <section class="py-20 bg-white border-t border-slate-100" id="aspirasi">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+          <div
+            class="rounded-3xl bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 p-8 sm:p-12 text-white shadow-xl shadow-blue-500/20 relative overflow-hidden"
+          >
+            <div
+              class="absolute -right-12 -bottom-12 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none"
+            ></div>
+            <div class="relative z-10 max-w-2xl mb-8">
+              <div
+                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-wider mb-3"
+              >
+                <span class="material-symbols-outlined text-[16px]"
+                  >campaign</span
+                >
+                <span class="">Kanal Suara Siswa 29</span>
+              </div>
+              <h2
+                class="text-2xl sm:text-3xl font-extrabold font-headline-lg tracking-tight"
+              >
+                Punya Ide, Masukan, atau Aspirasi?
+              </h2>
+              <p class="text-blue-100 text-sm sm:text-base mt-2">
+                Setiap usulan konstruktif akan ditampung oleh MPK dan diteruskan
+                ke manajemen sekolah. Anda dapat memilih untuk mengirim secara
+                anonim.
+              </p>
+            </div>
+            <form
+              class="relative z-10 bg-white rounded-2xl p-6 sm:p-8 text-slate-900 shadow-lg flex flex-col gap-4"
+              id="aspirasiForm"
+              onsubmit="handleAspirasiSubmit(event)"
+            >
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2"
+                  >Kategori Aspirasi</label
+                >
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  <label
+                    class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-200 hover:border-blue-500 cursor-pointer text-center text-xs font-semibold"
+                  >
+                    <input
+                      checked=""
+                      class="accent-blue-600"
+                      name="kategori"
+                      type="radio"
+                      value="Fasilitas"
+                    />
+                    <span class="">Fasilitas</span>
+                  </label>
+                  <label
+                    class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-200 hover:border-blue-500 cursor-pointer text-center text-xs font-semibold"
+                  >
+                    <input
+                      class="accent-blue-600"
+                      name="kategori"
+                      type="radio"
+                      value="Akademik"
+                    />
+                    <span class="">Akademik</span>
+                  </label>
+                  <label
+                    class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-200 hover:border-blue-500 cursor-pointer text-center text-xs font-semibold"
+                  >
+                    <input
+                      class="accent-blue-600"
+                      name="kategori"
+                      type="radio"
+                      value="Ekskul"
+                    />
+                    <span class="">Ekskul</span>
+                  </label>
+                  <label
+                    class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-200 hover:border-blue-500 cursor-pointer text-center text-xs font-semibold"
+                  >
+                    <input
+                      class="accent-blue-600"
+                      name="kategori"
+                      type="radio"
+                      value="Kegiatan"
+                    />
+                    <span class="">Kegiatan</span>
+                  </label>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1"
+                    >Nama Siswa / Pengirim (Opsional)</label
+                  >
+                  <input
+                    class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20 text-sm"
+                    id="senderName"
+                    placeholder="Contoh: Budi Santoso / Anonim"
+                    type="text"
+                  />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1"
+                    >Kelas / Rombel</label
+                  >
+                  <input
+                    class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20 text-sm"
+                    id="senderClass"
+                    placeholder="Contoh: XI F-3"
+                    required=""
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1"
+                  >Pesan Aspirasi &amp; Saran</label
+                >
+                <textarea
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20 text-sm"
+                  id="aspirasiMsg"
+                  placeholder="Tuliskan aspirasi secara santun dan konstruktif..."
+                  required=""
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-between pt-2">
+                <span class="text-xs text-slate-500 flex items-center gap-1">
+                  <span
+                    class="material-symbols-outlined text-[16px] text-emerald-500"
+                    >verified_user</span
+                  >
+                  Privasi &amp; kerahasiaan terjamin
+                </span>
+                <button
+                  class="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold shadow-md shadow-blue-500/20 transition-all flex items-center gap-1.5"
+                  type="submit"
+                >
+                  <span class="">Kirim Suara</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >send</span
+                  >
+                </button>
+              </div>
+              <div
+                class="hidden p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium text-center"
+                id="submitAlert"
+              >
+                Terima kasih! Aspirasi Anda telah dicatat oleh Parlemen MPK SMAN
+                29 Jakarta.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <!-- FOOTER -->
+    <footer class="w-full bg-slate-950 text-white pt-24 pb-12 border-t border-slate-800" id="kontak">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800"
+        >
+          <div class="lg:col-span-5 flex flex-col items-start gap-4">
+            <div class="flex items-center gap-3">
+              <img
+                alt="Logo OSIS MPK SMAN 29 Jakarta"
+                class="h-10 w-auto object-contain"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBW5e-0p9LMAAycT8KeLwSzSH7f1T-idWfB5F3o6l3I5Q-rKWCZ529z9gufdT0JlWjre1jG0oQxoc3sTl8U6FBtCeWhYUj81iV0tc6m1u1T5nYx_q4Bne8IgWWEkzs6gydblWt6mnv1ZH6z0ONLoXscNbijYQOKOU8MUqy3_awyxBNf7Z4UFZPr4htSUV_Bz_cn3Ofy_RvMdKf1Nq8-QeLlpiMdD1-5m9EXgsNcmT-"
+              />
+              <div class="flex flex-col">
+                <span class="text-base font-extrabold tracking-tight"
+                  >OSIS / MPK</span
+                >
+                <span
+                  class="text-xs font-bold text-blue-400 uppercase tracking-wider"
+                  >SMAN 29 JAKARTA</span
+                >
+              </div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+              Bersatu untuk tumbuh berkembang kuat dan kebersamaan.
+            </p>
+          </div>
+          <div class="lg:col-span-3 flex flex-col gap-3">
+            <span
+              class="text-sm font-bold text-slate-200 uppercase tracking-wider"
+              >Navigasi</span
+            >
+            <nav class="flex flex-col gap-2 text-xs text-slate-400">
+              <a class="hover:text-blue-400 transition-colors" href="#sambutan"
+                >Sambutan</a
+              >
+              <a class="hover:text-blue-400 transition-colors" href="#visi"
+                >Visi</a
+              >
+              <a class="hover:text-blue-400 transition-colors" href="#misi"
+                >Misi</a
+              >
+              <a
+                class="hover:text-blue-400 transition-colors"
+                href="SekbidDetail.html"
+                >Program Kerja</a
+              >
+              <a
+                class="hover:text-blue-400 transition-colors"
+                href="#kepengurusan"
+                >Kepengurusan</a
+              >
+              <a class="hover:text-blue-400 transition-colors" href="#galeri"
+                >Galeri</a
+              >
+              <a class="hover:text-blue-400 transition-colors" href="#kontak"
+                >Kontak</a
+              >
+            </nav>
+          </div>
+          <div class="lg:col-span-4 flex flex-col gap-4">
+            <div>
+              <span
+                class="text-sm font-bold text-slate-200 uppercase tracking-wider block mb-2"
+                >Kontak</span
+              >
+              <div class="flex flex-col gap-2 text-xs text-slate-400">
+                <div class="flex items-start gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-blue-400 shrink-0"
+                    >location_on</span
+                  >
+                  <span class=""
+                    >Jl. Kramat No. 48, Kebayoran Lama Selatan, Kec. Kebayoran
+                    Lama, Kota Jakarta Selatan 12240</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-blue-400 shrink-0"
+                    >mail</span
+                  >
+                  <span class="">osis.mpk@sman29jkt.sch.id</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span
+                class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-2"
+                >Ikuti Kami</span
+              >
+              <div class="flex items-center gap-2">
+                <a
+                  aria-label="Instagram"
+                  class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-400 transition-colors"
+                  href="https://instagram.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >photo_camera</span
+                  >
+                </a>
+                <a
+                  aria-label="TikTok"
+                  class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-400 transition-colors"
+                  href="https://tiktok.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >music_note</span
+                  >
+                </a>
+                <a
+                  aria-label="Email"
+                  class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-400 transition-colors"
+                  href="mailto:osis.mpk@sman29jkt.sch.id"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >mail</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500"
+        >
+          <p class="">© 2025 OSIS/MPK SMAN 29 Jakarta. All Right Reserved.</p>
+          <p class="">
+            Website Oleh Seksi Bidang
+            <span class="text-slate-300 font-semibold"
+              >Teknologi Informasi Dan Komunikasi</span
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Interactive Scripts -->
+    <script>
+      function handleAspirasiSubmit(event) {
+        event.preventDefault();
+        const alertBox = document.getElementById("submitAlert");
+        const form = document.getElementById("aspirasiForm");
+        if (alertBox) {
+          alertBox.classList.remove("hidden");
+          form.reset();
+          setTimeout(() => {
+            alertBox.classList.add("hidden");
+          }, 5000);
+        }
+      }
+    </script>
+    <script id="heroModeScript">
+      let currentHeroMode = "osis";
+
+      function toggleHeroOrgMode() {
+        setHeroOrgMode(currentHeroMode === "osis" ? "mpk" : "osis");
+      }
+
+      function setHeroOrgMode(mode) {
+        currentHeroMode = mode;
+        const switchBtn = document.getElementById("heroCapsuleSwitch");
+        const knob = document.getElementById("heroSwitchKnob");
+        const switchIcon = document.getElementById("heroSwitchIcon");
+        const osisBtn = document.getElementById("heroModeOsisBtn");
+        const mpkBtn = document.getElementById("heroModeMpkBtn");
+        const indicatorText = document.getElementById("heroModeIndicatorText");
+        const tagBadge = document.getElementById("heroTagBadge");
+        const titlePrefix = document.getElementById("heroOrgTitlePrefix");
+        const titleSuffix = document.getElementById("heroOrgTitleSuffix");
+        const schoolHighlight = document.getElementById("heroSchoolHighlight");
+        const subtitle = document.getElementById("heroSubtitle");
+        const primaryCta = document.getElementById("heroPrimaryCta");
+        const primaryCtaText = document.getElementById("heroPrimaryCtaText");
+        const heroRadialGlow = document.querySelector(
+          "#beranda div.absolute.bg-\\[radial-gradient\\(circle_at_center\\,rgba\\(37\\,99\\,235\\,0\\.18\\)_0\\,transparent_70\\%\\)\\]",
+        );
+
+        // Sambutan section elements
+        const sambutanBadge = document.getElementById("sambutanSectionBadge");
+        const sambutanTitleHighlight = document.getElementById(
+          "sambutanTitleHighlight",
+        );
+        const sambutanBgGlow = document.getElementById("sambutanBgGlow");
+        const leaderCardGlow = document.getElementById("leaderCardGlow");
+        const leaderPortraitImg = document.getElementById("leaderPortraitImg");
+        const leaderClassTag = document.getElementById("leaderClassTag");
+        const leaderRoleSubhead = document.getElementById("leaderRoleSubhead");
+        const leaderRoleBadgeText = document.getElementById(
+          "leaderRoleBadgeText",
+        );
+        const leaderName = document.getElementById("leaderName");
+        const pointIcon1 = document.getElementById("pointIcon1");
+        const pointIcon2 = document.getElementById("pointIcon2");
+        const pointIcon3 = document.getElementById("pointIcon3");
+        const quoteBar = document.getElementById("quoteBar");
+        const sambutanNextLink = document.getElementById("sambutanNextLink");
+        const signLeaderTitle = document.getElementById("signLeaderTitle");
+
+        if (mode === "mpk") {
+          // MPK Mode: Yellow / Gold Theme (#f59e0b / #eab308)
+          if (switchBtn) {
+            switchBtn.setAttribute("aria-checked", "true");
+            switchBtn.className =
+              "relative w-14 h-7 rounded-full transition-colors duration-300 flex items-center p-0.5 cursor-pointer bg-amber-500 shadow-[0_0_20px_rgba(245,158,11,0.7)] focus:outline-none";
+          }
+          if (knob) {
+            knob.className =
+              "w-6 h-6 rounded-full bg-white shadow-md transform transition-transform duration-300 translate-x-7 flex items-center justify-center";
+          }
+          if (switchIcon) {
+            switchIcon.className =
+              "w-2 h-2 rounded-full bg-amber-500 transition-colors";
+          }
+          if (osisBtn) {
+            osisBtn.className =
+              "flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all text-slate-400 hover:text-white bg-transparent";
+          }
+          if (mpkBtn) {
+            mpkBtn.className =
+              "flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all text-slate-950 bg-amber-400 shadow-md shadow-amber-500/30";
+          }
+          if (indicatorText) {
+            indicatorText.innerText =
+              "MODE AKTIF: MAJELIS PERWAKILAN KELAS (MPK)";
+            indicatorText.className =
+              "text-[11px] font-semibold text-amber-400 mt-2 uppercase tracking-widest transition-colors";
+          }
+          if (tagBadge) {
+            tagBadge.className =
+              "px-4 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/50 text-amber-300 font-bold text-xs uppercase tracking-widest backdrop-blur-md transition-all duration-300";
+            tagBadge.innerText = "LEGISLATIF & ASPIRASI SISWA";
+          }
+          if (titlePrefix) {
+            titlePrefix.className = "text-slate-400 transition-colors";
+          }
+          if (titleSuffix) {
+            titleSuffix.className =
+              "text-amber-400 font-black transition-colors";
+          }
+          if (schoolHighlight) {
+            schoolHighlight.className =
+              "text-amber-400 transition-colors duration-300 drop-shadow-[0_0_12px_rgba(245,158,11,0.5)]";
+          }
+          if (subtitle) {
+            subtitle.innerText =
+              "Menampung aspirasi, mengawal demokrasi, dan mewujudkan transparansi sekolah.";
+          }
+          if (primaryCta) {
+            primaryCta.className =
+              "px-7 py-3 rounded-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-label-md text-sm font-bold shadow-lg shadow-amber-500/30 transition-all hover:scale-105 inline-flex items-center gap-2";
+          }
+          if (primaryCtaText) {
+            primaryCtaText.innerText = "Salurkan Aspirasi MPK";
+            primaryCta.setAttribute("href", "KomisiDetail.html");
+          }
+          if (heroRadialGlow) {
+            heroRadialGlow.style.backgroundImage =
+              "radial-gradient(circle at center, rgba(245, 158, 11, 0.22) 0%, transparent 70%)";
+          }
+
+          // Update Sambutan Section to MPK Profile
+          if (sambutanBadge) {
+            sambutanBadge.className =
+              "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider mb-4 transition-colors";
+          }
+          if (sambutanTitleHighlight) {
+            sambutanTitleHighlight.className =
+              "text-amber-600 transition-colors";
+          }
+          if (sambutanBgGlow) {
+            sambutanBgGlow.className =
+              "absolute -top-24 -left-24 w-96 h-96 bg-amber-100/60 rounded-full blur-3xl pointer-events-none transition-all duration-500";
+          }
+          if (leaderCardGlow) {
+            leaderCardGlow.className =
+              "absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-amber-500 via-orange-400 to-yellow-300 opacity-30 group-hover:opacity-50 blur-xl transition-all duration-500";
+          }
+          if (leaderPortraitImg) {
+            leaderPortraitImg.src =
+              "https://lh3.googleusercontent.com/aida-public/AB6AXuC1fAnBVKuqa4vivqA-TDP7DbvL0i6p_j_IH-0M0LTBldvwIHoAxP8AYDmASEgQMH-LE0nrlwG2XEbz-07MJqigU7vyc-H60DOJ7cvNl0FG4oW_zhqNHsbPUYt2eyxkgWBCeX0fE3iC6x8WU3m7NUrjIH__Djh-ma4FH3J_0RCCPu1NfXtiVETWEw9JXSE4M0J6tyn7qYG4oZkVOHrHoc_ckY3RgnWQTDlzTCUEirur";
+            leaderPortraitImg.alt = "Ketua Umum MPK SMAN 29 Jakarta";
+          }
+          if (leaderClassTag) {
+            leaderClassTag.innerText = "Kelas XI F-5";
+            leaderClassTag.className =
+              "px-2.5 py-1 rounded-full bg-amber-500 text-slate-950 text-[11px] font-bold shadow-md transition-colors";
+          }
+          if (leaderRoleSubhead) {
+            leaderRoleSubhead.className =
+              "flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 mb-1 transition-colors";
+          }
+          if (leaderRoleBadgeText) {
+            leaderRoleBadgeText.innerText = "Ketua Umum MPK SMAN 29";
+          }
+          if (leaderName) {
+            leaderName.innerText = "Nabila Zahra Azzahra";
+          }
+          if (pointIcon1) {
+            pointIcon1.className =
+              "w-9 h-9 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center transition-colors";
+          }
+          if (pointIcon2) {
+            pointIcon2.className =
+              "w-9 h-9 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center transition-colors";
+          }
+          if (pointIcon3) {
+            pointIcon3.className =
+              "w-9 h-9 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center transition-colors";
+          }
+          if (quoteBar) {
+            quoteBar.className =
+              "w-1.5 h-10 rounded-full bg-amber-500 transition-colors";
+          }
+          if (sambutanNextLink) {
+            sambutanNextLink.className =
+              "inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors shrink-0 group self-start sm:self-center";
+          }
+          if (signLeaderTitle) {
+            signLeaderTitle.innerText = "— Parlemen Siswa MPK SMAN 29 Jakarta";
+          }
+
+          if (typeof switchOrgTab === "function") {
+            switchOrgTab("mpk");
+          }
+        } else {
+          // OSIS Mode: Blue Theme (#2563eb / blue-600)
+          if (switchBtn) {
+            switchBtn.setAttribute("aria-checked", "false");
+            switchBtn.className =
+              "relative w-14 h-7 rounded-full transition-colors duration-300 flex items-center p-0.5 cursor-pointer bg-blue-600 shadow-[0_0_15px_rgba(37,99,235,0.6)] focus:outline-none";
+          }
+          if (knob) {
+            knob.className =
+              "w-6 h-6 rounded-full bg-white shadow-md transform transition-transform duration-300 translate-x-0 flex items-center justify-center";
+          }
+          if (switchIcon) {
+            switchIcon.className =
+              "w-2 h-2 rounded-full bg-blue-600 transition-colors";
+          }
+          if (osisBtn) {
+            osisBtn.className =
+              "flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all text-white bg-blue-600 shadow-md shadow-blue-500/30";
+          }
+          if (mpkBtn) {
+            mpkBtn.className =
+              "flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all text-slate-400 hover:text-white bg-transparent";
+          }
+          if (indicatorText) {
+            indicatorText.innerText = "MODE AKTIF: KELUARGA BESAR OSIS";
+            indicatorText.className =
+              "text-[11px] font-semibold text-blue-300 mt-2 uppercase tracking-widest transition-colors";
+          }
+          if (tagBadge) {
+            tagBadge.className =
+              "px-4 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/40 text-blue-300 font-bold text-xs uppercase tracking-widest backdrop-blur-md transition-all duration-300";
+            tagBadge.innerText = "EKASANA VARDHANA SAKTI";
+          }
+          if (titlePrefix) {
+            titlePrefix.className =
+              "text-white font-extrabold transition-colors";
+          }
+          if (titleSuffix) {
+            titleSuffix.className = "text-slate-400 transition-colors";
+          }
+          if (schoolHighlight) {
+            schoolHighlight.className =
+              "text-blue-400 transition-colors duration-300";
+          }
+          if (subtitle) {
+            subtitle.innerText =
+              "Bersatu untuk tumbuh berkembang kuat dan kebersamaan.";
+          }
+          if (primaryCta) {
+            primaryCta.className =
+              "px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-label-md text-sm font-bold shadow-lg shadow-blue-500/30 transition-all hover:scale-105 inline-flex items-center gap-2";
+          }
+          if (primaryCtaText) {
+            primaryCtaText.innerText = "Sambutan & Program";
+            primaryCta.setAttribute("href", "#sambutan");
+          }
+          if (heroRadialGlow) {
+            heroRadialGlow.style.backgroundImage =
+              "radial-gradient(circle at center, rgba(37, 99, 235, 0.18) 0%, transparent 70%)";
+          }
+
+          // Update Sambutan Section to OSIS Profile
+          if (sambutanBadge) {
+            sambutanBadge.className =
+              "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4 transition-colors";
+          }
+          if (sambutanTitleHighlight) {
+            sambutanTitleHighlight.className =
+              "text-blue-600 transition-colors";
+          }
+          if (sambutanBgGlow) {
+            sambutanBgGlow.className =
+              "absolute -top-24 -left-24 w-96 h-96 bg-blue-100/60 rounded-full blur-3xl pointer-events-none transition-all duration-500";
+          }
+          if (leaderCardGlow) {
+            leaderCardGlow.className =
+              "absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-sky-400 opacity-25 group-hover:opacity-40 blur-xl transition-all duration-500";
+          }
+          if (leaderPortraitImg) {
+            leaderPortraitImg.src =
+              "https://lh3.googleusercontent.com/aida-public/AB6AXuDUepmAG0RVCXpBpiJKzvDtp4c2nZbgIHCrSCGKIRQKlwz-Z7WvmPkAmUm4PFYHQRRv9uEx6ky8FlnqiodUMSfgFjhFIkJaDzRd36c92wkNvP-wC1WJtPjrF-oiPQ7ivoX954uEdECn3e8Pv-ofe9Sc_EB1fEpHV3DV8Fh2l2ZKDM5N12X10I05N_jOdZTsz_RHlFQPJtHxmf8Mx0tD_4x6oJpHUF3HPYwlAdMQm7Ig";
+            leaderPortraitImg.alt = "Ketua OSIS SMAN 29 Jakarta";
+          }
+          if (leaderClassTag) {
+            leaderClassTag.innerText = "Kelas XI F-2";
+            leaderClassTag.className =
+              "px-2.5 py-1 rounded-full bg-blue-600 text-white text-[11px] font-bold shadow-md transition-colors";
+          }
+          if (leaderRoleSubhead) {
+            leaderRoleSubhead.className =
+              "flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-600 mb-1 transition-colors";
+          }
+          if (leaderRoleBadgeText) {
+            leaderRoleBadgeText.innerText = "Ketua Umum OSIS SMAN 29";
+          }
+          if (leaderName) {
+            leaderName.innerText = "Muhammad Fathir Al-Ghifari";
+          }
+          if (pointIcon1) {
+            pointIcon1.className =
+              "w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors";
+          }
+          if (pointIcon2) {
+            pointIcon2.className =
+              "w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors";
+          }
+          if (pointIcon3) {
+            pointIcon3.className =
+              "w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors";
+          }
+          if (quoteBar) {
+            quoteBar.className =
+              "w-1.5 h-10 rounded-full bg-blue-600 transition-colors";
+          }
+          if (sambutanNextLink) {
+            sambutanNextLink.className =
+              "inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors shrink-0 group self-start sm:self-center";
+          }
+          if (signLeaderTitle) {
+            signLeaderTitle.innerText = "— Presidium Ekasana Vardhana Sakti";
+          }
+
+          if (typeof switchOrgTab === "function") {
+            switchOrgTab("osis");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
