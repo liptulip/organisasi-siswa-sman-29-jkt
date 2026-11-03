@@ -29,7 +29,7 @@
       ::-webkit-scrollbar {
         display: none;
       }
-    
+
       /* === SMOOTH SCROLL & SCROLL ANIMATION ENGINE === */
       html {
         scroll-behavior: smooth;
@@ -39,7 +39,9 @@
       html.js-reveal-ready .scroll-reveal {
         opacity: 0;
         transform: translateY(26px);
-        transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        transition:
+          opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
         will-change: opacity, transform;
       }
       html.js-reveal-ready .scroll-reveal.scroll-revealed {
@@ -50,7 +52,9 @@
       html.js-reveal-ready .scroll-reveal-scale {
         opacity: 0;
         transform: translateY(20px) scale(0.96);
-        transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+        transition:
+          opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
         will-change: opacity, transform;
       }
       html.js-reveal-ready .scroll-reveal-scale.scroll-revealed {
@@ -61,7 +65,9 @@
       html.js-reveal-ready .scroll-reveal-left {
         opacity: 0;
         transform: translateX(-26px);
-        transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        transition:
+          opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
         will-change: opacity, transform;
       }
       html.js-reveal-ready .scroll-reveal-left.scroll-revealed {
@@ -72,7 +78,9 @@
       html.js-reveal-ready .scroll-reveal-right {
         opacity: 0;
         transform: translateX(26px);
-        transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        transition:
+          opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
         will-change: opacity, transform;
       }
       html.js-reveal-ready .scroll-reveal-right.scroll-revealed {
@@ -102,7 +110,10 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(16px) scale(0.9);
-        transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+        transition:
+          opacity 0.3s ease,
+          transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+          visibility 0.3s;
       }
       #backToTopBtn.visible {
         opacity: 1;
@@ -124,7 +135,7 @@
           scroll-behavior: auto;
         }
       }
-</style>
+    </style>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
       tailwind.config = {
@@ -491,7 +502,9 @@
             Bersatu untuk tumbuh berkembang kuat dan kebersamaan.
           </p>
           <!-- Action CTA Buttons -->
-          <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-3.5 w-full sm:w-auto">
+          <div
+            class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-3.5 w-full sm:w-auto"
+          >
             <a
               class="w-full sm:w-auto px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-label-md text-sm font-bold shadow-lg shadow-blue-500/30 transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
               href="#sambutan"
@@ -518,7 +531,10 @@
         </div>
       </section>
       <!-- SECTION SAMBUTAN KETUA ORGANISASI -->
-      <section class="py-24 md:py-32 lg:py-36 bg-white relative overflow-hidden border-b border-slate-100" id="sambutan">
+      <section
+        class="py-24 md:py-32 lg:py-36 bg-white relative overflow-hidden border-b border-slate-100"
+        id="sambutan"
+      >
         <!-- Subtle decorative background blurs -->
         <div
           class="absolute -top-24 -left-24 w-96 h-96 bg-blue-100/60 rounded-full blur-3xl pointer-events-none transition-all duration-500"
@@ -527,7 +543,9 @@
         <div
           class="absolute -bottom-20 right-0 w-80 h-80 bg-blue-50/70 rounded-full blur-2xl pointer-events-none"
         ></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 relative z-10">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 relative z-10"
+        >
           <!-- Header Section Badge & Title -->
           <div class="max-w-3xl mb-12 sm:mb-16">
             <div
@@ -573,7 +591,7 @@
                       alt="Ketua OSIS SMAN 29 Jakarta"
                       class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                       id="leaderPortraitImg"
-                      src="https://lh3.googleusercontent.com/aida/AEtjO1WWlZeUx5S6Y0eozHHWHFlHL0qgcBGRiPd-vqlT3ALoZ3oVHh-K6aLGhCIJuNqwrErGAzTiM-CCsf1zlsrYc6GnZrYz7dqvNQIPyGG2VhU3Q-zNZvBitFaTLUXiwxW99FSrNrMiAOzGJZYDBToS8Eg47YB6sbKrhxAI1vtU3trY1Msp8mF_d7_6ONtMhMzNOFkEOyk_S1UV_kxMDmIbDWr8LAB1i3vtd_BJ9uwl82HCtg"
+                      src="orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_girl_student_with_glasses_wearing_neat/screen.png"
                     />
                     <!-- Gradient Overlay on Bottom of Image -->
                     <div
@@ -763,7 +781,10 @@
         </div>
       </section>
       <!-- 2. SECTION VISI KAMI -->
-      <section class="relative py-24 md:py-32 lg:py-36 bg-gradient-to-b from-blue-50/70 via-white to-blue-50/40 overflow-hidden" id="visi">
+      <section
+        class="relative py-24 md:py-32 lg:py-36 bg-gradient-to-b from-blue-50/70 via-white to-blue-50/40 overflow-hidden"
+        id="visi"
+      >
         <div
           class="absolute -top-10 left-10 w-32 h-32 bg-blue-300/20 rounded-2xl rotate-12 blur-xl pointer-events-none"
         ></div>
@@ -802,7 +823,10 @@
         </div>
       </section>
       <!-- 3. SECTION MISI KAMI -->
-      <section class="py-24 md:py-32 lg:py-36 bg-white border-t border-slate-100" id="misi">
+      <section
+        class="py-24 md:py-32 lg:py-36 bg-white border-t border-slate-100"
+        id="misi"
+      >
         <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
           <div
             class="text-center max-w-2xl mx-auto mb-14 flex flex-col items-center"
@@ -916,7 +940,10 @@
         </div>
       </section>
       <!-- 4. SECTION PROGRAM KERJA UNGGULAN -->
-      <section class="py-24 md:py-32 lg:py-36 bg-slate-50/70 border-t border-slate-100" id="program-kerja">
+      <section
+        class="py-24 md:py-32 lg:py-36 bg-slate-50/70 border-t border-slate-100"
+        id="program-kerja"
+      >
         <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
           <div
             class="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center"
@@ -1035,7 +1062,10 @@
         </div>
       </section>
       <!-- 5. SECTION KEPENGURUSAN -->
-      <section class="py-28 md:py-36 lg:py-40 bg-white border-t border-slate-100" id="kepengurusan">
+      <section
+        class="py-28 md:py-36 lg:py-40 bg-white border-t border-slate-100"
+        id="kepengurusan"
+      >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
           <!-- Section Header -->
           <div
@@ -1063,7 +1093,10 @@
               kepemimpinan OSIS &amp; MPK SMAN 29 Jakarta
             </p>
             <!-- Tab Switcher Navigation -->
-            <div class="mt-8 flex flex-col sm:inline-flex sm:flex-row p-1.5 rounded-2xl sm:rounded-full bg-slate-100 border border-slate-200 shadow-inner w-full sm:w-auto gap-1" role="tablist">
+            <div
+              class="mt-8 flex flex-col sm:inline-flex sm:flex-row p-1.5 rounded-2xl sm:rounded-full bg-slate-100 border border-slate-200 shadow-inner w-full sm:w-auto gap-1"
+              role="tablist"
+            >
               <button
                 class="w-full sm:w-auto px-5 sm:px-6 py-2 rounded-xl sm:rounded-full font-label-md text-xs sm:text-sm font-bold transition-all shadow-sm bg-blue-600 text-white flex items-center justify-center gap-2"
                 id="tabBtnOsis"
@@ -1104,7 +1137,7 @@
                     >KETUA UMUM</span
                   >
                   <img
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1WWlZeUx5S6Y0eozHHWHFlHL0qgcBGRiPd-vqlT3ALoZ3oVHh-K6aLGhCIJuNqwrErGAzTiM-CCsf1zlsrYc6GnZrYz7dqvNQIPyGG2VhU3Q-zNZvBitFaTLUXiwxW99FSrNrMiAOzGJZYDBToS8Eg47YB6sbKrhxAI1vtU3trY1Msp8mF_d7_6ONtMhMzNOFkEOyk_S1UV_kxMDmIbDWr8LAB1i3vtd_BJ9uwl82HCtg"
+                    src="orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_boy_student_smiling_friendly_wearing_high/screen.png"
                     alt="Muhammad Fathir Al-Ghifari - Ketua Umum OSIS"
                     class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
@@ -1156,7 +1189,7 @@
                     >WAKIL KETUA</span
                   >
                   <img
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1VWxHvyFzdBNIcXTMRtWcWIYmckcvTS7wY0OBjzMl8Gh6GtLrceHb3-XjSOJ_jd5c95ms7TXDalcvEUU-UBwMWi1Jzy_wnQwZOK1MR2AS0dmpRlrU4BKS1531fN_vz0PU7Oa2Xs-k4pCyzs8od8y4dB0gqLnB04dYehbs-nd5VDPajhCn23fLpVuF34E44nu57GOHSByX7SxAnkZPD-xEoAypQxG2gIi1d3CwP6gAOY"
+                    src="orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_boy_student_in_late_teens_smiling/screen.png"
                     alt="Muhamad Rosid Sunbus - Wakil Ketua OSIS"
                     class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
@@ -1200,7 +1233,9 @@
               class="relative w-full max-w-3xl flex flex-col items-center mb-6"
             >
               <!-- Horizontal Crossbar -->
-              <div class="hidden sm:block w-2/3 border-t-2 border-blue-300"></div>
+              <div
+                class="hidden sm:block w-2/3 border-t-2 border-blue-300"
+              ></div>
               <div
                 class="w-full flex flex-col sm:flex-row items-center justify-around relative -mt-[1px] gap-6 sm:gap-8 px-2 sm:px-6"
               >
@@ -1218,7 +1253,7 @@
                         >SEKRETARIS</span
                       >
                       <img
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1XTawBehBf0merl4lerRdL9WMcErouEkLxM1pijGHUqER3vKq6hcEYYGK_N4Yrbhsq-5_cH9ThhJ6U2L1RGarGC0uTMY-8NXqK7s-gNo3QFxl4VXELdvQgUvrVNlM5c5FWIeKMgqJ7n24e66lTcmbWIsIPgifULuV4BQgtAtsHbzdSn-Eqes26k4L4TbM7yFuX-KRtO-DXC47cydLsRDjrQeWCwzdHNWdaB-X_o-3L4Dw"
+                        src="orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_girl_student_in_late_teens_smiling/screen.png"
                         alt="Raisyah Penelope Aneira - Sekretaris Umum"
                         class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       />
@@ -1271,7 +1306,7 @@
                         >BENDAHARA</span
                       >
                       <img
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1VigkED7YnrCeQA4B1zUJxJ3rm1OdPlMhzt4L9hO1TDF0NWCmQ_Yl7s-V4kkxW-z9QsXOfWqGpIIF3ePgwAuGh2e4Zav9uiAFgawg-DzvjYnB5YllzATw9L6mdCLb6Ac8v0ao6G7JQrTd_hnORg_o-wFNysOT0AGRY2L0AtiPeCIa7Isoq1VAr1HAdYJwXR9lenGmVliNH6_JxFEnpUnhzMddUg8g572YN0KV2j8o1a"
+                        src="orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_girl_student_with_glasses_wearing_neat/screen.png"
                         alt="Salwa Bidara - Bendahara Umum"
                         class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       />
@@ -1565,7 +1600,7 @@
                     <img
                       alt="Nabila Zahra Azzahra"
                       class="w-full h-full object-cover object-top"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1fAnBVKuqa4vivqA-TDP7DbvL0i6p_j_IH-0M0LTBldvwIHoAxP8AYDmASEgQMH-LE0nrlwG2XEbz-07MJqigU7vyc-H60DOJ7cvNl0FG4oW_zhqNHsbPUYt2eyxkgWBCeX0fE3iC6x8WU3m7NUrjIH__Djh-ma4FH3J_0RCCPu1NfXtiVETWEw9JXSE4M0J6tyn7qYG4oZkVOHrHoc_ckY3RgnWQTDlzTCUEirur"
+                      src="orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_girl_student_in_late_teens_smiling/screen.png"
                     />
                   </div>
                   <h4
@@ -1586,8 +1621,12 @@
               class="relative w-full max-w-2xl flex flex-col items-center mb-6"
             >
               <!-- Horizontal Crossbar -->
-              <div class="hidden sm:block w-1/2 border-t-2 border-blue-400"></div>
-              <div class="w-full flex flex-col sm:flex-row items-center justify-around relative -mt-[1px] gap-6 sm:gap-4 px-2 sm:px-4">
+              <div
+                class="hidden sm:block w-1/2 border-t-2 border-blue-400"
+              ></div>
+              <div
+                class="w-full flex flex-col sm:flex-row items-center justify-around relative -mt-[1px] gap-6 sm:gap-4 px-2 sm:px-4"
+              >
                 <!-- Wakil Ketua MPK -->
                 <div class="flex flex-col items-center w-full sm:w-auto">
                   <div class="hidden sm:block w-0.5 h-6 bg-blue-400"></div>
@@ -1604,13 +1643,17 @@
                       <img
                         alt="Dama Elrafi Indrajaya"
                         class="w-full h-full object-cover object-top"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUepmAG0RVCXpBpiJKzvDtp4c2nZbgIHCrSCGKIRQKlwz-Z7WvmPkAmUm4PFYHQRRv9uEx6ky8FlnqiodUMSfgFjhFIkJaDzRd36c92wkNvP-wC1WJtPjrF-oiPQ7ivoX954uEdECn3e8Pv-ofe9Sc_EB1fEpHV3DV8Fh2l2ZKDM5N12X10I05N_jOdZTsz_RHlFQPJtHxmf8Mx0tD_4x6oJpHUF3HPYwlAdMQm7Ig"
+                        src="orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_boy_student_in_late_teens_smiling/screen.png"
                       />
                     </div>
-                    <h5 class="text-sm sm:text-base font-bold text-slate-900 leading-snug mb-1">
+                    <h5
+                      class="text-sm sm:text-base font-bold text-slate-900 leading-snug mb-1"
+                    >
                       Dama Elrafi Indrajaya
                     </h5>
-                    <span class="text-xs text-slate-500 font-medium">XI F-3</span>
+                    <span class="text-xs text-slate-500 font-medium"
+                      >XI F-3</span
+                    >
                   </div>
                 </div>
 
@@ -1633,13 +1676,17 @@
                       <img
                         alt="Aneira Afkarina"
                         class="w-full h-full object-cover object-top"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1fAnBVKuqa4vivqA-TDP7DbvL0i6p_j_IH-0M0LTBldvwIHoAxP8AYDmASEgQMH-LE0nrlwG2XEbz-07MJqigU7vyc-H60DOJ7cvNl0FG4oW_zhqNHsbPUYt2eyxkgWBCeX0fE3iC6x8WU3m7NUrjIH__Djh-ma4FH3J_0RCCPu1NfXtiVETWEw9JXSE4M0J6tyn7qYG4oZkVOHrHoc_ckY3RgnWQTDlzTCUEirur"
+                        src="orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_boy_student_smiling_friendly_wearing_high/screen.png"
                       />
                     </div>
-                    <h5 class="text-sm sm:text-base font-bold text-slate-900 leading-snug mb-1">
+                    <h5
+                      class="text-sm sm:text-base font-bold text-slate-900 leading-snug mb-1"
+                    >
                       Aneira Afkarina
                     </h5>
-                    <span class="text-xs text-slate-500 font-medium">XI F-2</span>
+                    <span class="text-xs text-slate-500 font-medium"
+                      >XI F-2</span
+                    >
                   </div>
                 </div>
               </div>
@@ -1788,7 +1835,10 @@
         </script>
       </section>
       <!-- 6. SECTION GALERI -->
-      <section class="py-24 md:py-32 lg:py-36 bg-slate-50/70 border-t border-slate-100" id="galeri">
+      <section
+        class="py-24 md:py-32 lg:py-36 bg-slate-50/70 border-t border-slate-100"
+        id="galeri"
+      >
         <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
           <div
             class="text-center max-w-2xl mx-auto mb-14 flex flex-col items-center"
@@ -1831,7 +1881,7 @@
               <img
                 alt="Juara Futsal 29 Cup"
                 class="w-full h-48 sm:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
-                src="https://lh3.googleusercontent.com/aida/AEtjO1Uv_f1gHREEtyQBtJKDGneZNbv5ZB8dA1EoSoy0wTyZ_TMQ2JUAazfJGyOXtKo97bcEHwgBJGUFwNkueVbzo5dYLCQj8knTBaJtOLpJYRv_6HtXWwHDEh0GOxt4VRzlTaE1rsCNFzBduusAYfLpJ1jDy1q_zFlVZ1wTLrtl1En91hb42i1VucmLICbZcgTaffzKxm3HIxekcceTGxWFS2rdnpUol09IfV3Auru5Ox-j-Q"
+                src="dokum/1.png"
               />
             </div>
             <div
@@ -1840,7 +1890,7 @@
               <img
                 alt="Pameran Teknologi &amp; Robotik"
                 class="w-full h-48 sm:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
-                src="https://lh3.googleusercontent.com/aida/AEtjO1UVTzuykEPcTu7WAErYOooDVsWdjOjEQ0neaa4AVqZgc5RvKnXbtXru0iQSf0kIdTDjMFZf38u5Tqblyd7N-YHLuwfTJwoNMoVI72Y3kEscdcOiR5LCuch9HbWibP0pSd66bciRrE-nvOdPgM31MYOCYSz3vIwunN4snSMkvDP-mK613GrFAa4OZgre4_4R1qY1yj63pLPjbfQo4UVtq_XP_9YMYZU-BOpc8nhaTqIE"
+                src="dokum/2.png"
               />
             </div>
             <div
@@ -1849,7 +1899,7 @@
               <img
                 alt="Workshop Coding &amp; Kreativitas"
                 class="w-full h-48 sm:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
-                src="https://lh3.googleusercontent.com/aida/AEtjO1W3ugh5hE---W05QHJAdcz3GAKv10hG0UGcysjjsjT7tQkEZoQ67PGuucgD3XXi-wMK2e0vU4KLRnQryDTt8AP5-yHi-eW5OGh9J7grxeGnGblIYojKSeSRM8S8n0wCxYPM7OunNrFHM_Zrq_sBNiVy7eSZYMbpBZFiIAM5cYvPEEFlj3MROkj_0wr-mXo0SxFgJgN2fnRQL6-5jK9KqysCO36U8DNtB_Sz34IUxVMcNg"
+                src="dokum/3.png"
               />
             </div>
             <div
@@ -1858,7 +1908,7 @@
               <img
                 alt="Kompetisi Futsal Pelajar"
                 class="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-                src="https://lh3.googleusercontent.com/aida/AEtjO1Xxj-YipTs0ub6WPE6CyLzJcM3Dtm_TbyqaCdYffC-zh4R0CTsN0aPw0aQwtufV2x5l7LGWyST_f24CC_YAWelXmWAGcVHlNzzz3seCpz9n3bKoKV_IggRQToRv3uLnOtcYqH0aPw3CnY2H1F--AeBGr50nUJZ-hVwuDPjVkyIPpdKHC8L11-Df2jCK6MVOdpjN-e20DTTCVno2vgcPYO8-QtAs_NVd96zSxv-xUH7WOg"
+                src="dokum/1.png"
               />
             </div>
             <div
@@ -1867,7 +1917,7 @@
               <img
                 alt="Sidang Pleno Bersama"
                 class="w-full h-48 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmEH6S5Im2x-DkOiAZqkkw6Jzd7cVfNK9fCpCCMybAj032rniKgtxHYCQjf_6uaW4Ia4QE9N-VaKwObSTy9JdkuwpbT2i3LlXnEdcxtAd2LsrwjUEbgtc9hh1hNpeNOpz9Zwz8eDFcAMOVHMWR7vaxJqPIwg1nMS8oo6UHApuydXBZf-Wg58Orc9SN5Q1DUHebLZFYQexjwsP60890FrJR7trkH7iaasjYofECFCKx"
+                src="screen.png"
               />
             </div>
           </div>
@@ -2028,7 +2078,10 @@
       </section> -->
     </main>
     <!-- FOOTER -->
-    <footer class="w-full bg-slate-950 text-white pt-24 pb-12 border-t border-slate-800" id="kontak">
+    <footer
+      class="w-full bg-slate-950 text-white pt-24 pb-12 border-t border-slate-800"
+      id="kontak"
+    >
       <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800"
@@ -2435,7 +2488,7 @@
           }
           if (leaderPortraitImg) {
             leaderPortraitImg.src =
-              "https://lh3.googleusercontent.com/aida-public/AB6AXuDUepmAG0RVCXpBpiJKzvDtp4c2nZbgIHCrSCGKIRQKlwz-Z7WvmPkAmUm4PFYHQRRv9uEx6ky8FlnqiodUMSfgFjhFIkJaDzRd36c92wkNvP-wC1WJtPjrF-oiPQ7ivoX954uEdECn3e8Pv-ofe9Sc_EB1fEpHV3DV8Fh2l2ZKDM5N12X10I05N_jOdZTsz_RHlFQPJtHxmf8Mx0tD_4x6oJpHUF3HPYwlAdMQm7Ig";
+              "orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_boy_student_in_late_teens_smiling/screen.png";
             leaderPortraitImg.alt = "Ketua OSIS SMAN 29 Jakarta";
           }
           if (leaderClassTag) {
@@ -2483,13 +2536,16 @@
         }
       }
     </script>
-      <!-- Back to Top Floating Action Button -->
+    <!-- Back to Top Floating Action Button -->
     <button
       id="backToTopBtn"
       aria-label="Kembali ke atas"
       class="w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-xl shadow-blue-500/30 flex items-center justify-center transition-all hover:scale-110 active:scale-95 group focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
     >
-      <span class="material-symbols-outlined text-[24px] transition-transform duration-300 group-hover:-translate-y-0.5">arrow_upward</span>
+      <span
+        class="material-symbols-outlined text-[24px] transition-transform duration-300 group-hover:-translate-y-0.5"
+        >arrow_upward</span
+      >
     </button>
 
     <script>
@@ -2545,7 +2601,7 @@
           if (!("IntersectionObserver" in window)) {
             document
               .querySelectorAll(
-                ".scroll-reveal, .scroll-reveal-scale, .scroll-reveal-left, .scroll-reveal-right"
+                ".scroll-reveal, .scroll-reveal-scale, .scroll-reveal-left, .scroll-reveal-right",
               )
               .forEach(function (el) {
                 el.classList.add("scroll-revealed");
@@ -2560,7 +2616,7 @@
 
           const revealObserver = new IntersectionObserver(function (
             entries,
-            observer
+            observer,
           ) {
             entries.forEach(function (entry) {
               if (entry.isIntersecting) {
@@ -2575,9 +2631,13 @@
           sections.forEach(function (section, sIdx) {
             // Section header block (title/badge/desc)
             const headerBlock = section.querySelector(
-              ":scope > div > .text-center, :scope > div > div:first-child"
+              ":scope > div > .text-center, :scope > div > div:first-child",
             );
-            if (headerBlock && !headerBlock.classList.contains("scroll-reveal") && sIdx > 0) {
+            if (
+              headerBlock &&
+              !headerBlock.classList.contains("scroll-reveal") &&
+              sIdx > 0
+            ) {
               headerBlock.classList.add("scroll-reveal");
               revealObserver.observe(headerBlock);
             }
@@ -2604,7 +2664,9 @@
             });
 
             // Prominent standalone cards/containers
-            const bigCards = section.querySelectorAll(".rounded-3xl, .rounded-2xl");
+            const bigCards = section.querySelectorAll(
+              ".rounded-3xl, .rounded-2xl",
+            );
             bigCards.forEach(function (card) {
               if (card.closest('[id*="modal"], [role="dialog"]')) return;
 
@@ -2624,7 +2686,7 @@
           // Explicitly tagged elements
           document
             .querySelectorAll(
-              ".scroll-reveal, .scroll-reveal-scale, .scroll-reveal-left, .scroll-reveal-right"
+              ".scroll-reveal, .scroll-reveal-scale, .scroll-reveal-left, .scroll-reveal-right",
             )
             .forEach(function (el) {
               revealObserver.observe(el);
@@ -2645,7 +2707,7 @@
               setTimeout(function () {
                 document
                   .querySelectorAll(
-                    "#treeMpk .scroll-reveal, #treeMpk .scroll-reveal-scale"
+                    "#treeMpk .scroll-reveal, #treeMpk .scroll-reveal-scale",
                   )
                   .forEach(function (el) {
                     el.classList.add("scroll-revealed");
@@ -2658,7 +2720,7 @@
               setTimeout(function () {
                 document
                   .querySelectorAll(
-                    "#treeOsis .scroll-reveal, #treeOsis .scroll-reveal-scale"
+                    "#treeOsis .scroll-reveal, #treeOsis .scroll-reveal-scale",
                   )
                   .forEach(function (el) {
                     el.classList.add("scroll-revealed");
@@ -2675,5 +2737,5 @@
         }
       })();
     </script>
-</body>
+  </body>
 </html>
