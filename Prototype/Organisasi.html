@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html class="scroll-smooth" lang="id">
   <head>
     <meta charset="utf-8" />
@@ -339,8 +339,13 @@
         <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
           <a
             class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
-            href="#sambutan"
-            >Sambutan</a
+            href="#beranda"
+            >Beranda</a
+          >
+          <a
+            class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
+            href="#latarbelakang"
+            >Latar Belakang</a
           >
           <a
             class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
@@ -354,24 +359,19 @@
           >
           <a
             class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
-            href="SekbidDetail.html"
-            >Program Kerja</a
+            href="#struktur"
+            >Struktur</a
           >
           <a
             class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
-            href="#kepengurusan"
-            >Kepengurusan</a
+            href="#dokumentasi"
+            >Dokumentasi</a
           >
-          <a
-            class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
-            href="#galeri"
-            >Galeri</a
-          >
-          <a
+          <!-- <a
             class="px-3 py-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-label-md text-sm font-semibold transition-colors"
             href="#kontak"
             >Kontak</a
-          >
+          > -->
         </nav>
         <!-- Action Button -->
         <!-- <div class="flex items-center gap-3">
@@ -507,11 +507,11 @@
           >
             <a
               class="w-full sm:w-auto px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-label-md text-sm font-bold shadow-lg shadow-blue-500/30 transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
-              href="#sambutan"
+              href="#latarbelakang"
               id="heroPrimaryCta"
             >
               <span class="" id="heroPrimaryCtaText"
-                >Sambutan &amp; Program</span
+                >Latar Belakang Organisasi</span
               >
               <span class="material-symbols-outlined text-[18px]"
                 >arrow_downward</span
@@ -519,26 +519,27 @@
             </a>
             <a
               class="w-full sm:w-auto px-7 py-3 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-600 text-white font-label-md text-sm font-semibold backdrop-blur-md transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
-              href="#kepengurusan"
+              href="#struktur"
               id="heroSecondaryCta"
             >
               <span class="material-symbols-outlined text-[18px]"
                 >account_tree</span
               >
-              <span class="" id="heroSecondaryCtaText">Bagan Kepengurusan</span>
+              <span class="" id="heroSecondaryCtaText">Bagan Struktur</span>
             </a>
           </div>
         </div>
       </section>
-      <!-- SECTION SAMBUTAN KETUA ORGANISASI -->
+      <!-- 2. SECTION LATAR BELAKANG ORGANISASI -->
       <section
         class="py-24 md:py-32 lg:py-36 bg-white relative overflow-hidden border-b border-slate-100"
-        id="sambutan"
+        id="latarbelakang"
       >
+        <span id="latar-belakang" class="sr-only"></span>
         <!-- Subtle decorative background blurs -->
         <div
           class="absolute -top-24 -left-24 w-96 h-96 bg-blue-100/60 rounded-full blur-3xl pointer-events-none transition-all duration-500"
-          id="sambutanBgGlow"
+          id="latarBgGlow"
         ></div>
         <div
           class="absolute -bottom-20 right-0 w-80 h-80 bg-blue-50/70 rounded-full blur-2xl pointer-events-none"
@@ -546,241 +547,599 @@
         <div
           class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 relative z-10"
         >
-          <!-- Header Section Badge & Title -->
-          <div class="max-w-3xl mb-12 sm:mb-16">
-            <div
-              class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4 transition-colors"
-              id="sambutanSectionBadge"
-            >
-              <span class="material-symbols-outlined text-[15px]"
-                >record_voice_over</span
+          <!-- Header Section with Mode Switcher -->
+          <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12 sm:mb-16">
+            <div class="max-w-3xl">
+              <div
+                class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4 transition-colors"
+                id="latarSectionBadge"
               >
-              <span class="">SAMBUTAN RESMI</span>
-            </div>
-            <h2
-              class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-headline-lg tracking-tight leading-snug"
-            >
-              Menyalakan Semangat Kolaborasi Menuju
-              <span
-                class="text-blue-600 transition-colors"
-                id="sambutanTitleHighlight"
-                >Prestasi Gemilang</span
-              >
-            </h2>
-          </div>
-          <!-- 2 Column Responsive Grid Layout -->
-          <div
-            class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center"
-          >
-            <!-- Kolom Kiri: Kartu Foto Portrait Ketua -->
-            <div class="lg:col-span-5 flex justify-center scroll-reveal-left">
-              <div class="relative w-full max-w-sm sm:max-w-md group">
-                <!-- Ambient Glow Border -->
-                <div
-                  class="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-sky-400 opacity-25 group-hover:opacity-40 blur-xl transition-all duration-500"
-                  id="leaderCardGlow"
-                ></div>
-                <div
-                  class="relative bg-white rounded-3xl border border-slate-200/80 shadow-2xl p-5 overflow-hidden backdrop-blur-sm"
+                <span class="material-symbols-outlined text-[15px]" id="latarSectionIcon"
+                  >domain</span
                 >
-                  <!-- Frame Foto Pemimpin -->
+                <span id="latarSectionBadgeText">LEMBAGA EKSEKUTIF SISWA</span>
+              </div>
+              <h2
+                class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-headline-lg tracking-tight leading-snug"
+                id="latarSectionHeading"
+              >
+                Latar Belakang &amp; Sejarah
+                <span
+                  class="text-blue-600 transition-colors"
+                  id="latarTitleHighlight"
+                  >OSIS SMAN 29 Jakarta</span
+                >
+              </h2>
+              <p class="text-slate-600 text-base sm:text-lg mt-3 leading-relaxed" id="latarSectionSubtitle">
+                Mengenal lebih dalam rekam jejak, peran eksekutif kepemimpinan, dan komitmen pembinaan potensi kesiswaan SMAN 29 Jakarta.
+              </p>
+            </div>
+
+            <!-- Mode Pill Tabs inside Section -->
+            <div
+              class="inline-flex p-1.5 rounded-2xl bg-slate-100 border border-slate-200 shadow-inner shrink-0 self-start lg:self-end gap-1"
+              role="tablist"
+            >
+              <button
+                id="latarTabBtnOsis"
+                onclick="setHeroOrgMode('osis')"
+                class="flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 bg-blue-600 text-white shadow-md shadow-blue-500/25"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[18px]">domain</span>
+                <span>Fokus OSIS</span>
+              </button>
+              <button
+                id="latarTabBtnMpk"
+                onclick="setHeroOrgMode('mpk')"
+                class="flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 text-slate-600 hover:text-slate-900 bg-transparent"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[18px]">how_to_vote</span>
+                <span>Fokus MPK</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ==================== MODE 1: KONTEN KHUSUS OSIS ==================== -->
+          <div id="latarOsisBlock" class="transition-all duration-300">
+            <!-- 2 Column Responsive Grid Layout -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-16"
+            >
+              <!-- Kolom Kiri: Visual Showcase OSIS -->
+              <div class="lg:col-span-5 flex justify-center scroll-reveal-left">
+                <div class="relative w-full max-w-sm sm:max-w-md group">
+                  <!-- Ambient Glow Border -->
                   <div
-                    class="relative w-full h-[360px] sm:h-[400px] rounded-2xl overflow-hidden bg-slate-100 shadow-inner"
+                    class="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-sky-400 opacity-25 group-hover:opacity-40 blur-xl transition-all duration-500"
+                  ></div>
+                  <div
+                    class="relative rounded-3xl bg-white border border-slate-100 shadow-xl overflow-hidden p-3 sm:p-4"
                   >
-                    <img
-                      alt="Ketua OSIS SMAN 29 Jakarta"
-                      class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                      id="leaderPortraitImg"
-                      src="orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_girl_student_with_glasses_wearing_neat/screen.png"
-                    />
-                    <!-- Gradient Overlay on Bottom of Image -->
+                    <!-- Frame Foto Pengurus OSIS -->
                     <div
-                      class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"
-                    ></div>
-                    <!-- Floating Pill on Bottom of Image -->
-                    <div
-                      class="absolute bottom-3 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 flex flex-wrap gap-1.5 items-center justify-between"
+                      class="relative w-full h-[280px] sm:h-[340px] rounded-2xl overflow-hidden bg-slate-100"
                     >
-                      <span
-                        class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-medium border border-white/30 flex items-center gap-1.5"
+                      <img
+                        alt="OSIS SMAN 29 Jakarta"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src="screen.png"
+                      />
+                      <!-- Gradient Overlay -->
+                      <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"
+                      ></div>
+                      <!-- Floating Badge -->
+                      <div
+                        class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white"
                       >
                         <span
-                          class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"
-                        ></span>
-                        Masa Bakti 2024/2025
-                      </span>
-                      <span
-                        class="px-2.5 py-1 rounded-full bg-blue-600 text-white text-[11px] font-bold shadow-md transition-colors"
-                        id="leaderClassTag"
+                          class="px-2.5 py-1 rounded-full bg-blue-600 text-white text-[11px] font-bold shadow-md"
+                          >BADAN EKSEKUTIF SISWA</span
+                        >
+                        <span
+                          class="text-[11px] font-medium text-slate-200 backdrop-blur-md bg-black/40 px-2 py-0.5 rounded-md"
+                          >OSIS SMAN 29</span
+                        >
+                      </div>
+                    </div>
+                    <!-- Card Info Summary -->
+                    <div class="p-4 sm:p-5">
+                      <div class="flex items-center justify-between mb-3">
+                        <div>
+                          <span
+                            class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-0.5 block"
+                            >PENGGERAK KEGIATAN &amp; KREATIFITAS</span
+                          >
+                          <h3 class="text-lg sm:text-xl font-bold text-slate-900">
+                            OSIS SMAN 29 Jakarta
+                          </h3>
+                        </div>
+                        <div
+                          class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold"
+                        >
+                          <span class="material-symbols-outlined text-[22px]"
+                            >campaign</span
+                          >
+                        </div>
+                      </div>
+                      <p class="text-xs text-slate-600 leading-relaxed">
+                        Lembaga eksekutif resmi yang menjadi motor penggerak kreativitas, pembinaan karakter kepemimpinan, dan realisasi program nyata bagi seluruh peserta didik.
+                      </p>
+                      <!-- Quick Stats Badges -->
+                      <div
+                        class="grid grid-cols-2 gap-2 mt-4 pt-3 border-t border-slate-100 text-center"
                       >
-                        Kelas XI F-2
-                      </span>
+                        <div
+                          class="p-2 rounded-xl bg-blue-50/60 border border-blue-100"
+                        >
+                          <span class="block text-base font-extrabold text-blue-600"
+                            >8 Sekbid</span
+                          >
+                          <span class="text-[11px] text-slate-500 font-medium"
+                            >Divisi Operasional</span
+                          >
+                        </div>
+                        <div
+                          class="p-2 rounded-xl bg-blue-50/60 border border-blue-100"
+                        >
+                          <span class="block text-base font-extrabold text-blue-600"
+                            >1000+ Siswa</span
+                          >
+                          <span class="text-[11px] text-slate-500 font-medium"
+                            >Penerima Manfaat</span
+                          >
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <!-- Card Bio Info -->
-                  <div class="pt-5 pb-1 flex flex-col">
-                    <div
-                      class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-600 mb-1 transition-colors"
-                      id="leaderRoleSubhead"
+                </div>
+              </div>
+
+              <!-- Kolom Kanan: Narasi Latar Belakang OSIS -->
+              <div class="lg:col-span-7 flex flex-col gap-6 scroll-reveal-right">
+                <!-- Paragraf 1: Sejarah & Landasan OSIS -->
+                <div class="relative pl-5 border-l-2 border-blue-600">
+                  <span
+                    class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-1 block"
+                    >Sejarah Pembentukan OSIS</span
+                  >
+                  <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+                    Organisasi Siswa Intra Sekolah (OSIS) SMA Negeri 29 Jakarta didirikan sebagai satu-satunya organisasi kesiswaan resmi di sekolah yang bertindak sebagai badan eksekutif. Berakar dari tekad menghadirkan wadah kepemimpinan yang berkarakter, OSIS menjadi rumah kreasi bagi siswa dalam mengasah potensi akademik, non-akademik, kepribadian, dan kepedulian sosial.
+                  </p>
+                </div>
+
+                <!-- Paragraf 2: Peran Eksekutif & Agenda Nyata -->
+                <div
+                  class="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-blue-50/70 via-indigo-50/40 to-slate-50 border border-blue-100/80 shadow-sm"
+                >
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="material-symbols-outlined text-blue-600 text-[20px]"
+                      >rocket_launch</span
                     >
-                      <span class="material-symbols-outlined text-[16px]"
-                        >verified</span
-                      >
-                      <span id="leaderRoleBadgeText" class=""
-                        >Ketua Umum OSIS SMAN 29</span
-                      >
+                    <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wide">
+                      Peran &amp; Tanggung Jawab Eksekutif
+                    </h4>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Sebagai pelaksana program, OSIS memegang peranan krusial dalam merancang dan merealisasikan beragam agenda kesiswaan. Mulai dari pembinaan karakter kepemimpinan, kegiatan ketaqwaan, perayaan hari besar nasional, kompetisi tahunan pelajar bergengsi <strong class="text-slate-900">Twenty Nine Cup (29 CUP)</strong>, program kedisiplinan 3S (Senyum, Sapa, Salam), hingga pertunjukan seni dan literasi digital.
+                  </p>
+                </div>
+
+                <!-- Paragraf 3: 8 Seksi Bidang Pelaksana -->
+                <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="material-symbols-outlined text-blue-600 text-[20px]"
+                      >hub</span
+                    >
+                    <h4 class="text-sm font-bold text-slate-900">
+                      Struktur Gerak 8 Seksi Bidang (Sekbid)
+                    </h4>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                    Pelaksanaan program kerja OSIS dijalankan secara profesional melalui 8 Seksi Bidang spesifik yang mengayomi seluruh ekstrakurikuler dan minat bakat siswa:
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                    <div class="p-2 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2">
+                      <span class="w-6 h-6 rounded-md bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[11px] shrink-0">1</span>
+                      <span class="text-slate-700 font-medium">Ketaqwaan Terhadap Tuhan YME</span>
                     </div>
-                    <h3
-                      class="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug font-headline-md"
-                      id="leaderName"
-                    >
-                      Muhammad Fathir Al-Ghifari
-                    </h3>
-                    <p
-                      class="text-xs text-slate-500 mt-1 flex items-center gap-1"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[15px] text-slate-400"
-                        >school</span
-                      >
-                      SMA Negeri 29 Jakarta Selatan
+                    <div class="p-2 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2">
+                      <span class="w-6 h-6 rounded-md bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[11px] shrink-0">2</span>
+                      <span class="text-slate-700 font-medium">Budi Pekerti Luhur &amp; Karakter</span>
+                    </div>
+                    <div class="p-2 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2">
+                      <span class="w-6 h-6 rounded-md bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[11px] shrink-0">3</span>
+                      <span class="text-slate-700 font-medium">Bela Negara &amp; Kedisiplinan</span>
+                    </div>
+                    <div class="p-2 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2">
+                      <span class="w-6 h-6 rounded-md bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[11px] shrink-0">4</span>
+                      <span class="text-slate-700 font-medium">Prestasi Seni, Bahasa &amp; Olahraga</span>
+                    </div>
+                    <div class="p-2 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2">
+                      <span class="w-6 h-6 rounded-md bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[11px] shrink-0">5</span>
+                      <span class="text-slate-700 font-medium">Demokrasi, HAM &amp; Lingkungan Hidup</span>
+                    </div>
+                    <div class="p-2 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2">
+                      <span class="w-6 h-6 rounded-md bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[11px] shrink-0">6</span>
+                      <span class="text-slate-700 font-medium">Kreativitas, Keterampilan &amp; Kewirausahaan</span>
+                    </div>
+                    <div class="p-2 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2">
+                      <span class="w-6 h-6 rounded-md bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[11px] shrink-0">7</span>
+                      <span class="text-slate-700 font-medium">Kualitas Jasmani, Kesehatan &amp; Gizi</span>
+                    </div>
+                    <div class="p-2 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-2">
+                      <span class="w-6 h-6 rounded-md bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[11px] shrink-0">8</span>
+                      <span class="text-slate-700 font-medium">Teknologi Informasi &amp; Komunikasi</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Penutup & Link ke Visi Misi -->
+                <div
+                  class="pt-3 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+                >
+                  <div class="flex items-center gap-3">
+                    <div class="w-1.5 h-10 rounded-full bg-blue-600"></div>
+                    <p class="text-xs italic text-slate-500 leading-relaxed">
+                      "Bergerak serempak, berkarya dengan aksi nyata, mewujudkan pelajar SMAN 29 yang unggul dan mandiri."
                     </p>
                   </div>
+                  <a
+                    class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors shrink-0 group self-start sm:self-center"
+                    href="#visi"
+                  >
+                    Eksplor Visi &amp; Misi
+                    <span
+                      class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform"
+                      >arrow_forward</span
+                    >
+                  </a>
                 </div>
               </div>
             </div>
-            <!-- Kolom Kanan: Teks Sambutan Hangat & Komitmen Nilai -->
-            <div class="lg:col-span-7 flex flex-col gap-6 scroll-reveal-right">
-              <!-- Paragraf 1: Salam Pembuka -->
-              <p
-                class="text-slate-800 text-base sm:text-lg leading-relaxed font-medium"
+
+            <!-- 3 Nilai Filosofis Fondasi OSIS -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-slate-100"
+            >
+              <div
+                class="p-6 rounded-2xl bg-slate-50/70 border border-slate-200/80 hover:border-blue-300 hover:bg-white shadow-sm transition-all"
               >
-                <span class="font-bold text-slate-900"
-                  >Assalamu’alaikum Warahmatullahi Wabarakatuh, Salam Sejahtera,
-                  dan Salam Kebersamaan.</span
-                >
-                Selamat datang di laman resmi OSIS &amp; MPK SMAN 29 Jakarta.
-                Puji syukur kami panjatkan, atas amanah dan kepercayaan besar
-                dari Bapak/Ibu Dewan Guru, rekan-rekan pengurus, serta seluruh
-                siswa-siswi tercinta untuk bersama memajukan almamater tercinta.
-              </p>
-              <!-- Paragraf 2: Esensi Organisasi -->
-              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Bagi kami, organisasi sekolah bukan sekadar struktur formalitas
-                kepengurusan, melainkan wadah bertumbuh, laboratorium
-                kepemimpinan yang humanis, serta rumah kreasi terbuka tempat
-                setiap mimpi dan aspirasi siswa didengarkan, dihargai, dan
-                diwujudkan dalam karya nyata yang berdampak.
-              </p>
-              <!-- 3 Poin Nilai & Komitmen Utama -->
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
-                <!-- Poin 1 -->
                 <div
-                  class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-blue-300 transition-all flex flex-col gap-2 group hover:shadow-sm"
+                  class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm shadow-blue-500/20 mb-4"
                 >
-                  <div
-                    class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors"
-                    id="pointIcon1"
+                  <span class="material-symbols-outlined text-[22px]"
+                    >auto_awesome</span
                   >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >groups</span
-                    >
-                  </div>
-                  <h4
-                    class="text-xs sm:text-sm font-bold text-slate-900 leading-snug"
-                  >
-                    Kolaboratif &amp; Terbuka
-                  </h4>
-                  <p class="text-[12px] text-slate-600 leading-relaxed">
-                    Membuka ruang sinergi seluas-luasnya bagi seluruh ide,
-                    bakat, dan inisiatif baru.
-                  </p>
                 </div>
-                <!-- Poin 2 -->
+                <h4 class="text-base font-bold text-slate-900 mb-2">
+                  1. Kepeloporan &amp; Kreativitas
+                </h4>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Menjadi inisiator gagasan progresif yang memberi ruang seluas-luasnya bagi peserta didik untuk berkarya dan berprestasi.
+                </p>
+              </div>
+
+              <div
+                class="p-6 rounded-2xl bg-slate-50/70 border border-slate-200/80 hover:border-blue-300 hover:bg-white shadow-sm transition-all"
+              >
                 <div
-                  class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-blue-300 transition-all flex flex-col gap-2 group hover:shadow-sm"
+                  class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm shadow-blue-500/20 mb-4"
                 >
-                  <div
-                    class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors"
-                    id="pointIcon2"
+                  <span class="material-symbols-outlined text-[22px]"
+                    >diversity_3</span
                   >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >trending_up</span
-                    >
-                  </div>
-                  <h4
-                    class="text-xs sm:text-sm font-bold text-slate-900 leading-snug"
-                  >
-                    Progresif Berprestasi
-                  </h4>
-                  <p class="text-[12px] text-slate-600 leading-relaxed">
-                    Mendorong sekbid, ekstrakurikuler, dan kompetisi siswa
-                    berdaya saing unggul.
-                  </p>
                 </div>
-                <!-- Poin 3 -->
+                <h4 class="text-base font-bold text-slate-900 mb-2">
+                  2. Kolaborasi &amp; Sinergi
+                </h4>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Membangun jembatan kerja sama harmonis antarseluruh ekstrakurikuler, kelas, guru, dan alumni SMAN 29 Jakarta.
+                </p>
+              </div>
+
+              <div
+                class="p-6 rounded-2xl bg-slate-50/70 border border-slate-200/80 hover:border-blue-300 hover:bg-white shadow-sm transition-all"
+              >
                 <div
-                  class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-blue-300 transition-all flex flex-col gap-2 group hover:shadow-sm"
+                  class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm shadow-blue-500/20 mb-4"
                 >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >workspace_premium</span
+                  >
+                </div>
+                <h4 class="text-base font-bold text-slate-900 mb-2">
+                  3. Integritas &amp; Prestasi
+                </h4>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Menanamkan budaya disiplin, keteladanan budi pekerti, dan dedikasi pantang menyerah dalam mengharumkan nama sekolah.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== MODE 2: KONTEN KHUSUS MPK ==================== -->
+          <div id="latarMpkBlock" class="hidden transition-all duration-300">
+            <!-- 2 Column Responsive Grid Layout -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-16"
+            >
+              <!-- Kolom Kiri: Visual Showcase MPK -->
+              <div class="lg:col-span-5 flex justify-center scroll-reveal-left">
+                <div class="relative w-full max-w-sm sm:max-w-md group">
+                  <!-- Ambient Glow Border -->
                   <div
-                    class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors"
-                    id="pointIcon3"
+                    class="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-amber-500 via-orange-400 to-yellow-300 opacity-30 group-hover:opacity-50 blur-xl transition-all duration-500"
+                  ></div>
+                  <div
+                    class="relative rounded-3xl bg-white border border-amber-100 shadow-xl overflow-hidden p-3 sm:p-4"
                   >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >handshake</span
+                    <!-- Frame Foto Pengurus MPK -->
+                    <div
+                      class="relative w-full h-[280px] sm:h-[340px] rounded-2xl overflow-hidden bg-slate-100"
                     >
+                      <img
+                        alt="MPK SMAN 29 Jakarta"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1fAnBVKuqa4vivqA-TDP7DbvL0i6p_j_IH-0M0LTBldvwIHoAxP8AYDmASEgQMH-LE0nrlwG2XEbz-07MJqigU7vyc-H60DOJ7cvNl0FG4oW_zhqNHsbPUYt2eyxkgWBCeX0fE3iC6x8WU3m7NUrjIH__Djh-ma4FH3J_0RCCPu1NfXtiVETWEw9JXSE4M0J6tyn7qYG4oZkVOHrHoc_ckY3RgnWQTDlzTCUEirur"
+                      />
+                      <!-- Gradient Overlay -->
+                      <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"
+                      ></div>
+                      <!-- Floating Badge -->
+                      <div
+                        class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white"
+                      >
+                        <span
+                          class="px-2.5 py-1 rounded-full bg-amber-500 text-slate-950 text-[11px] font-bold shadow-md"
+                          >LEMBAGA LEGISLATIF SISWA</span
+                        >
+                        <span
+                          class="text-[11px] font-medium text-slate-200 backdrop-blur-md bg-black/40 px-2 py-0.5 rounded-md"
+                          >MPK SMAN 29</span
+                        >
+                      </div>
+                    </div>
+                    <!-- Card Info Summary -->
+                    <div class="p-4 sm:p-5">
+                      <div class="flex items-center justify-between mb-3">
+                        <div>
+                          <span
+                            class="text-xs font-bold uppercase tracking-wider text-amber-700 mb-0.5 block"
+                            >PARLEMEN &amp; PENGAWAS KEBIJAKAN</span
+                          >
+                          <h3 class="text-lg sm:text-xl font-bold text-slate-900">
+                            MPK SMAN 29 Jakarta
+                          </h3>
+                        </div>
+                        <div
+                          class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold"
+                        >
+                          <span class="material-symbols-outlined text-[22px]"
+                            >how_to_vote</span
+                          >
+                        </div>
+                      </div>
+                      <p class="text-xs text-slate-600 leading-relaxed">
+                        Lembaga perwakilan kelas tertinggi yang memegang kedaulatan aspirasi, perumus garis haluan organisasi, dan pengawas akuntabilitas kinerja kesiswaan.
+                      </p>
+                      <!-- Quick Stats Badges -->
+                      <div
+                        class="grid grid-cols-2 gap-2 mt-4 pt-3 border-t border-slate-100 text-center"
+                      >
+                        <div
+                          class="p-2 rounded-xl bg-amber-50/60 border border-amber-200/80"
+                        >
+                          <span class="block text-base font-extrabold text-amber-600"
+                            >3 Komisi</span
+                          >
+                          <span class="text-[11px] text-slate-600 font-medium"
+                            >Komisi Parlemen</span
+                          >
+                        </div>
+                        <div
+                          class="p-2 rounded-xl bg-amber-50/60 border border-amber-200/80"
+                        >
+                          <span class="block text-base font-extrabold text-amber-600"
+                            >100% Kelas</span
+                          >
+                          <span class="text-[11px] text-slate-600 font-medium"
+                            >Keterwakilan Suara</span
+                          >
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h4
-                    class="text-xs sm:text-sm font-bold text-slate-900 leading-snug"
-                  >
-                    Integritas &amp; Pelayanan
-                  </h4>
-                  <p class="text-[12px] text-slate-600 leading-relaxed">
-                    Mengedepankan dedikasi tulus dalam melayani dan
-                    memperjuangkan suara siswa.
-                  </p>
                 </div>
               </div>
-              <!-- Penutup Kutipan Filosofi & Tanda Tangan Digital -->
-              <div
-                class="mt-2 pt-5 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
-              >
-                <div class="flex items-center gap-3">
-                  <div
-                    class="w-1.5 h-10 rounded-full bg-blue-600 transition-colors"
-                    id="quoteBar"
-                  ></div>
-                  <div>
-                    <p class="text-xs italic text-slate-500 leading-relaxed">
-                      "Pemimpin sejati bukan yang mencari tepuk tangan,
-                      melainkan yang menumbuhkan pemimpin-pemimpin baru di
-                      sekelilingnya."
-                    </p>
-                    <span
-                      class="text-xs font-bold text-slate-900 mt-1 block"
-                      id="signLeaderTitle"
+
+              <!-- Kolom Kanan: Narasi Latar Belakang MPK -->
+              <div class="lg:col-span-7 flex flex-col gap-6 scroll-reveal-right">
+                <!-- Paragraf 1: Sejarah & Pembentukan Parlemen MPK -->
+                <div class="relative pl-5 border-l-2 border-amber-500">
+                  <span
+                    class="text-xs font-bold uppercase tracking-widest text-amber-700 mb-1 block"
+                    >Sejarah Lembaga Parlemen Siswa</span
+                  >
+                  <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+                    Majelis Perwakilan Kelas (MPK) SMA Negeri 29 Jakarta dibentuk atas prinsip kedaulatan demokrasi tertinggi di tangan peserta didik. MPK lahir untuk memastikan bahwa setiap kebijakan sekolah dan kegiatan kesiswaan senantiasa berpijak pada suara nurani, kebutuhan riil, serta aspirasi siswa dari seluruh perwakilan kelas X, XI, hingga XII.
+                  </p>
+                </div>
+
+                <!-- Paragraf 2: Tiga Fungsi Utama MPK -->
+                <div
+                  class="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-amber-50/70 via-orange-50/40 to-slate-50 border border-amber-200/80 shadow-sm"
+                >
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="material-symbols-outlined text-amber-600 text-[20px]"
+                      >gavel</span
                     >
-                      — Presidium Ekasana Vardhana Sakti
-                    </span>
+                    <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wide">
+                      Tiga Fungsi Pokok Parlemen MPK
+                    </h4>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Sebagai pilar legislatif sekolah, MPK mengemban tiga mandat sakral:
+                    <strong class="text-slate-900">1. Fungsi Legislasi:</strong> Merumuskan AD/ART, tata tertib persidangan, dan garis-garis besar program kesiswaan.
+                    <strong class="text-slate-900">2. Fungsi Pengawasan:</strong> Memantau, meninjau, dan mengevaluasi ketercapaian target program kerja OSIS secara transparan.
+                    <strong class="text-slate-900">3. Fungsi Aspirasi:</strong> Menjaring dan mengadvokasikan keluhan serta usulan siswa ke pihak sekolah dan dewan pembina.
+                  </p>
+                </div>
+
+                <!-- Paragraf 3: Struktur 3 Komisi Parlemen -->
+                <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="material-symbols-outlined text-amber-600 text-[20px]"
+                      >account_balance</span
+                    >
+                    <h4 class="text-sm font-bold text-slate-900">
+                      Spesialisasi 3 Komisi Parlemen MPK
+                    </h4>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                    Kerja pengawasan dan perumusan kebijakan MPK dijalankan secara terstruktur melalui tiga komisi kerja independen:
+                  </p>
+                  <div class="flex flex-col gap-2.5">
+                    <div
+                      class="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-start gap-3"
+                    >
+                      <span
+                        class="px-2.5 py-1 rounded-lg bg-amber-100 text-amber-900 font-bold text-xs shrink-0"
+                        >Komisi A</span
+                      >
+                      <div>
+                        <span class="text-xs font-bold text-slate-900 block"
+                          >Hukum, Tata Tertib &amp; Konstitusi</span
+                        >
+                        <span class="text-xs text-slate-600 leading-relaxed"
+                          >Merumuskan regulasi organisasi, menyusun agenda musyawarah besar/sidang pleno, dan mengawal kepatuhan anggaran dasar.</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-start gap-3"
+                    >
+                      <span
+                        class="px-2.5 py-1 rounded-lg bg-amber-100 text-amber-900 font-bold text-xs shrink-0"
+                        >Komisi B</span
+                      >
+                      <div>
+                        <span class="text-xs font-bold text-slate-900 block"
+                          >Pengawasan &amp; Evaluasi Kinerja</span
+                        >
+                        <span class="text-xs text-slate-600 leading-relaxed"
+                          >Melakukan audit evaluasi pelaksanaan agenda kerja OSIS agar tepat sasaran, akuntabel, dan sesuai mandat yang ditetapkan.</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-start gap-3"
+                    >
+                      <span
+                        class="px-2.5 py-1 rounded-lg bg-amber-100 text-amber-900 font-bold text-xs shrink-0"
+                        >Komisi C</span
+                      >
+                      <div>
+                        <span class="text-xs font-bold text-slate-900 block"
+                          >Penjaringan Aspirasi &amp; Hubungan Masyarakat</span
+                        >
+                        <span class="text-xs text-slate-600 leading-relaxed"
+                          >Menjadi pintu utama penerima suara perwakilan kelas, survei kebutuhan siswa, serta jembatan dialog dengan dewan guru.</span
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <a
-                  class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors shrink-0 group self-start sm:self-center"
-                  href="#visi"
-                  id="sambutanNextLink"
+
+                <!-- Penutup & Link ke Visi Misi -->
+                <div
+                  class="pt-3 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
                 >
-                  Eksplor Visi &amp; Misi
-                  <span
-                    class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform"
-                    >arrow_forward</span
+                  <div class="flex items-center gap-3">
+                    <div class="w-1.5 h-10 rounded-full bg-amber-500"></div>
+                    <p class="text-xs italic text-slate-500 leading-relaxed">
+                      "Menampung aspirasi, mengawal demokrasi, dan mewujudkan transparansi sekolah secara berkeadilan."
+                    </p>
+                  </div>
+                  <a
+                    class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors shrink-0 group self-start sm:self-center"
+                    href="#visi"
                   >
-                </a>
+                    Eksplor Visi &amp; Misi
+                    <span
+                      class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 Nilai Filosofis Fondasi MPK -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-slate-100"
+            >
+              <div
+                class="p-6 rounded-2xl bg-slate-50/70 border border-slate-200/80 hover:border-amber-300 hover:bg-white shadow-sm transition-all"
+              >
+                <div
+                  class="w-11 h-11 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-lg shadow-sm shadow-amber-500/20 mb-4"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >how_to_reg</span
+                  >
+                </div>
+                <h4 class="text-base font-bold text-slate-900 mb-2">
+                  1. Kedaulatan Suara Siswa
+                </h4>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Menjamin hak berpendapat setiap murid dari kelas X sampai XII diperjuangkan secara adil, objektif, dan transparan.
+                </p>
+              </div>
+
+              <div
+                class="p-6 rounded-2xl bg-slate-50/70 border border-slate-200/80 hover:border-amber-300 hover:bg-white shadow-sm transition-all"
+              >
+                <div
+                  class="w-11 h-11 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-lg shadow-sm shadow-amber-500/20 mb-4"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >verified_user</span
+                  >
+                </div>
+                <h4 class="text-base font-bold text-slate-900 mb-2">
+                  2. Integritas &amp; Transparansi
+                </h4>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Menjaga muruah organisasi melalui pengawasan yang independen, kritis, konstruktif, serta akuntabilitas pertanggungjawaban program.
+                </p>
+              </div>
+
+              <div
+                class="p-6 rounded-2xl bg-slate-50/70 border border-slate-200/80 hover:border-amber-300 hover:bg-white shadow-sm transition-all"
+              >
+                <div
+                  class="w-11 h-11 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-lg shadow-sm shadow-amber-500/20 mb-4"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >balance</span
+                  >
+                </div>
+                <h4 class="text-base font-bold text-slate-900 mb-2">
+                  3. Budaya Musyawarah
+                </h4>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Menegakkan asas musyawarah mufakat, persidangan yang tertib, dan penyelesaian masalah secara arif serta beretika.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- 2. SECTION VISI KAMI -->
+      <!-- 3. SECTION VISI KAMI -->
       <section
         class="relative py-24 md:py-32 lg:py-36 bg-gradient-to-b from-blue-50/70 via-white to-blue-50/40 overflow-hidden"
         id="visi"
@@ -804,7 +1163,7 @@
           <div
             class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-6"
           >
-            <span class="">✨ VISI KAMI ✨</span>
+            <span class="">âœ¨ VISI KAMI âœ¨</span>
           </div>
           <h2
             class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 leading-snug tracking-tight font-headline-lg"
@@ -822,7 +1181,7 @@
           </h2>
         </div>
       </section>
-      <!-- 3. SECTION MISI KAMI -->
+      <!-- 4. SECTION MISI KAMI -->
       <section
         class="py-24 md:py-32 lg:py-36 bg-white border-t border-slate-100"
         id="misi"
@@ -839,7 +1198,7 @@
             <div
               class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2"
             >
-              ✨ MISI KAMI ✨
+              âœ¨ MISI KAMI âœ¨
             </div>
             <h2
               class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-headline-lg"
@@ -939,133 +1298,12 @@
           </div>
         </div>
       </section>
-      <!-- 4. SECTION PROGRAM KERJA UNGGULAN -->
-      <section
-        class="py-24 md:py-32 lg:py-36 bg-slate-50/70 border-t border-slate-100"
-        id="program-kerja"
-      >
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
-          <div
-            class="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center"
-          >
-            <div
-              class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/30 mb-3"
-            >
-              <span class="material-symbols-outlined text-[26px]"
-                >fact_check</span
-              >
-            </div>
-            <div
-              class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2"
-            >
-              ✨ PROGRAM KERJA ✨
-            </div>
-            <h2
-              class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-headline-lg"
-            >
-              Program <span class="text-blue-600">Unggulan</span> Kami
-            </h2>
-            <p class="text-slate-600 text-sm sm:text-base mt-2">
-              Berbagai kegiatan positif yang dirancang untuk mengembangkan
-              potensi dan karakter siswa
-            </p>
-          </div>
-          <div class="flex flex-col gap-16">
-            <!-- Proker 1 -->
-            <div
-              class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
-            >
-              <div
-                class="lg:col-span-6 overflow-hidden rounded-2xl shadow-xl border border-slate-200 bg-white"
-              >
-                <img
-                  alt="TWENTY NINE CUP VOL.9"
-                  class="w-full h-[220px] sm:h-[320px] md:h-[380px] object-cover hover:scale-105 transition-transform duration-500"
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1Xxj-YipTs0ub6WPE6CyLzJcM3Dtm_TbyqaCdYffC-zh4R0CTsN0aPw0aQwtufV2x5l7LGWyST_f24CC_YAWelXmWAGcVHlNzzz3seCpz9n3bKoKV_IggRQToRv3uLnOtcYqH0aPw3CnY2H1F--AeBGr50nUJZ-hVwuDPjVkyIPpdKHC8L11-Df2jCK6MVOdpjN-e20DTTCVno2vgcPYO8-QtAs_NVd96zSxv-xUH7WOg"
-                />
-              </div>
-              <div class="lg:col-span-6 flex flex-col items-start gap-4">
-                <div
-                  class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm shadow-blue-500/20"
-                >
-                  1
-                </div>
-                <h3
-                  class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-headline-md tracking-tight uppercase"
-                >
-                  TWENTY NINE CUP (29 CUP) VOL.9
-                </h3>
-                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                  Twenty Nine Cup Vol.9 bertujuan untuk mempererat hubungan
-                  antarsekolah dan memberikan kesempatan bagi siswa/i SMP, SMA,
-                  dan SMK sederajat se-Jabodetabek untuk menunjukkan kreativitas
-                  dan bakat terbaik mereka. Acara ini menghadirkan berbagai
-                  cabang perlombaan seperti Futsal, Basket, Modern Dance, hingga
-                  Band Akustik yang selalu menjadi sorotan utama tahunan.
-                </p>
-                <a
-                  class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-label-md text-sm font-semibold transition-all shadow-md shadow-blue-500/20"
-                  href="#galeri"
-                >
-                  <span class="">Lihat Lebih Detail</span>
-                  <span class="material-symbols-outlined text-[16px]"
-                    >arrow_forward</span
-                  >
-                </a>
-              </div>
-            </div>
-            <!-- Proker 2 -->
-            <div
-              class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
-            >
-              <div
-                class="lg:col-span-6 order-2 lg:order-1 flex flex-col items-start gap-4"
-              >
-                <div
-                  class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm shadow-blue-500/20"
-                >
-                  2
-                </div>
-                <h3
-                  class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-headline-md tracking-tight"
-                >
-                  3S (Senyum, Salam, Sapa) &amp; Gerakan Disiplin
-                </h3>
-                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                  3S bertujuan untuk meningkatkan kedisiplinan, kerapian, dan
-                  mempererat silaturahmi antara pengurus OSIS, MPK, dewan guru,
-                  dan seluruh warga SMAN 29 Jakarta. Kegiatan dilaksanakan
-                  setiap pagi hari sebelum masuk sekolah di pintu gerbang utama
-                  oleh tim gabungan piket kedisiplinan siswa.
-                </p>
-                <a
-                  class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-label-md text-sm font-semibold transition-all shadow-md shadow-blue-500/20"
-                  href="KomisiDetail.html"
-                >
-                  <span class="">Lihat Lebih Detail</span>
-                  <span class="material-symbols-outlined text-[16px]"
-                    >arrow_forward</span
-                  >
-                </a>
-              </div>
-              <div
-                class="lg:col-span-6 order-1 lg:order-2 overflow-hidden rounded-2xl shadow-xl border border-slate-200 bg-white"
-              >
-                <img
-                  alt="3S dan Disiplin Positif OSIS MPK"
-                  class="w-full h-[220px] sm:h-[320px] md:h-[380px] object-cover hover:scale-105 transition-transform duration-500"
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1W3ugh5hE---W05QHJAdcz3GAKv10hG0UGcysjjsjT7tQkEZoQ67PGuucgD3XXi-wMK2e0vU4KLRnQryDTt8AP5-yHi-eW5OGh9J7grxeGnGblIYojKSeSRM8S8n0wCxYPM7OunNrFHM_Zrq_sBNiVy7eSZYMbpBZFiIAM5cYvPEEFlj3MROkj_0wr-mXo0SxFgJgN2fnRQL6-5jK9KqysCO36U8DNtB_Sz34IUxVMcNg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 5. SECTION KEPENGURUSAN -->
+      <!-- 5. SECTION STRUKTUR ORGANISASI -->
       <section
         class="py-28 md:py-36 lg:py-40 bg-white border-t border-slate-100"
-        id="kepengurusan"
+        id="struktur"
       >
+        <span id="kepengurusan" class="sr-only"></span>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
           <!-- Section Header -->
           <div
@@ -1081,16 +1319,15 @@
             <div
               class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2"
             >
-              ✨ STRUKTUR HIERARKI ORGANISASI ✨
+              âœ¨ STRUKTUR ORGANISASI âœ¨
             </div>
             <h2
               class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-headline-lg"
             >
-              Bagan Hierarki <span class="text-blue-600">Organisasi</span>
+              Bagan Struktur <span class="text-blue-600">Organisasi</span>
             </h2>
             <p class="text-slate-600 text-sm sm:text-base mt-2">
-              Visualisasi alur komando, koordinasi strategis, dan sinergi
-              kepemimpinan OSIS &amp; MPK SMAN 29 Jakarta
+              Visualisasi hierarki kepengurusan, alur komando strategis, dan sinergi kepemimpinan OSIS &amp; MPK SMAN 29 Jakarta
             </p>
             <!-- Tab Switcher Navigation -->
             <div
@@ -1834,11 +2071,12 @@
           }
         </script>
       </section>
-      <!-- 6. SECTION GALERI -->
+      <!-- 6. SECTION DOKUMENTASI -->
       <section
         class="py-24 md:py-32 lg:py-36 bg-slate-50/70 border-t border-slate-100"
-        id="galeri"
+        id="dokumentasi"
       >
+        <span id="galeri" class="sr-only"></span>
         <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16">
           <div
             class="text-center max-w-2xl mx-auto mb-14 flex flex-col items-center"
@@ -1853,7 +2091,7 @@
             <div
               class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2"
             >
-              ✨ GALERI ✨
+              âœ¨ DOKUMENTASI KEGIATAN âœ¨
             </div>
             <h2
               class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-headline-lg"
@@ -1861,8 +2099,7 @@
               Dokumentasi <span class="text-blue-600">Kegiatan</span>
             </h2>
             <p class="text-slate-600 text-sm sm:text-base mt-2">
-              Momen-momen berharga dari berbagai kegiatan yang telah kami
-              laksanakan
+              Rekam jejak dan momen-momen berharga dari berbagai program serta agenda yang telah kami laksanakan
             </p>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -1923,159 +2160,6 @@
           </div>
         </div>
       </section>
-      <!-- 7. SECTION SALURKAN ASPIRASI SISWA -->
-      <!-- <section class="py-20 bg-white border-t border-slate-100" id="aspirasi">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-          <div
-            class="rounded-3xl bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 p-8 sm:p-12 text-white shadow-xl shadow-blue-500/20 relative overflow-hidden"
-          >
-            <div
-              class="absolute -right-12 -bottom-12 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none"
-            ></div>
-            <div class="relative z-10 max-w-2xl mb-8">
-              <div
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-wider mb-3"
-              >
-                <span class="material-symbols-outlined text-[16px]"
-                  >campaign</span
-                >
-                <span class="">Kanal Suara Siswa 29</span>
-              </div>
-              <h2
-                class="text-2xl sm:text-3xl font-extrabold font-headline-lg tracking-tight"
-              >
-                Punya Ide, Masukan, atau Aspirasi?
-              </h2>
-              <p class="text-blue-100 text-sm sm:text-base mt-2">
-                Setiap usulan konstruktif akan ditampung oleh MPK dan diteruskan
-                ke manajemen sekolah. Anda dapat memilih untuk mengirim secara
-                anonim.
-              </p>
-            </div>
-            <form
-              class="relative z-10 bg-white rounded-2xl p-6 sm:p-8 text-slate-900 shadow-lg flex flex-col gap-4"
-              id="aspirasiForm"
-              onsubmit="handleAspirasiSubmit(event)"
-            >
-              <div>
-                <label
-                  class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2"
-                  >Kategori Aspirasi</label
-                >
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                  <label
-                    class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-200 hover:border-blue-500 cursor-pointer text-center text-xs font-semibold"
-                  >
-                    <input
-                      checked=""
-                      class="accent-blue-600"
-                      name="kategori"
-                      type="radio"
-                      value="Fasilitas"
-                    />
-                    <span class="">Fasilitas</span>
-                  </label>
-                  <label
-                    class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-200 hover:border-blue-500 cursor-pointer text-center text-xs font-semibold"
-                  >
-                    <input
-                      class="accent-blue-600"
-                      name="kategori"
-                      type="radio"
-                      value="Akademik"
-                    />
-                    <span class="">Akademik</span>
-                  </label>
-                  <label
-                    class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-200 hover:border-blue-500 cursor-pointer text-center text-xs font-semibold"
-                  >
-                    <input
-                      class="accent-blue-600"
-                      name="kategori"
-                      type="radio"
-                      value="Ekskul"
-                    />
-                    <span class="">Ekskul</span>
-                  </label>
-                  <label
-                    class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-200 hover:border-blue-500 cursor-pointer text-center text-xs font-semibold"
-                  >
-                    <input
-                      class="accent-blue-600"
-                      name="kategori"
-                      type="radio"
-                      value="Kegiatan"
-                    />
-                    <span class="">Kegiatan</span>
-                  </label>
-                </div>
-              </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-semibold text-slate-700 mb-1"
-                    >Nama Siswa / Pengirim (Opsional)</label
-                  >
-                  <input
-                    class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20 text-sm"
-                    id="senderName"
-                    placeholder="Contoh: Budi Santoso / Anonim"
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <label class="block text-xs font-semibold text-slate-700 mb-1"
-                    >Kelas / Rombel</label
-                  >
-                  <input
-                    class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20 text-sm"
-                    id="senderClass"
-                    placeholder="Contoh: XI F-3"
-                    required=""
-                    type="text"
-                  />
-                </div>
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1"
-                  >Pesan Aspirasi &amp; Saran</label
-                >
-                <textarea
-                  class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20 text-sm"
-                  id="aspirasiMsg"
-                  placeholder="Tuliskan aspirasi secara santun dan konstruktif..."
-                  required=""
-                  rows="3"
-                ></textarea>
-              </div>
-              <div class="flex items-center justify-between pt-2">
-                <span class="text-xs text-slate-500 flex items-center gap-1">
-                  <span
-                    class="material-symbols-outlined text-[16px] text-emerald-500"
-                    >verified_user</span
-                  >
-                  Privasi &amp; kerahasiaan terjamin
-                </span>
-                <button
-                  class="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold shadow-md shadow-blue-500/20 transition-all flex items-center gap-1.5"
-                  type="submit"
-                >
-                  <span class="">Kirim Suara</span>
-                  <span class="material-symbols-outlined text-[16px]"
-                    >send</span
-                  >
-                </button>
-              </div>
-              <div
-                class="hidden p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium text-center"
-                id="submitAlert"
-              >
-                Terima kasih! Aspirasi Anda telah dicatat oleh Parlemen MPK SMAN
-                29 Jakarta.
-              </div>
-            </form>
-          </div>
-        </div>
-      </section> -->
     </main>
     <!-- FOOTER -->
     <footer
@@ -2113,8 +2197,11 @@
               >Navigasi</span
             >
             <nav class="flex flex-col gap-2 text-xs text-slate-400">
-              <a class="hover:text-blue-400 transition-colors" href="#sambutan"
-                >Sambutan</a
+              <a class="hover:text-blue-400 transition-colors" href="#beranda"
+                >Beranda</a
+              >
+              <a class="hover:text-blue-400 transition-colors" href="#latarbelakang"
+                >Latar Belakang</a
               >
               <a class="hover:text-blue-400 transition-colors" href="#visi"
                 >Visi</a
@@ -2124,16 +2211,11 @@
               >
               <a
                 class="hover:text-blue-400 transition-colors"
-                href="SekbidDetail.html"
-                >Program Kerja</a
+                href="#struktur"
+                >Struktur Organisasi</a
               >
-              <a
-                class="hover:text-blue-400 transition-colors"
-                href="#kepengurusan"
-                >Kepengurusan</a
-              >
-              <a class="hover:text-blue-400 transition-colors" href="#galeri"
-                >Galeri</a
+              <a class="hover:text-blue-400 transition-colors" href="#dokumentasi"
+                >Dokumentasi</a
               >
               <a class="hover:text-blue-400 transition-colors" href="#kontak"
                 >Kontak</a
@@ -2210,7 +2292,7 @@
         <div
           class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500"
         >
-          <p class="">© 2025 OSIS/MPK SMAN 29 Jakarta. All Right Reserved.</p>
+          <p class="">Â© 2025 OSIS/MPK SMAN 29 Jakarta. All Right Reserved.</p>
           <p class="">
             Website Oleh Seksi Bidang
             <span class="text-slate-300 font-semibold"
@@ -2221,20 +2303,6 @@
       </div>
     </footer>
     <!-- Interactive Scripts -->
-    <script>
-      function handleAspirasiSubmit(event) {
-        event.preventDefault();
-        const alertBox = document.getElementById("submitAlert");
-        const form = document.getElementById("aspirasiForm");
-        if (alertBox) {
-          alertBox.classList.remove("hidden");
-          form.reset();
-          setTimeout(() => {
-            alertBox.classList.add("hidden");
-          }, 5000);
-        }
-      }
-    </script>
     <script id="heroModeScript">
       let currentHeroMode = "osis";
 
@@ -2261,26 +2329,17 @@
           "#beranda div.absolute.bg-\\[radial-gradient\\(circle_at_center\\,rgba\\(37\\,99\\,235\\,0\\.18\\)_0\\,transparent_70\\%\\)\\]",
         );
 
-        // Sambutan section elements
-        const sambutanBadge = document.getElementById("sambutanSectionBadge");
-        const sambutanTitleHighlight = document.getElementById(
-          "sambutanTitleHighlight",
-        );
-        const sambutanBgGlow = document.getElementById("sambutanBgGlow");
-        const leaderCardGlow = document.getElementById("leaderCardGlow");
-        const leaderPortraitImg = document.getElementById("leaderPortraitImg");
-        const leaderClassTag = document.getElementById("leaderClassTag");
-        const leaderRoleSubhead = document.getElementById("leaderRoleSubhead");
-        const leaderRoleBadgeText = document.getElementById(
-          "leaderRoleBadgeText",
-        );
-        const leaderName = document.getElementById("leaderName");
-        const pointIcon1 = document.getElementById("pointIcon1");
-        const pointIcon2 = document.getElementById("pointIcon2");
-        const pointIcon3 = document.getElementById("pointIcon3");
-        const quoteBar = document.getElementById("quoteBar");
-        const sambutanNextLink = document.getElementById("sambutanNextLink");
-        const signLeaderTitle = document.getElementById("signLeaderTitle");
+        // Latar Belakang dedicated mode elements
+        const latarOsisBlock = document.getElementById("latarOsisBlock");
+        const latarMpkBlock = document.getElementById("latarMpkBlock");
+        const latarBadge = document.getElementById("latarSectionBadge");
+        const latarIcon = document.getElementById("latarSectionIcon");
+        const latarBadgeText = document.getElementById("latarSectionBadgeText");
+        const latarHeading = document.getElementById("latarSectionHeading");
+        const latarSubtitle = document.getElementById("latarSectionSubtitle");
+        const latarBgGlow = document.getElementById("latarBgGlow");
+        const latarTabOsis = document.getElementById("latarTabBtnOsis");
+        const latarTabMpk = document.getElementById("latarTabBtnMpk");
 
         if (mode === "mpk") {
           // MPK Mode: Yellow / Gold Theme (#f59e0b / #eab308)
@@ -2333,76 +2392,55 @@
           }
           if (primaryCta) {
             primaryCta.className =
-              "px-7 py-3 rounded-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-label-md text-sm font-bold shadow-lg shadow-amber-500/30 transition-all hover:scale-105 inline-flex items-center gap-2";
+              "px-7 py-3 rounded-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-label-md text-sm font-bold shadow-lg shadow-amber-500/30 transition-all hover:scale-105 inline-flex items-center justify-center gap-2";
+            primaryCta.setAttribute("href", "#latarbelakang");
           }
           if (primaryCtaText) {
-            primaryCtaText.innerText = "Salurkan Aspirasi MPK";
-            primaryCta.setAttribute("href", "KomisiDetail.html");
+            primaryCtaText.innerText = "Latar Belakang MPK";
           }
           if (heroRadialGlow) {
             heroRadialGlow.style.backgroundImage =
               "radial-gradient(circle at center, rgba(245, 158, 11, 0.22) 0%, transparent 70%)";
           }
 
-          // Update Sambutan Section to MPK Profile
-          if (sambutanBadge) {
-            sambutanBadge.className =
+          // Switch Latar Belakang Content strictly to MPK
+          if (latarOsisBlock) {
+            latarOsisBlock.classList.add("hidden");
+          }
+          if (latarMpkBlock) {
+            latarMpkBlock.classList.remove("hidden");
+            // Auto reveal elements in mpk block
+            latarMpkBlock.querySelectorAll(".scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale").forEach(function(el) {
+              el.classList.add("scroll-revealed");
+            });
+          }
+          if (latarBadge) {
+            latarBadge.className =
               "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider mb-4 transition-colors";
           }
-          if (sambutanTitleHighlight) {
-            sambutanTitleHighlight.className =
-              "text-amber-600 transition-colors";
+          if (latarIcon) {
+            latarIcon.innerText = "how_to_vote";
           }
-          if (sambutanBgGlow) {
-            sambutanBgGlow.className =
+          if (latarBadgeText) {
+            latarBadgeText.innerText = "LEMBAGA LEGISLATIF SISWA";
+          }
+          if (latarHeading) {
+            latarHeading.innerHTML = 'Latar Belakang &amp; Sejarah <span class="text-amber-500 transition-colors" id="latarTitleHighlight">MPK SMAN 29 Jakarta</span>';
+          }
+          if (latarSubtitle) {
+            latarSubtitle.innerText = "Mengenal sejarah parlemen siswa, lembaga pengawal demokrasi, dan penyalur aspirasi tertinggi SMAN 29 Jakarta.";
+          }
+          if (latarBgGlow) {
+            latarBgGlow.className =
               "absolute -top-24 -left-24 w-96 h-96 bg-amber-100/60 rounded-full blur-3xl pointer-events-none transition-all duration-500";
           }
-          if (leaderCardGlow) {
-            leaderCardGlow.className =
-              "absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-amber-500 via-orange-400 to-yellow-300 opacity-30 group-hover:opacity-50 blur-xl transition-all duration-500";
+          if (latarTabMpk) {
+            latarTabMpk.className =
+              "flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 bg-amber-500 text-slate-950 shadow-md shadow-amber-500/25";
           }
-          if (leaderPortraitImg) {
-            leaderPortraitImg.src =
-              "https://lh3.googleusercontent.com/aida-public/AB6AXuC1fAnBVKuqa4vivqA-TDP7DbvL0i6p_j_IH-0M0LTBldvwIHoAxP8AYDmASEgQMH-LE0nrlwG2XEbz-07MJqigU7vyc-H60DOJ7cvNl0FG4oW_zhqNHsbPUYt2eyxkgWBCeX0fE3iC6x8WU3m7NUrjIH__Djh-ma4FH3J_0RCCPu1NfXtiVETWEw9JXSE4M0J6tyn7qYG4oZkVOHrHoc_ckY3RgnWQTDlzTCUEirur";
-            leaderPortraitImg.alt = "Ketua Umum MPK SMAN 29 Jakarta";
-          }
-          if (leaderClassTag) {
-            leaderClassTag.innerText = "Kelas XI F-5";
-            leaderClassTag.className =
-              "px-2.5 py-1 rounded-full bg-amber-500 text-slate-950 text-[11px] font-bold shadow-md transition-colors";
-          }
-          if (leaderRoleSubhead) {
-            leaderRoleSubhead.className =
-              "flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 mb-1 transition-colors";
-          }
-          if (leaderRoleBadgeText) {
-            leaderRoleBadgeText.innerText = "Ketua Umum MPK SMAN 29";
-          }
-          if (leaderName) {
-            leaderName.innerText = "Nabila Zahra Azzahra";
-          }
-          if (pointIcon1) {
-            pointIcon1.className =
-              "w-9 h-9 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center transition-colors";
-          }
-          if (pointIcon2) {
-            pointIcon2.className =
-              "w-9 h-9 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center transition-colors";
-          }
-          if (pointIcon3) {
-            pointIcon3.className =
-              "w-9 h-9 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center transition-colors";
-          }
-          if (quoteBar) {
-            quoteBar.className =
-              "w-1.5 h-10 rounded-full bg-amber-500 transition-colors";
-          }
-          if (sambutanNextLink) {
-            sambutanNextLink.className =
-              "inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors shrink-0 group self-start sm:self-center";
-          }
-          if (signLeaderTitle) {
-            signLeaderTitle.innerText = "— Parlemen Siswa MPK SMAN 29 Jakarta";
+          if (latarTabOsis) {
+            latarTabOsis.className =
+              "flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 text-slate-600 hover:text-slate-900 bg-transparent";
           }
 
           if (typeof switchOrgTab === "function") {
@@ -2458,76 +2496,55 @@
           }
           if (primaryCta) {
             primaryCta.className =
-              "px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-label-md text-sm font-bold shadow-lg shadow-blue-500/30 transition-all hover:scale-105 inline-flex items-center gap-2";
+              "px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-label-md text-sm font-bold shadow-lg shadow-blue-500/30 transition-all hover:scale-105 inline-flex items-center justify-center gap-2";
+            primaryCta.setAttribute("href", "#latarbelakang");
           }
           if (primaryCtaText) {
-            primaryCtaText.innerText = "Sambutan & Program";
-            primaryCta.setAttribute("href", "#sambutan");
+            primaryCtaText.innerText = "Latar Belakang OSIS";
           }
           if (heroRadialGlow) {
             heroRadialGlow.style.backgroundImage =
               "radial-gradient(circle at center, rgba(37, 99, 235, 0.18) 0%, transparent 70%)";
           }
 
-          // Update Sambutan Section to OSIS Profile
-          if (sambutanBadge) {
-            sambutanBadge.className =
+          // Switch Latar Belakang Content strictly to OSIS
+          if (latarMpkBlock) {
+            latarMpkBlock.classList.add("hidden");
+          }
+          if (latarOsisBlock) {
+            latarOsisBlock.classList.remove("hidden");
+            // Auto reveal elements in osis block
+            latarOsisBlock.querySelectorAll(".scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale").forEach(function(el) {
+              el.classList.add("scroll-revealed");
+            });
+          }
+          if (latarBadge) {
+            latarBadge.className =
               "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4 transition-colors";
           }
-          if (sambutanTitleHighlight) {
-            sambutanTitleHighlight.className =
-              "text-blue-600 transition-colors";
+          if (latarIcon) {
+            latarIcon.innerText = "domain";
           }
-          if (sambutanBgGlow) {
-            sambutanBgGlow.className =
+          if (latarBadgeText) {
+            latarBadgeText.innerText = "LEMBAGA EKSEKUTIF SISWA";
+          }
+          if (latarHeading) {
+            latarHeading.innerHTML = 'Latar Belakang &amp; Sejarah <span class="text-blue-600 transition-colors" id="latarTitleHighlight">OSIS SMAN 29 Jakarta</span>';
+          }
+          if (latarSubtitle) {
+            latarSubtitle.innerText = "Mengenal lebih dalam rekam jejak, peran eksekutif kepemimpinan, dan komitmen pembinaan potensi kesiswaan SMAN 29 Jakarta.";
+          }
+          if (latarBgGlow) {
+            latarBgGlow.className =
               "absolute -top-24 -left-24 w-96 h-96 bg-blue-100/60 rounded-full blur-3xl pointer-events-none transition-all duration-500";
           }
-          if (leaderCardGlow) {
-            leaderCardGlow.className =
-              "absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-sky-400 opacity-25 group-hover:opacity-40 blur-xl transition-all duration-500";
+          if (latarTabOsis) {
+            latarTabOsis.className =
+              "flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 bg-blue-600 text-white shadow-md shadow-blue-500/25";
           }
-          if (leaderPortraitImg) {
-            leaderPortraitImg.src =
-              "orang/stitch_school_extracurricular_directory_platform/portrait_of_an_indonesian_high_school_boy_student_in_late_teens_smiling/screen.png";
-            leaderPortraitImg.alt = "Ketua OSIS SMAN 29 Jakarta";
-          }
-          if (leaderClassTag) {
-            leaderClassTag.innerText = "Kelas XI F-2";
-            leaderClassTag.className =
-              "px-2.5 py-1 rounded-full bg-blue-600 text-white text-[11px] font-bold shadow-md transition-colors";
-          }
-          if (leaderRoleSubhead) {
-            leaderRoleSubhead.className =
-              "flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-600 mb-1 transition-colors";
-          }
-          if (leaderRoleBadgeText) {
-            leaderRoleBadgeText.innerText = "Ketua Umum OSIS SMAN 29";
-          }
-          if (leaderName) {
-            leaderName.innerText = "Muhammad Fathir Al-Ghifari";
-          }
-          if (pointIcon1) {
-            pointIcon1.className =
-              "w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors";
-          }
-          if (pointIcon2) {
-            pointIcon2.className =
-              "w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors";
-          }
-          if (pointIcon3) {
-            pointIcon3.className =
-              "w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center transition-colors";
-          }
-          if (quoteBar) {
-            quoteBar.className =
-              "w-1.5 h-10 rounded-full bg-blue-600 transition-colors";
-          }
-          if (sambutanNextLink) {
-            sambutanNextLink.className =
-              "inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors shrink-0 group self-start sm:self-center";
-          }
-          if (signLeaderTitle) {
-            signLeaderTitle.innerText = "— Presidium Ekasana Vardhana Sakti";
+          if (latarTabMpk) {
+            latarTabMpk.className =
+              "flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 text-slate-600 hover:text-slate-900 bg-transparent";
           }
 
           if (typeof switchOrgTab === "function") {
@@ -2739,3 +2756,4 @@
     </script>
   </body>
 </html>
+
